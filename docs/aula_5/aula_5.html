@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-contrib/timeline-0.1.0/timeline.js"></script>
+<link href="../site_libs/quarto-contrib/timeline-0.1.0/timeline.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.19">
+
+  <meta name="author" content="Gustavo Frosi">
+  <title>Física do solo – Física do Solo:</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-ec59874b3a8398889ca2432df423b2c0.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+  <script src="../site_libs/viz-1.8.2/viz.js"></script>
+
+  <link href="../site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+
+  <script src="../site_libs/grViz-binding-1.0.12/grViz.js"></script>
+
+</head>
+<body class="quarto-light">
+<script src="mathjax-config.js"></script>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="fundo.jpg" data-background-opacity="0.9" data-background-position="right 15% top 52%" data-background-size="30%" class="quarto-title-block center">
+  <h1 class="title">Física do Solo:</h1>
+  <p class="subtitle">Consistência do solo</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Gustavo Frosi
+</div>
+<div class="quarto-title-author-email">
+<a href="mailto:gustavofrosi@hotmail.com">gustavofrosi@hotmail.com</a>
+</div>
+        <p class="quarto-title-affiliation">
+            Instituto Federal do Paraná <br> Curso Superior em Engenharia Agronômica
+          </p>
+    </div>
+</div>
+
+  <p class="date">21 de setembro de 2026</p>
+</section>
+<section>
+<section id="o-que-é-consistência-do-solo" class="title-slide slide level1 center">
+<h1>O que é consistência do solo?</h1>
+<hr>
+<aside class="notes">
+<p>Perguntar: por que o mesmo solo gruda na bota em um dia e vira pó no outro? O que mudou?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="consistência-do-solo" class="slide level2">
+<h2>Consistência do solo</h2>
+<hr>
+<div class="fragment">
+<p>O mesmo solo pode se apresentar duro, friável ou pegajoso em diferentes momentos do ano.</p>
+</div>
+<div class="fragment">
+<p>O que muda não é o solo, mas o seu <span class="fg" style="--col: #e64173"><strong>teor de água</strong></span>.</p>
+</div>
+<div class="fragment">
+<p>A consistência descreve justamente esse comportamento.</p>
+</div>
+</section>
+<section id="consistência-do-solo-1" class="slide level2">
+<h2>Consistência do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Definição:</strong></span></p>
+<div class="fragment">
+<blockquote>
+<p>Consistência é a manifestação das forças físicas de coesão e adesão que atuam no solo, sob diferentes teores de umidade.</p>
+</blockquote>
+</div>
+<div class="fragment">
+<p>É uma propriedade <span class="fg" style="--col: #e64173"><strong>dinâmica</strong></span>: depende da umidade no momento da avaliação.</p>
+</div>
+<div class="fragment">
+<p>Também é um atributo <span class="fg" style="--col: #e64173"><strong>morfológico</strong></span>, descrito no campo horizonte por horizonte.</p>
+</div>
+<aside class="notes">
+<p>Reforçar o contraste: textura é um atributo estático; consistência é dinâmica.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="por-que-estudar-consistência" class="slide level2">
+<h2>Por que estudar consistência?</h2>
+<hr>
+<ul>
+<li class="fragment">Define a melhor umidade para o preparo do solo;</li>
+<li class="fragment">Indica o risco de compactação pelo tráfego de máquinas;</li>
+<li class="fragment">Auxilia na descrição e na classificação de solos;</li>
+<li class="fragment">Relaciona-se com a resistência à penetração das raízes;</li>
+<li class="fragment">É base para obras de engenharia (estradas, barragens, fundações).</li>
+</ul>
+</section></section>
+<section>
+<section id="coesão-e-adesão" class="title-slide slide level1 center">
+<h1>Coesão e adesão</h1>
+<hr>
+</section>
+<section id="coesão-e-adesão-1" class="slide level2">
+<h2>Coesão e adesão</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Coesão:</strong></span></p>
+<p>Atração entre partículas <span class="fg" style="--col: #e64173"><strong>sólidas iguais</strong></span> (partícula–partícula).</p>
+<ul>
+<li class="fragment">Pontes de hidrogênio e forças de van der Waals;</li>
+<li class="fragment">Ligações por agentes cimentantes (óxidos, carbonatos, sílica);</li>
+<li class="fragment">Pontes de matéria orgânica e de cátions.</li>
+</ul>
+<div class="fragment">
+<p><span class="fg" style="--col: #e64173"><strong>Adesão:</strong></span></p>
+<p>Atração entre partículas sólidas e <span class="fg" style="--col: #e64173"><strong>moléculas de água</strong></span> (sólido–líquido): depende da polaridade da água, aumenta com a ASE e é responsável pela pegajosidade nas mãos e nos implementos.</p>
+</div>
+</section>
+<section id="coesão-e-adesão-2" class="slide level2">
+<h2>Coesão e adesão</h2>
+<hr>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-19886896726c4c454452" style="width:100%;height:70%;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-19886896726c4c454452">{"x":{"diagram":"\ndigraph {\n\n  graph [\n    layout = dot,\n    rankdir = LR,\n    bgcolor = \"transparent\",\n    margin = 0\n  ]\n\n  node [\n    shape = box,\n    style = \"filled,rounded\",\n    fillcolor = \"#FFFFFF\",\n    color = \"#222222\",\n    penwidth = 2,\n    fontname = \"Arial\",\n    fontsize = 16,\n    width = 1.8,\n    height = 0.9,\n    fixedsize = true\n  ]\n\n  edge [\n    color = \"#222222\",\n    penwidth = 2,\n    arrowsize = 0.8,\n    fontname = \"Arial\",\n    fontsize = 13\n  ]\n\n  agua    [label = \"Teor de\nágua\"]\n  coesao  [label = \"Coesão\"]\n  adesao  [label = \"Adesão\"]\n  cons    [label = \"Consistência\"]\n\n  agua -> coesao [label = \"diminui\"]\n  agua -> adesao [label = \"aumenta*\"]\n  coesao -> cons\n  adesao -> cons\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="fragment">
+<p>* até um valor máximo; depois o solo passa a fluir.</p>
+</div>
+<aside class="notes">
+<p>Explicar: coesão máxima no solo seco e adesão máxima em umidade intermediária.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="coesão-e-adesão-3" class="slide level2">
+<h2>Coesão e adesão</h2>
+<hr>
+
+<img data-src="imagens/friavel.jpeg" class="quarto-figure quarto-figure-center r-stretch" width="600"></section>
+<section id="consistência-e-teor-de-água" class="slide level2">
+<h2>Consistência e teor de água</h2>
+<hr>
+<p>A consistência é descrita em <span class="fg" style="--col: #e64173"><strong>três condições de umidade</strong></span>:</p>
+<p><br></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Condição de umidade</th>
+<th style="text-align: left;">Propriedade avaliada</th>
+<th style="text-align: left;">Força dominante</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Seco</td>
+<td style="text-align: left;">Dureza (tenacidade)</td>
+<td style="text-align: left;">Coesão</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Úmido</td>
+<td style="text-align: left;">Friabilidade</td>
+<td style="text-align: left;">Coesão moderada</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Molhado</td>
+<td style="text-align: left;">Plasticidade e pegajosidade</td>
+<td style="text-align: left;">Adesão</td>
+</tr>
+</tbody>
+</table>
+</section></section>
+<section>
+<section id="consistência-do-solo-seco" class="title-slide slide level1 center">
+<h1>Consistência do solo seco</h1>
+<hr>
+</section>
+<section id="consistência-do-solo-seco-1" class="slide level2">
+<h2>Consistência do solo seco</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Dureza ou tenacidade:</strong></span></p>
+<div class="fragment">
+<p>Resistência do agregado seco ao ar à ruptura por pressão entre o polegar e o indicador.</p>
+</div>
+<div class="fragment">
+<p>Reflete o predomínio das forças de <span class="fg" style="--col: #e64173"><strong>coesão</strong></span>, já que a água praticamente não atua como lubrificante.</p>
+</div>
+<div class="fragment">
+<p>Avaliar em agregados de 2 a 3 cm, aplicando pressão lenta e crescente.</p>
+</div>
+</section>
+<section id="consistência-do-solo-seco-2" class="slide level2">
+<h2>Consistência do solo seco</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Classes de dureza:</strong></span></p>
+<div style="font-size:30px">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Classe</th>
+<th style="text-align: left;">Critério de campo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Solta</td>
+<td style="text-align: left;">Sem agregados coerentes (grãos simples)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Macia</td>
+<td style="text-align: left;">Rompe-se com pressão muito leve dos dedos</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ligeiramente dura</td>
+<td style="text-align: left;">Rompe-se facilmente entre polegar e indicador</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dura</td>
+<td style="text-align: left;">Difícil de romper entre os dedos</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Muito dura</td>
+<td style="text-align: left;">Rompe-se apenas entre as duas mãos</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Extremamente dura</td>
+<td style="text-align: left;">Não se rompe entre as mãos</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="consistência-do-solo-seco-3" class="slide level2">
+<h2>Consistência do solo seco</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Implicações práticas:</strong></span></p>
+<ul>
+<li class="fragment">Solo muito duro dificulta a emergência de plântulas (encrostamento);</li>
+<li class="fragment">Aumenta a resistência à penetração das raízes;</li>
+<li class="fragment">Exige maior demanda de potência no preparo;</li>
+<li class="fragment">Favorece a formação de torrões e a pulverização de agregados.</li>
+</ul>
+<div class="fragment">
+<div class="quarto-layout-panel" data-layout-nrow="1">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/solo_seco.jpg" class="quarto-figure quarto-figure-center" width="340"></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/solo_seco2.avif" class="quarto-figure quarto-figure-center" width="340"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="consistência-do-solo-úmido" class="title-slide slide level1 center">
+<h1>Consistência do solo úmido</h1>
+<hr>
+</section>
+<section id="consistência-do-solo-úmido-1" class="slide level2">
+<h2>Consistência do solo úmido</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Friabilidade:</strong></span></p>
+<div class="fragment">
+<p>Facilidade com que o solo úmido se desfaz em agregados menores quando pressionado, sem se deformar plasticamente.</p>
+</div>
+<div class="fragment">
+<p>É a condição de umidade <span class="fg" style="--col: #e64173"><strong>ideal para o preparo do solo</strong></span>.</p>
+</div>
+</section>
+<section id="consistência-do-solo-úmido-2" class="slide level2">
+<h2>Consistência do solo úmido</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Classes de friabilidade:</strong></span></p>
+<div style="font-size:30px">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Classe</th>
+<th style="text-align: left;">Critério de campo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Solta</td>
+<td style="text-align: left;">Não coeso, grãos simples</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Muito friável</td>
+<td style="text-align: left;">Esboroa-se sob pressão muito leve</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Friável</td>
+<td style="text-align: left;">Esboroa-se sob pressão leve a moderada</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Firme</td>
+<td style="text-align: left;">Esboroa-se sob pressão moderada a forte</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Muito firme</td>
+<td style="text-align: left;">Esboroa-se somente sob forte pressão</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Extremamente firme</td>
+<td style="text-align: left;">Não se esboroa entre os dedos</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="consistência-do-solo-úmido-3" class="slide level2">
+<h2>Consistência do solo úmido</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Faixa friável:</strong></span></p>
+<p>Situa-se aproximadamente entre a capacidade de campo e o limite de plasticidade.</p>
+<ul>
+<li class="fragment">O solo se fragmenta sem se deformar;</li>
+<li class="fragment">Menor energia de tração exigida;</li>
+<li class="fragment">Menor risco de compactação e de pulverização;</li>
+<li class="fragment">Maior eficiência operacional das máquinas.</li>
+</ul>
+</section>
+<section id="consistência-do-solo-úmido-4" class="slide level2">
+<h2>Consistência do solo úmido</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>A amplitude da faixa friável varia entre solos:</strong></span></p>
+<ul>
+<li class="fragment">Solos arenosos: faixa ampla, pouco sensível ao manejo;</li>
+<li class="fragment">Latossolos argilosos (caulinita e óxidos): faixa relativamente ampla;</li>
+<li class="fragment">Vertissolos (argila 2:1): faixa muito estreita, manejo crítico.</li>
+</ul>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/friavel.jpeg" class="quarto-figure quarto-figure-center" width="600"></p>
+</figure>
+</div>
+</div>
+</section></section>
+<section>
+<section id="consistência-do-solo-molhado" class="title-slide slide level1 center">
+<h1>Consistência do solo molhado</h1>
+<hr>
+</section>
+<section id="consistência-do-solo-molhado-1" class="slide level2">
+<h2>Consistência do solo molhado</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Plasticidade:</strong></span></p>
+<div class="fragment">
+<p>Capacidade do solo molhado de ser moldado e de <span class="fg" style="--col: #e64173"><strong>manter a forma</strong></span> após cessar a força aplicada.</p>
+</div>
+<div class="fragment">
+<p>Depende do teor de argila e da orientação das partículas lamelares lubrificadas pela água.</p>
+</div>
+<div class="fragment">
+<p>Areias puras são <span class="fg" style="--col: #e64173"><strong>não plásticas</strong></span>.</p>
+</div>
+</section>
+<section id="consistência-do-solo-molhado-2" class="slide level2">
+<h2>Consistência do solo molhado</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Classes de plasticidade:</strong></span></p>
+<div style="font-size:30px">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Classe</th>
+<th style="text-align: left;">Critério de campo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Não plástico</td>
+<td style="text-align: left;">Não forma cilindro (rolo)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ligeiramente plástico</td>
+<td style="text-align: left;">Forma cilindro que se rompe facilmente</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Plástico</td>
+<td style="text-align: left;">Forma cilindro que resiste à deformação</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Muito plástico</td>
+<td style="text-align: left;">Cilindro firme, exige pressão considerável</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fragment">
+<p>Teste do rolo: cilindro de ~3 a 4 cm de comprimento e ~3 mm de diâmetro.</p>
+</div>
+</section>
+<section id="consistência-do-solo-molhado-3" class="slide level2">
+<h2>Consistência do solo molhado</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Pegajosidade (aderência):</strong></span></p>
+<p>Capacidade do solo molhado de <span class="fg" style="--col: #e64173"><strong>aderir a outros corpos</strong></span>: dedos, ferramentas, pneus, discos de grade.</p>
+<div style="font-size:30px">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Classe</th>
+<th style="text-align: left;">Critério de campo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Não pegajoso</td>
+<td style="text-align: left;">Não adere aos dedos</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ligeiramente pegajoso</td>
+<td style="text-align: left;">Adere pouco e solta-se com facilidade</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Pegajoso</td>
+<td style="text-align: left;">Adere a ambos os dedos e estira-se um pouco</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Muito pegajoso</td>
+<td style="text-align: left;">Adere fortemente e estira-se bastante</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="consistência-do-solo-molhado-4" class="slide level2">
+<h2>Consistência do solo molhado</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Cuidados na avaliação:</strong></span></p>
+<ul>
+<li class="fragment">Destorroar a amostra e retirar fragmentos grosseiros;</li>
+<li class="fragment">Umedecer gradualmente até o ponto de máxima plasticidade;</li>
+<li class="fragment">Não avaliar com excesso de água (o solo passa a fluir);</li>
+<li class="fragment">Padronizar a pressão entre polegar e indicador.</li>
+</ul>
+</section>
+<section id="consistência-do-solo-molhado-5" class="slide level2">
+<h2>Consistência do solo molhado</h2>
+<hr>
+<div class="quarto-layout-panel" data-layout-nrow="1">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/percepcao.png" class="quarto-figure quarto-figure-center" width="900"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="limites-de-consistência" class="title-slide slide level1 center">
+<h1>Limites de consistência</h1>
+<hr>
+</section>
+<section id="limites-de-consistência-1" class="slide level2">
+<h2>Limites de consistência</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Limites de Atterberg:</strong></span></p>
+<div class="fragment">
+<p>Propostos por Albert Atterberg para a cerâmica e a agricultura e depois adaptados por Arthur Casagrande para a mecânica dos solos.</p>
+</div>
+<div class="fragment">
+<p>Definem os teores de água que separam os estados de consistência do solo:</p>
+<ul>
+<li class="fragment">Sólido;</li>
+<li class="fragment">Semissólido;</li>
+<li class="fragment">Plástico;</li>
+<li class="fragment">Líquido (viscoso).</li>
+</ul>
+</div>
+</section>
+<section id="limites-de-consistência-2" class="slide level2">
+<h2>Limites de consistência</h2>
+<hr>
+<p><br></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Limite</th>
+<th style="text-align: center;">Sigla</th>
+<th style="text-align: left;">Transição</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Limite de contração</td>
+<td style="text-align: center;">LC</td>
+<td style="text-align: left;">Sólido → semissólido</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Limite de plasticidade</td>
+<td style="text-align: center;">LP</td>
+<td style="text-align: left;">Semissólido → plástico</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Limite de liquidez</td>
+<td style="text-align: center;">LL</td>
+<td style="text-align: left;">Plástico → líquido</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p>Podem ser encontrados em <span class="fg" style="--col: #e64173"><strong>teor de água gravimétrico (%)</strong></span>. No entanto, é recomendado não utilizar unidades.</p>
+</div>
+</section>
+<section id="limites-de-consistência-3" class="slide level2">
+<h2>Limites de consistência</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Limite de contração (LC):</strong></span></p>
+<p>Teor de água abaixo do qual a perda de água não provoca mais redução de volume do solo.</p>
+<ul>
+<li class="fragment">Abaixo do LC o ar entra nos poros e o solo clareia;</li>
+<li class="fragment">Relaciona-se com a formação de fendas de dessecação;</li>
+<li class="fragment">Importante em Vertissolos e em solos com argila 2:1.</li>
+</ul>
+</section>
+<section id="limites-de-consistência-4" class="slide level2">
+<h2>Limites de consistência</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Limite de plasticidade (LP):</strong></span></p>
+<div class="fragment">
+<p>Menor teor de água em que o solo ainda se comporta plasticamente.</p>
+</div>
+<div class="fragment">
+<p>Determinação: teor de água no qual o cilindro de 3 mm de diâmetro começa a se fragmentar ao ser rolado sobre placa de vidro.</p>
+</div>
+<div class="fragment">
+<p><span class="fg" style="--col: #e64173"><strong>Limite de liquidez (LL):</strong></span></p>
+</div>
+<div class="fragment">
+<p>Teor de água a partir do qual o solo perde a capacidade de manter a forma e escoa como um líquido viscoso.</p>
+</div>
+<div class="fragment">
+<p>Determinação no <span class="fg" style="--col: #e64173"><strong>aparelho de Casagrande</strong></span>: teor de água em que a ranhura se fecha em 1 cm após 25 golpes.</p>
+</div>
+</section>
+<section id="limites-de-consistência-5" class="slide level2">
+<h2>Limites de consistência</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Limite de liquidez (LL):</strong></span></p>
+<div class="quarto-layout-panel" data-layout-nrow="1">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/casagrand.jpeg" width="340"></p>
+<figcaption>Aparelho de Casagrande</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/limite_ll.jpeg" width="390"></p>
+<figcaption>Determinação do LP</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="limites-de-consistência-6" class="slide level2">
+<h2>Limites de consistência</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Índice de plasticidade (IP):</strong></span></p>
+<div class="fragment">
+<p><span class="math display">\[ IP = LL - LP \]</span></p>
+</div>
+<div class="fragment">
+<p>Representa a <span class="fg" style="--col: #e64173"><strong>amplitude do estado plástico</strong></span>, ou seja, a faixa de umidade em que o solo pode ser moldado.</p>
+</div>
+<div class="fragment">
+<p>Quanto maior o IP, mais crítico é o manejo hídrico do solo.</p>
+</div>
+</section>
+<section id="limites-de-consistência-7" class="slide level2">
+<h2>Limites de consistência</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Interpretação do IP:</strong></span></p>
+<p><br></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">IP (%)</th>
+<th style="text-align: left;">Classificação</th>
+<th style="text-align: left;">Tipo de solo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">Não plástico</td>
+<td style="text-align: left;">Arenoso</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">&lt; 7</td>
+<td style="text-align: left;">Fracamente plástico</td>
+<td style="text-align: left;">Siltoso</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">7 – 17</td>
+<td style="text-align: left;">Medianamente plástico</td>
+<td style="text-align: left;">Argilo siltoso</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">&gt; 17</td>
+<td style="text-align: left;">Altamente plástico</td>
+<td style="text-align: left;">Argiloso</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="limites-de-consistência-8" class="slide level2">
+<h2>Limites de consistência</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Volume:</strong></span></p>
+
+<img data-src="imagens/volume.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="limites-de-consistência-9" class="slide level2">
+<h2>Limites de consistência</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Resumo:</strong></span></p>
+
+<img data-src="imagens/tipos_conssitencia.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="limites-de-consistência-10" class="slide level2">
+<h2>Limites de consistência</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Aplicações:</strong></span></p>
+<ul>
+<li class="fragment">Classificação geotécnica de solos;</li>
+<li class="fragment">Projeto de estradas rurais e de barragens de terra;</li>
+<li class="fragment">Estimativa da trafegabilidade em áreas agrícolas;</li>
+<li class="fragment">Definição da janela operacional de preparo;</li>
+<li class="fragment">Avaliação do risco de compactação.</li>
+</ul>
+</section></section>
+<section>
+<section id="fatores-que-influenciam-a-consistência" class="title-slide slide level1 center">
+<h1>Fatores que influenciam a consistência</h1>
+<hr>
+</section>
+<section id="fatores-que-influenciam" class="slide level2">
+<h2>Fatores que influenciam</h2>
+<hr>
+<ul>
+<li class="fragment">Textura;</li>
+<li class="fragment">Mineralogia da fração argila;</li>
+<li class="fragment">Matéria orgânica;</li>
+<li class="fragment">Cátions trocáveis;</li>
+<li class="fragment">Óxidos de Fe e Al e outros cimentantes;</li>
+<li class="fragment">Estrutura e densidade do solo.</li>
+</ul>
+</section>
+<section id="fatores-que-influenciam-1" class="slide level2">
+<h2>Fatores que influenciam</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Textura:</strong></span></p>
+<ul>
+<li class="fragment">Quanto maior o teor de argila, maior a ASE e o número de pontos de contato;</li>
+<li class="fragment">Maior coesão no seco e maior plasticidade e pegajosidade no molhado;</li>
+<li class="fragment">Solos arenosos: soltos quando secos, não plásticos e não pegajosos;</li>
+<li class="fragment">O silte contribui pouco para a plasticidade, mas favorece o encrostamento.</li>
+</ul>
+<div class="fragment">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Classe textural</th>
+<th style="text-align: center;">Dureza (seco)</th>
+<th style="text-align: center;">Friabilidade</th>
+<th style="text-align: center;">Plasticidade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Arenosa</td>
+<td style="text-align: center;">Solta / macia</td>
+<td style="text-align: center;">Solta</td>
+<td style="text-align: center;">Não plástica</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Média</td>
+<td style="text-align: center;">Lig. dura</td>
+<td style="text-align: center;">Friável</td>
+<td style="text-align: center;">Lig. plástica</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Argilosa</td>
+<td style="text-align: center;">Dura</td>
+<td style="text-align: center;">Firme</td>
+<td style="text-align: center;">Plástica</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Muito argilosa</td>
+<td style="text-align: center;">Muito dura</td>
+<td style="text-align: center;">Muito firme</td>
+<td style="text-align: center;">Muito plástica</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="fatores-que-influenciam-2" class="slide level2">
+<h2>Fatores que influenciam</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Mineralogia:</strong></span></p>
+<div class="fragment">
+<p>Argilas <span class="fg" style="--col: #e64173"><strong>2:1 expansivas</strong></span> (esmectita, vermiculita): alta ASE, alta plasticidade, alto LL e alto IP, forte expansão e contração.</p>
+</div>
+<div class="fragment">
+<p>Argilas <span class="fg" style="--col: #e64173"><strong>1:1</strong></span> (caulinita): baixa ASE, baixa plasticidade, comportamento mais estável com a variação da umidade.</p>
+</div>
+</section>
+<section id="fatores-que-influenciam-3" class="slide level2">
+<h2>Fatores que influenciam</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Matéria orgânica:</strong></span></p>
+<ul>
+<li class="fragment">Aumenta a agregação e a friabilidade;</li>
+<li class="fragment">Reduz a dureza no estado seco;</li>
+<li class="fragment">Amplia a faixa de umidade friável;</li>
+<li class="fragment">Em teores elevados, pode aumentar o LL e o LP;</li>
+<li class="fragment">Reduz a pegajosidade em relação a um solo argiloso sem matéria orgânica.</li>
+</ul>
+</section>
+<section id="fatores-que-influenciam-4" class="slide level2">
+<h2>Fatores que influenciam</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Cátions trocáveis:</strong></span></p>
+<p>O tipo de cátion adsorvido altera a espessura da dupla camada difusa.</p>
+<ul>
+<li class="fragment">Ca<sup>2+</sup> e Mg<sup>2+</sup>: floculam e reduzem a plasticidade;</li>
+<li class="fragment">Na<sup>+</sup>: dispersa e aumenta muito a plasticidade e a pegajosidade;</li>
+<li class="fragment">Solos sódicos: extremamente duros quando secos e muito plásticos quando molhados.</li>
+</ul>
+</section>
+<section id="fatores-que-influenciam-5" class="slide level2">
+<h2>Fatores que influenciam</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Cimentantes, estrutura e densidade:</strong></span></p>
+<ul>
+<li class="fragment">Óxidos de Fe e Al aumentam a agregação e reduzem a plasticidade;</li>
+<li class="fragment">Carbonatos e sílica podem cimentar horizontes (fragipã, duripã);</li>
+<li class="fragment">Solos bem estruturados são mais friáveis;</li>
+<li class="fragment">O aumento da densidade eleva a dureza e a resistência à penetração;</li>
+<li class="fragment">Horizontes coesos: duros quando secos e friáveis quando úmidos.</li>
+</ul>
+</section></section>
+<section>
+<section id="consistência-e-manejo-do-solo" class="title-slide slide level1 center">
+<h1>Consistência e manejo do solo</h1>
+<hr>
+</section>
+<section id="consistência-e-manejo" class="slide level2">
+<h2>Consistência e manejo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>A questão central:</strong></span></p>
+<div class="fragment">
+<p>Qual é o momento certo de entrar na lavoura com as máquinas?</p>
+</div>
+<div class="fragment">
+<p>Resposta: quando o solo está na <span class="fg" style="--col: #e64173"><strong>faixa friável</strong></span>, abaixo do limite de plasticidade.</p>
+</div>
+</section>
+<section id="consistência-e-manejo-1" class="slide level2">
+<h2>Consistência e manejo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Preparo com o solo molhado:</strong></span></p>
+<ul>
+<li class="fragment">Deformação plástica e compactação;</li>
+<li class="fragment">Formação de pé de grade ou pé de arado;</li>
+<li class="fragment">Espelhamento da camada subsuperficial;</li>
+<li class="fragment">Redução da macroporosidade e da infiltração;</li>
+<li class="fragment">Restrição ao crescimento radicular.</li>
+</ul>
+</section>
+<section id="consistência-e-manejo-2" class="slide level2">
+<h2>Consistência e manejo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Preparo com o solo muito seco:</strong></span></p>
+<ul>
+<li class="fragment">Formação de torrões grandes;</li>
+<li class="fragment">Pulverização excessiva da camada superficial;</li>
+<li class="fragment">Maior consumo de combustível e desgaste dos implementos;</li>
+<li class="fragment">Maior risco de erosão eólica e hídrica.</li>
+</ul>
+</section>
+<section id="consistência-e-manejo-3" class="slide level2">
+<h2>Consistência e manejo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Testes práticos de campo:</strong></span></p>
+<ul>
+<li class="fragment">Coletar solo na profundidade de trabalho;</li>
+<li class="fragment">Bolinha que se molda e deforma → solo muito úmido, não trabalhar;</li>
+<li class="fragment">Torrão que esboroa sob leve pressão → solo friável, momento adequado;</li>
+<li class="fragment">Torrão duro que não se desfaz → solo muito seco;</li>
+<li class="fragment">Cilindro de 3 mm que não rompe → solo acima do limite de plasticidade.</li>
+</ul>
+</section>
+<section id="consistência-e-manejo-4" class="slide level2">
+<h2>Consistência e manejo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Trafegabilidade:</strong></span></p>
+<ul>
+<li class="fragment">Solos com alto IP têm janela operacional estreita;</li>
+<li class="fragment">Pressão de inflação dos pneus e carga por eixo são determinantes;</li>
+<li class="fragment">O tráfego controlado reduz a área compactada;</li>
+<li class="fragment">O plantio direto, com cobertura permanente, amortece a pressão aplicada.</li>
+</ul>
+<div class="fragment">
+<p>Formação do pé de arado e compactação do solo!</p>
+</div>
+</section></section>
+<section id="fim" class="title-slide slide level1 center">
+<h1>Fim!</h1>
+<hr>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copiada");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copiada");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

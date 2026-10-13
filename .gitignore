@@ -2,3 +2,10 @@
 /.quarto/
 **/*.quarto_ipynb
 /para_render.txt
+/.luarc.json
+/Frequência_fisica.xlsx
+/Avaliação de nivelamento.docx
+/aulas_praticas/
+/provas/
+/aula_3/imagens/floculacao.mp4
+/aula_3/imagens/video.gif

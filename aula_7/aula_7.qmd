@@ -1,0 +1,369 @@
+---
+title: "Física do solo:"
+subtitle: Umidade gravimétrica e volumétrica do solo
+format: clean-revealjs
+institute: Instituto Federal do Paraná <br> Curso Superior em Engenharia Agronômica
+author:
+  - name: Gustavo Frosi
+    # orcid: 0000-0000-0000-0000
+    email: gustavofrosi@hotmail.com
+    # affiliations: UFRGS
+filters:
+  - timeline
+  # - move-abs-elems
+title-slide-attributes:
+  data-background-image: fundo.png
+  data-background-size: 35%
+  data-background-opacity: "0.9"
+  data-background-position: right 3% top 52%
+logo: logo.png
+image: true
+date: "10/05/2026"
+date-format: long
+lang: pt-BR
+---
+
+## O que é umidade do solo?
+<hr>
+
+::: {.fragment}
+
+Umidade do solo é a quantidade de água presente nos poros do solo em determinado momento.
+
+:::
+
+::: {.incremental}
+
+- Pode ser expressa em relação à **massa** (umidade gravimétrica) ou ao **volume** (umidade volumétrica);
+- É uma propriedade muito dinâmica: varia com chuva, irrigação, evapotranspiração e drenagem;
+- Depende da porosidade, da textura, da estrutura e da matéria orgânica do solo.
+
+:::
+
+## Por que medir a umidade do solo?
+<hr>
+
+::: {.incremental}
+
+- **Irrigação**: define quando irrigar e qual lâmina de água aplicar;
+- **Manejo**: indica a melhor condição para preparo do solo, semeadura e tráfego de máquinas;
+- **Planta**: a água disponível controla a absorção de nutrientes, a transpiração e a produtividade;
+- **Ambiente**: influencia a infiltração, o escoamento superficial e a atividade microbiana.
+
+:::
+
+::: {.fragment}
+
+A água do solo pode ser quantificada de **duas formas**: em base de massa ou em base de volume.
+
+:::
+
+## Umidade gravimétrica (U)
+<hr>
+
+[__Definição:__]{.fg style="--col: #e64173"}
+
+A umidade gravimétrica é a relação entre a **massa de água** (M~a~) e a **massa de solo seco** (M~s~).
+
+::: {.fragment}
+
+$$U = \frac{M_a}{M_s} = \frac{M_u - M_s}{M_s}$$
+
+:::
+
+::: {.fragment}
+
+M~u~ = massa do solo úmido (g); M~s~ = massa do solo seco em estufa (g); M~a~ = massa de água (g).
+
+:::
+
+::: {.incremental}
+
+- Unidade: g g^-1^ ou kg kg^-1^ (para percentagem, multiplicar por 100);
+- Considera sempre a massa de solo **seco** como referência.
+
+:::
+
+## Determinação da umidade gravimétrica
+<hr>
+
+[__Método padrão: estufa__]{.fg style="--col: #e64173"}
+
+::: {.incremental}
+
+- Coletar a amostra (estrutura preservada ou não) e acondicioná-la em recipiente de massa conhecida (tara);
+- Pesar imediatamente, obtendo a **massa do solo úmido**;
+- Secar em estufa a **105 °C** por 24 h, até massa constante;
+- Esfriar em dessecador e pesar novamente, obtendo a **massa do solo seco**;
+- Calcular U pela diferença entre as massas.
+
+:::
+
+::: {.fragment}
+
+Método direto, de baixo custo e usado como **referência** para calibrar sensores.
+
+:::
+
+## Umidade gravimétrica: exemplo
+<hr>
+
+::: {.fragment}
+
+Uma amostra de solo apresentou massa úmida de 180 g e, após secagem em estufa a 105 °C, massa seca de 150 g. Qual a umidade gravimétrica?
+
+:::
+
+::: {.fragment}
+
+$$M_a = 180 - 150 = 30~g$$
+
+:::
+
+::: {.fragment}
+
+$$U = \frac{30}{150} = 0,20~g~g^{-1}~(20\%)$$
+
+:::
+
+## Umidade volumétrica ($\theta$)
+<hr>
+
+[__Definição:__]{.fg style="--col: #e64173"}
+
+A umidade volumétrica é a relação entre o **volume de água** (V~a~) e o **volume total** do solo (V~t~).
+
+::: {.fragment}
+
+$$\theta = \frac{V_a}{V_t}$$
+
+:::
+
+::: {.incremental}
+
+- Unidade: cm^3^ cm^-3^ ou m^3^ m^-3^ (para percentagem, multiplicar por 100);
+- O valor máximo de $\theta$ é a porosidade total (solo saturado: $\theta = P_t$);
+
+:::
+
+## Relação entre U e $\theta$
+<hr>
+
+::: {.fragment}
+
+Como $\rho_{\mathrm{água}} \approx 1\ \text{g cm}^{-3}$, o volume de água (cm^3^) é numericamente igual à sua massa (g):
+
+$$\theta = \frac{V_a}{V_t} = \frac{M_a}{V_t} = \frac{M_a}{M_s}*\frac{M_s}{V_t}$$
+
+:::
+
+::: {.fragment}
+
+$$\theta = U * D_s$$
+
+:::
+
+::: {.fragment}
+
+D~s~ = densidade do solo (g cm^-3^). Logo, $\theta$ **depende da densidade do solo**: dois solos com a mesma U podem ter $\theta$ diferentes.
+
+:::
+
+## Conversão entre U e $\theta$: exemplo
+<hr>
+
+::: {.fragment}
+
+Um solo com umidade gravimétrica de 0,20 g g^-1^ e densidade de 1,30 g cm^-3^. Qual a umidade volumétrica?
+
+:::
+
+::: {.fragment}
+
+$$\theta = U * D_s$$
+
+:::
+
+::: {.fragment}
+
+$$\theta = 0,20 * 1,30 = 0,26~cm^3~cm^{-3}~(26\%)$$
+
+:::
+
+::: {.fragment}
+
+Em um solo compactado ($D_s$ = 1,60 g cm^-3^) com a mesma U: $\theta = 0,20 * 1,60 = 0,32~cm^3~cm^{-3}$.
+
+:::
+
+## Lâmina de água armazenada
+<hr>
+
+A umidade volumétrica permite calcular a **lâmina de água** (h) armazenada em uma camada de solo de espessura z:
+
+::: {.fragment}
+
+$$h = \theta * z$$
+
+:::
+
+::: {.fragment}
+
+Com z em mm, h resulta em mm (1 mm de lâmina = 1 L m^-2^).
+
+:::
+
+::: {.fragment}
+
+Exemplo: solo com $\theta$ = 0,26 cm^3^ cm^-3^ na camada de 0 a 30 cm (z = 300 mm):
+
+$$h = 0,26 * 300 = 78~mm$$
+
+:::
+
+## Umidade gravimétrica x volumétrica
+<hr>
+
+::: {.columns}
+
+::: {.column}
+
+**Gravimétrica (U)**
+
+::: {.incremental}
+
+- Base de massa: M~a~ / M~s~;
+- Unidade: g g^-1^ ou kg kg^-1^;
+- Não depende do volume da amostra;
+- Obtida diretamente pelo método da estufa;
+- Dificulta o cálculo da lâmina de água.
+
+:::
+
+:::
+
+::: {.column}
+
+**Volumétrica ($\theta$)**
+
+::: {.incremental}
+
+- Base de volume: V~a~ / V~t~;
+- Unidade: cm^3^ cm^-3^ ou m^3^ m^-3^;
+- Depende da densidade do solo;
+- Obtida por D~s~ ou por sensores;
+- Permite calcular a lâmina e o manejo da irrigação.
+
+:::
+
+:::
+
+:::
+
+## Exercícios
+<hr>
+
+```{r}
+
+library(countdown)
+
+countdown(
+  minutes = 5,
+  seconds = 0,
+  right = 0,
+  top = 0,
+  padding = "5px",
+  margin = "0%",
+)
+```
+
+1 - Uma amostra de solo apresentou massa úmida de 135 g e massa seca de 120 g. Qual a umidade gravimétrica dessa amostra?
+
+::: {.fragment}
+
+Resposta:
+
+$$M_a = 135 - 120 = 15~g$$
+
+:::
+
+::: {.fragment}
+
+$$U = \frac{15}{120} = 0,125~g~g^{-1}~(12,5\%)$$
+
+:::
+
+## Exercícios
+<hr>
+
+```{r}
+
+library(countdown)
+
+countdown(
+  minutes = 5,
+  seconds = 0,
+  right = 0,
+  top = 0,
+  padding = "5px",
+  margin = "0%",
+)
+```
+
+2 - Um solo apresenta umidade gravimétrica de 0,25 g g^-1^ e densidade de 1,20 g cm^-3^. Qual a umidade volumétrica?
+
+::: {.fragment}
+
+Resposta:
+
+$$\theta = U * D_s$$
+
+:::
+
+::: {.fragment}
+
+$$\theta = 0,25 * 1,20 = 0,30~cm^3~cm^{-3}~(30\%)$$
+
+:::
+
+## Exercícios
+<hr>
+
+```{r}
+
+library(countdown)
+
+countdown(
+  minutes = 5,
+  seconds = 0,
+  right = 0,
+  top = 0,
+  padding = "5px",
+  margin = "0%",
+)
+```
+
+3 - Um cilindro de 100 cm^3^ coletado a campo apresentou massa úmida de 168 g e massa seca de 140 g. Determine a densidade do solo, a umidade gravimétrica, a umidade volumétrica e a lâmina de água na camada de 0 a 20 cm.
+
+::: {.fragment}
+
+Resposta:
+
+$$D_s = \frac{140}{100} = 1,40~g~cm^{-3}$$
+
+:::
+
+::: {.fragment}
+
+$$U = \frac{168-140}{140} = 0,20~g~g^{-1} \qquad \theta = 0,20 * 1,40 = 0,28~cm^3~cm^{-3}$$
+
+:::
+
+::: {.fragment}
+
+$$h = 0,28 * 200 = 56~mm$$
+
+:::
+
+# Fim!
+<hr>

@@ -6,13 +6,13 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/quarto-contrib/timeline-0.1.0/timeline.js"></script>
 <link href="../site_libs/quarto-contrib/timeline-0.1.0/timeline.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.38">
+  <meta name="generator" content="quarto-1.10.19">
 
   <meta name="author" content="Gustavo Frosi">
-  <title>mecanizacao – Mecanização agrícola:</title>
+  <title>Física do solo – Física do solo:</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -22,10 +22,13 @@
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
     */
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -35,15 +38,6 @@
     }
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-ec59874b3a8398889ca2432df423b2c0.css">
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-SCQSRGY4FE"></script>
-
-  <script type="text/javascript">
-
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-SCQSRGY4FE', { 'anonymize_ip': true});
-  </script>
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -135,20 +129,24 @@
       margin-right: 0; 
     }
   </style>
+  <link href="../site_libs/countdown-0.6.0/countdown.css" rel="stylesheet">
+
+  <script src="../site_libs/countdown-0.6.0/countdown.js"></script>
+
 </head>
 <body class="quarto-light">
 <script src="mathjax-config.js"></script>
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="fundo.jpg" data-background-opacity="0.9" data-background-position="right 3% top 52%" data-background-size="50%" class="quarto-title-block center">
-  <h1 class="title">Mecanização agrícola:</h1>
-  <p class="subtitle">Tratores e seus constituintes</p>
+<section id="title-slide" data-background-image="fundo.jpeg" data-background-opacity="0.9" data-background-position="right 3% top 52%" data-background-size="35%" class="quarto-title-block center">
+  <h1 class="title">Física do solo:</h1>
+  <p class="subtitle">Densidade de partículas e do solo</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Gustavo Frosi 
+Gustavo Frosi
 </div>
 <div class="quarto-title-author-email">
 <a href="mailto:gustavofrosi@hotmail.com">gustavofrosi@hotmail.com</a>
@@ -159,26 +157,731 @@ Gustavo Frosi
     </div>
 </div>
 
-  <p class="date">10 de junho de 2026</p>
+  <p class="date">31 de agosto de 2026</p>
 </section>
-<section id="o-que-é-um-trator" class="slide level2">
-<h2>O que é um trator?</h2>
+<section>
+<section id="o-que-é-densidade" class="title-slide slide level1 center">
+<h1>O que é densidade?</h1>
 <hr>
 </section>
-<section id="definições" class="slide level2">
-<h2>Definições</h2>
-<p>Motor</p>
-<blockquote>
-<p>Uma máquina que transforma energia térmica em energia mecânica</p>
-</blockquote>
+<section id="o-que-é-densidade-1" class="slide level2">
+<h2>O que é densidade?</h2>
+<hr>
+
+<img data-src="imagens/densidade.jpeg" class="quarto-figure quarto-figure-center r-stretch"><div class="fragment">
+<p>Densidade é a relação da massa de um corpo com o volume que ele ocupa no espaço.</p>
+</div>
+<ul>
+<li class="fragment">Todos os corpos apresentam uma densidade;</li>
+<li class="fragment">A densidade absoluta é uma característica própria de cada material (ex);</li>
+<li class="fragment">Densidade de sólidos &gt; líquidos &gt; gases;</li>
+</ul>
+</section>
+<section id="o-que-é-densidade-2" class="slide level2">
+<h2>O que é densidade?</h2>
+<hr>
+<p>A densidade do solo é a relação entre a <strong>massa de solo seco</strong> (M<sub>s</sub>, g) com o seu <strong>volume total</strong> (V<sub>t</sub>, cm<sup>3</sup>).</p>
+<ul>
+<li class="fragment">O volume, no caso do solo, leva em conta o espaço poroso e os sólidos.</li>
+<li class="fragment">A densidade é variável no espaço, no tempo e na profundidade do solo;</li>
+<li class="fragment">Varia em relação ao tipo de solo e à sua composição.</li>
+</ul>
+</section>
+<section id="densidade-do-solo" class="slide level2">
+<h2>Densidade do solo</h2>
+<hr>
+<p>A densidade é fixa?</p>
 <div class="fragment">
-<blockquote>
-<p>Os motores de combustão interna, transformam a energia térmica gerada pela combustão da mistura ar/combustível em energia mecânica</p>
-</blockquote>
+<p>Como modificar?</p>
 </div>
 
-
+<img data-src="imagens/composicao.jpeg" class="quarto-figure quarto-figure-center r-stretch"><div class="fragment">
+<p>O solo é um sistema trifásico e o volume ocupado pela fração sólida pode mudar!</p>
+</div>
 </section>
+<section id="densidade-do-solo-1" class="slide level2">
+<h2>Densidade do solo</h2>
+<hr>
+<p>Onde a densidade é maior?</p>
+
+<img data-src="imagens/organico_mineral.jpg" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<section>
+<section id="determinação-da-densidade-do-solo" class="title-slide slide level1 center">
+<h1>Determinação da densidade do solo</h1>
+<hr>
+</section>
+<section id="determinação-da-densidade-do-solo-1" class="slide level2">
+<h2>Determinação da densidade do solo</h2>
+<hr>
+<p>Os métodos devem ser capazes de determinar a massa de solo seco, bem como o volume total em que ele se encontra na natureza.</p>
+<div class="fragment">
+<p><strong>Amostras com estrutura preservada!</strong></p>
+</div>
+<div class="fragment">
+<p>Dois métodos principais:</p>
+<ul>
+<li class="fragment">Método do cilindro volumétrico;</li>
+<li class="fragment">Método do torrão parafinado.</li>
+</ul>
+</div>
+</section>
+<section id="determinação-da-densidade-do-solo-2" class="slide level2">
+<h2>Determinação da densidade do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método do cilindro volumétrico:</strong></span></p>
+<div class="fragment">
+<p>Utiliza-se um cilindro metálico de volume conhecido, o qual é inserido no solo para a coleta das amostras com estrutura preservada.</p>
+</div>
+<div class="fragment">
+<p>Etapas:</p>
+<ul>
+<li class="fragment">Inserção de cilindro com volume conhecido no solo (V<sub>t</sub>);</li>
+<li class="fragment">Limpeza de bordas;</li>
+<li class="fragment">Amostra de solo contida no cilindro é levada ao laboratório;</li>
+<li class="fragment">A amostra é seca em estufa para obter a M<sub>s</sub></li>
+</ul>
+</div>
+</section>
+<section id="determinação-da-densidade-do-solo-3" class="slide level2">
+<h2>Determinação da densidade do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método do cilindro volumétrico:</strong></span></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/coleta_cilindros.jpg" class="quarto-figure quarto-figure-center" width="350"></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/cilindro.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="determinação-da-densidade-do-solo-4" class="slide level2">
+<h2>Determinação da densidade do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método do cilindro volumétrico:</strong></span></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/coleta_cilindor2.jpg" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/cilindro_day.jpeg" class="quarto-figure quarto-figure-center" width="380"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="determinação-da-densidade-do-solo-5" class="slide level2">
+<h2>Determinação da densidade do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método do cilindro volumétrico:</strong></span></p>
+<p>Exemplos:</p>
+<div class="fragment">
+<p>Em uma área de vegetação nativa foi realizada a coleta para densidade do solo. O cilindro utilizado possui 8 cm de diâmetro interno e 12 cm de altura. Após a secagem, a amostra continha 881 g. Qual a densidade desse solo?</p>
+</div>
+<div class="fragment">
+<p>Volume:</p>
+<p><span class="math display">\[V (cm^3) = \pi*\frac{D^2}{4}*h\]</span></p>
+<p><span class="math inline">\(D = Diâmetro~interno~(cm)\)</span> e <span class="math inline">\(h = Altura~do~cilindro~(cm)\)</span></p>
+</div>
+</section>
+<section id="determinação-da-densidade-do-solo-6" class="slide level2">
+<h2>Determinação da densidade do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método do cilindro volumétrico:</strong></span></p>
+<p>Exemplos:</p>
+<p>Em uma área de vegetação nativa foi realizada a coleta para densidade do solo. O cilindro utilizado possui 8 cm de diâmetro interno e 12 cm de altura. Após a secagem, a amostra continha 881 g. Qual a densidade desse solo?</p>
+<div class="fragment">
+<p>Volume:</p>
+<p><span class="math display">\[V (cm^3) = \pi*\frac{8^2}{4}*12\]</span></p>
+<p><span class="math display">\[V = 603,1858~cm^3\]</span></p>
+</div>
+</section>
+<section id="determinação-da-densidade-do-solo-7" class="slide level2">
+<h2>Determinação da densidade do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método do cilindro volumétrico:</strong></span></p>
+<p>Exemplos:</p>
+<p>Em uma área de vegetação nativa foi realizada a coleta para densidade do solo. O cilindro utilizado possui 8 cm de diâmetro interno e 12 cm de altura. Após a secagem, a amostra continha 881 g. Qual a densidade desse solo?</p>
+<div class="fragment">
+<p><span class="math display">\[D_s=\frac{M_s}{V_t}\]</span></p>
+</div>
+</section>
+<section id="determinação-da-densidade-do-solo-8" class="slide level2">
+<h2>Determinação da densidade do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método do cilindro volumétrico:</strong></span></p>
+<p>Exemplos:</p>
+<p>Em uma área de vegetação nativa foi realizada a coleta para densidade do solo. O cilindro utilizado possui 8 cm de diâmetro interno e 12 cm de altura. Após a secagem, a amostra continha 881 g. Qual a densidade desse solo?</p>
+<div class="fragment">
+<p><span class="math display">\[D_s=\frac{881~g}{603,1858~cm^3}\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[D_s=1,46~g~cm^3\]</span></p>
+</div>
+</section>
+<section id="determinação-da-densidade-do-solo-9" class="slide level2">
+<h2>Determinação da densidade do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método do torrão parafinado:</strong></span></p>
+<div class="fragment">
+<p>Utilizado para determinar a densidade em solos com presença de fragmentos de rochas e concreções, os quais impossibilitam a utilização do método do cilindro metálico.</p>
+</div>
+</section>
+<section id="determinação-da-densidade-do-solo-10" class="slide level2">
+<h2>Determinação da densidade do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método do torrão parafinado:</strong></span></p>
+<div class="fragment">
+<p>Etapas:</p>
+<ul>
+<li class="fragment">Utiliza-se um torrão de solo como amostra;
+<ul>
+<li class="fragment">Com volume aproximado de 100 cm<sup>3</sup> (3 a 5 cm de diâmetro);</li>
+<li class="fragment">Coleta em campo e com proteção;</li>
+</ul></li>
+<li class="fragment">Pesagem da amostra em laboratório;</li>
+<li class="fragment">Amostra é imersa em parafina líquida (aquecida);
+<ul>
+<li class="fragment">Impermeabilização;</li>
+</ul></li>
+<li class="fragment">Segunda pesagem (amostra + parafina);</li>
+<li class="fragment">Adicionar um béquer com água em seu limite máximo sobre uma balança;</li>
+</ul>
+</div>
+</section>
+<section id="determinação-da-densidade-do-solo-11" class="slide level2">
+<h2>Determinação da densidade do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método do torrão parafinado:</strong></span></p>
+<p>Etapas:</p>
+<ul>
+<li class="fragment">Medir a massa da água;</li>
+<li class="fragment">Remover parte da água e adicionar o torrão;</li>
+<li class="fragment">O torrão é então suspenso ao ar;</li>
+<li class="fragment">Completar o béquer para o volume máximo novamente;</li>
+<li class="fragment">Medir a massa da água mais o torrão;
+<ul>
+<li class="fragment">O espaço ocupado pelo torrão é determinado pela diferença entre o volume total e o volume até completar após a adição do torrão;</li>
+</ul></li>
+</ul>
+</section>
+<section id="determinação-da-densidade-do-solo-12" class="slide level2">
+<h2>Determinação da densidade do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método do torrão parafinado:</strong></span></p>
+
+<img data-src="imagens/parafina_densidade.jpg" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<section>
+<section id="fatores-que-afetam-a-densidade-do-solo" class="title-slide slide level1 center">
+<h1>Fatores que afetam a densidade do solo</h1>
+<hr>
+</section>
+<section id="fatores-que-afetam-a-densidade-do-solo-1" class="slide level2">
+<h2>Fatores que afetam a densidade do solo</h2>
+<hr>
+<div class="columns">
+<div class="column">
+<div class="fragment">
+<p><strong>Intrínsecos</strong></p>
+<ul>
+<li class="fragment">Textura;</li>
+<li class="fragment">Potencial de água;</li>
+<li class="fragment">Estrutura;</li>
+<li class="fragment">Densidade inicial;</li>
+<li class="fragment">Mineralogia.</li>
+</ul>
+</div>
+</div><div class="column">
+<div class="fragment">
+<p><strong>Extrínsecos</strong></p>
+<ul>
+<li class="fragment">Máquinas e implementos agrícolas;</li>
+<li class="fragment">Tráfego de máquinas e animais;</li>
+<li class="fragment">Manejo do solo.</li>
+</ul>
+</div>
+</div></div>
+</section>
+<section id="fatores-que-afetam-a-densidade-do-solo-2" class="slide level2">
+<h2>Fatores que afetam a densidade do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Granulometria:</strong></span></p>
+<p>Relação entre o peso da amostra (TFSA) e seu teor de areia considerando um volume fixo (2,5 ml)</p>
+
+<img data-src="imagens/relação_peso_areia.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="fatores-que-afetam-a-densidade-do-solo-3" class="slide level2">
+<h2>Fatores que afetam a densidade do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Granulometria:</strong></span></p>
+<p>Relação entre o peso da amostra (TFSA) e seu teor de argila considerando um volume fixo (2,5 ml)</p>
+
+<img data-src="imagens/relação_peso_argila.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="fatores-que-afetam-a-densidade-do-solo-4" class="slide level2">
+<h2>Fatores que afetam a densidade do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Granulometria:</strong></span></p>
+
+<img data-src="imagens/argila_densidade_solo.png" class="r-stretch quarto-figure-center"><p class="caption">Marcolin, C. D e Klein, V. A. 2011</p></section>
+<section id="fatores-que-afetam-a-densidade-do-solo-5" class="slide level2">
+<h2>Fatores que afetam a densidade do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Granulometria:</strong></span></p>
+
+<img data-src="imagens/materia_organica_densidade_solo.png" class="r-stretch quarto-figure-center"><p class="caption">Marcolin, C. D e Klein, V. A. 2011</p></section></section>
+<section>
+<section id="relação-entre-a-densidade-e-aspectos-agronômicos" class="title-slide slide level1 center">
+<h1>Relação entre a densidade e aspectos agronômicos</h1>
+<hr>
+</section>
+<section id="relação-entre-a-densidade-e-aspectos-agronômicos-1" class="slide level2">
+<h2>Relação entre a densidade e aspectos agronômicos</h2>
+<hr>
+<div class="columns">
+<div class="column">
+<p><span class="fg" style="--col: #e64173"><strong>Plantio direto:</strong></span></p>
+<p>Plantio direto modifica a densidade? De que forma?</p>
+<div class="fragment">
+<ul>
+<li>Noroeste do Estado do Paraná;</li>
+<li>Ano agrícola 1999/2000;</li>
+<li>Latossolo Vermelho distrófico.</li>
+</ul>
+</div>
+</div><div class="column">
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/plantio_direto_densidade.png" width="350"></p>
+<figcaption>Tormena, C. A. et al.&nbsp;2002</figcaption>
+</figure>
+</div>
+</div>
+</div></div>
+</section>
+<section id="relação-entre-a-densidade-e-aspectos-agronômicos-2" class="slide level2">
+<h2>Relação entre a densidade e aspectos agronômicos</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Plantio direto:</strong></span></p>
+<ul>
+<li>Santo Antônio de Goiás, GO;</li>
+<li>Latossolo Vermelho distrófico;</li>
+<li>O trabalho foi conduzido sob irrigação por aspersão, sistema pivô central, por seis anos consecutivos, 1999 a 2004, durante os quais foram realizados doze cultivos.</li>
+</ul>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/plantio_direto_densidade2.png"></p>
+<figcaption>Silveira, P. M. et al.&nbsp;2008</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="relação-entre-a-densidade-e-aspectos-agronômicos-3" class="slide level2">
+<h2>Relação entre a densidade e aspectos agronômicos</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Plantio direto:</strong></span></p>
+<ul>
+<li>Uberaba, Minas Gerais;</li>
+<li>Latossolo Vermelho distrófico;</li>
+</ul>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/plantio_direto_densidade3.png" width="500"></p>
+<figcaption>Silva, V. R. et al.&nbsp;2020</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="relação-entre-a-densidade-e-aspectos-agronômicos-4" class="slide level2">
+<h2>Relação entre a densidade e aspectos agronômicos</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Rotação de culturas:</strong></span></p>
+<ul>
+<li>Montividiu, Goiás;</li>
+<li>Latossolo Vermelho distrófico;</li>
+</ul>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/rotacao_cultura.png" width="620"></p>
+<figcaption>Rosa, V. C. S. et al.&nbsp;2025</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="relação-entre-a-densidade-e-aspectos-agronômicos-5" class="slide level2">
+<h2>Relação entre a densidade e aspectos agronômicos</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Rotação de culturas:</strong></span></p>
+<ul>
+<li>Montividiu, Goiás;</li>
+<li>Latossolo Vermelho distrófico;</li>
+</ul>
+
+<img data-src="imagens/rotacao_cultura2.png" width="620" class="r-stretch quarto-figure-center"><p class="caption">Rosa, V. C. S. et al.&nbsp;2025</p></section>
+<section id="relação-entre-a-densidade-e-aspectos-agronômicos-6" class="slide level2">
+<h2>Relação entre a densidade e aspectos agronômicos</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Produção das culturas:</strong></span></p>
+<div style="font-size:20px">
+<p>Tuzzin, M. et al.&nbsp;2020</p>
+<ul>
+<li>Produtividade de soja;</li>
+<li>a = densidade, b = comprimento de raízes (RLD);</li>
+<li>0 a 20 cm, em um Latossolo Vermelho.</li>
+<li>MTC: sistema de cultivo mínimo com escarificação do solo; NT: sistema de plantio direto; e plantio direto com compactação adicional por quatro passadas do trator (NTC4) ou oito passadas da colhedora (NTC8).</li>
+</ul>
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 89.5%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/producao_densidade_soja2.jpg" class="quarto-figure quarto-figure-center" width="850"></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 10.5%;justify-content: center;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="imagens/producao_densidade_soja3.jpg" class="quarto-figure quarto-figure-left" width="100"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="densidade-de-partícula" class="title-slide slide level1 center">
+<h1>Densidade de partícula</h1>
+<hr>
+</section>
+<section id="densidade-de-partícula-dp" class="slide level2">
+<h2>Densidade de partícula (Dp)</h2>
+<hr>
+<p>É a relação entre a massa (M<sub>s</sub>) e o volume das partículas do solo (V<sub>s</sub>)…</p>
+<div class="fragment">
+<p>…partículas sólidas.</p>
+</div>
+<div class="fragment">
+<p>A Dp é importante para o tempo de sedimentação das partículas do solo em água, em estudos sobre erosão e granulometria.</p>
+<div class="fragment">
+<p>Utilizada para calcular a porosidade total do solo.</p>
+</div>
+</div>
+</section>
+<section id="densidade-de-partícula-dp-1" class="slide level2">
+<h2>Densidade de partícula (Dp)</h2>
+<hr>
+
+<img data-src="imagens/particula_solo.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="densidade-de-partícula-dp-2" class="slide level2">
+<h2>Densidade de partícula (Dp)</h2>
+<hr>
+
+<img data-src="imagens/solo_particula.jpg" class="quarto-figure quarto-figure-center r-stretch"><div class="fragment">
+<p>Densidade do solo vs densidade de partícula</p>
+</div>
+</section>
+<section id="densidade-de-partícula-dp-3" class="slide level2">
+<h2>Densidade de partícula (Dp)</h2>
+<hr>
+<p><span class="math display">\[Dp = \frac{Mp}{Vp}\]</span></p>
+<p><span class="math inline">\(Dp = Densidade~de~partículas\)</span></p>
+<p><span class="math inline">\(Mp = Massa~de~partículas\)</span></p>
+<p><span class="math inline">\(Vp = Volume~de~partículas\)</span></p>
+</section>
+<section id="densidade-de-partícula-dp-4" class="slide level2">
+<h2>Densidade de partícula (Dp)</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Densidade do solo e das partículas:</strong></span></p>
+<div class="columns">
+<div class="column">
+<p><strong>Densidade do solo</strong></p>
+<p><span class="math inline">\(D_s = \frac{M_s}{V_t}\)</span></p>
+</div><div class="column">
+<p><strong>Densidade de partícula</strong></p>
+<p><span class="math inline">\(D_p = \frac{M_s}{V_p}\)</span></p>
+</div></div>
+</section>
+<section id="densidade-de-partícula-dp-5" class="slide level2">
+<h2>Densidade de partícula (Dp)</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Densidade do solo e das partículas:</strong></span></p>
+<p>Considere: Massa de solo: 1,8 g; Volume total: 1 cm<sup>3</sup>; Volume de partícula: 0,5 cm<sup>3</sup>.</p>
+<div class="columns">
+<div class="column">
+<div class="fragment">
+<p><strong>Densidade do solo</strong></p>
+<p><span class="math inline">\(D_s = \frac{M_s}{V_t}\)</span></p>
+<p><span class="math inline">\(D_s = \frac{1,8}{1} = 1,8~g~cm^3\)</span></p>
+</div>
+</div><div class="column">
+<div class="fragment">
+<p><strong>Densidade de partícula</strong></p>
+<p><span class="math inline">\(D_p = \frac{M_s}{V_p}\)</span></p>
+<p><span class="math inline">\(D_p = \frac{1,8}{0,5}=3,6~g~cm^3\)</span></p>
+</div>
+</div></div>
+</section></section>
+<section>
+<section id="determinação-da-densidade-de-partículas" class="title-slide slide level1 center">
+<h1>Determinação da densidade de partículas</h1>
+<hr>
+</section>
+<section id="determinação-da-densidade-de-partículas-1" class="slide level2">
+<h2>Determinação da densidade de partículas</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método do balão volumétrico:</strong></span></p>
+<ul>
+<li class="fragment">Determinação da massa do solo em balança;
+<ul>
+<li class="fragment">Amostra seca em estufa a 105ºC;</li>
+</ul></li>
+<li class="fragment">Determinação do volume por deslocamento de líquidos.</li>
+</ul>
+</section>
+<section id="determinação-da-densidade-de-partículas-2" class="slide level2">
+<h2>Determinação da densidade de partículas</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método do balão volumétrico:</strong></span></p>
+<ul>
+<li class="fragment">Quantidade de líquido (álcool) para preencher um balão volumétrico vazio;</li>
+<li class="fragment">Quantidade de líquido para preencher um balão contendo partículas de solo.
+<ul>
+<li class="fragment">Medida via bureta.</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p><span class="math display">\[D_p = \frac{M_s}{(V_b-V_u)}\]</span></p>
+<div style="font-size:22px">
+<p>V<sub>b</sub> é o volume do balão volumétrico (cm<sup>3</sup>), V<sub>u</sub> é o volume de álcool utilizado para completar o balão com a amostra (cm<sup>3</sup>).</p>
+</div>
+</div>
+</section>
+<section id="densidade-de-partículas" class="slide level2">
+<h2>Densidade de partículas</h2>
+<hr>
+<div class="tbl">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Mineral</th>
+<th style="text-align: right;">Densidade (<span class="math inline">\(g\,cm^{-3}\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Caulinita</td>
+<td style="text-align: right;">2,65</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Quartzo</td>
+<td style="text-align: right;">2,65</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Hematita</td>
+<td style="text-align: right;">5,26</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Magnetita</td>
+<td style="text-align: right;">5,18</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Anatásio</td>
+<td style="text-align: right;">3,90</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gibbsita</td>
+<td style="text-align: right;">2,35</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Azevedo e Dalmolin (2006).</p>
+</div>
+</section></section>
+<section>
+<section id="densidade-de-partículas-e-propriedades-do-solo" class="title-slide slide level1 center">
+<h1>Densidade de partículas e propriedades do solo</h1>
+<hr>
+</section>
+<section id="densidade-de-partículas-e-propriedades-do-solo-1" class="slide level2">
+<h2>Densidade de partículas e propriedades do solo</h2>
+<hr>
+<p>O manejo e uso do solo podem alterar a densidade de partículas?</p>
+<div class="fragment">
+<p>O que podemos alterar do solo?</p>
+</div>
+<div class="fragment">
+<p>Mineralogia ou matéria orgânica?</p>
+</div>
+</section>
+<section id="densidade-de-partículas-e-propriedades-do-solo-2" class="slide level2">
+<h2>Densidade de partículas e propriedades do solo</h2>
+<hr>
+<p>Podemos alterar a distribuição mineral do solo?</p>
+
+<img data-src="imagens/densidade_minerais.png" class="r-stretch quarto-figure-center"><p class="caption">Ruehlmann, J e Körschens, M. 2020</p></section>
+<section id="densidade-de-partículas-e-propriedades-do-solo-3" class="slide level2">
+<h2>Densidade de partículas e propriedades do solo</h2>
+<hr>
+<div class="fragment">
+<p>Podemos incrementar matéria orgânica!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/mos_densidade_particulas.jpg" width="550"></p>
+<figcaption>McBride et al.&nbsp;2012</figcaption>
+</figure>
+</div>
+</div>
+</section></section>
+<section>
+<section id="exercícios" class="title-slide slide level1 center">
+<h1>Exercícios</h1>
+<hr>
+</section>
+<section id="exercícios-1" class="slide level2">
+<h2>Exercícios</h2>
+<hr>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_592706a7" minutes="0" seconds="40" update-every="1" tabindex="0" style="top:0;right:0;--countdown-margin:0%;--countdown-padding:5px;"></countdown-timer>
+</div>
+</div>
+<p>1 - Uma amostra de solo foi coletada para determinação da densidade pelo método do cilindro. A massa de solo seca foi de 600 g e o volume do cilindro é de 350 cm<sup>3</sup>. Qual a densidade desse solo?</p>
+<div class="fragment">
+<p>Resposta:</p>
+<p><span class="math display">\[D_s= \frac{600g}{350cm^3}\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[D_s= 1,714~g~cm^3\]</span></p>
+</div>
+</section>
+<section id="exercícios-2" class="slide level2">
+<h2>Exercícios</h2>
+<hr>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_14ed4dfe" minutes="0" seconds="50" update-every="1" tabindex="0" style="top:0;right:0;--countdown-margin:0%;--countdown-padding:5px;"></countdown-timer>
+</div>
+</div>
+<p>2 - Uma amostra de solo apresentou uma densidade de 1,08 g cm<sup>3</sup> quando medida utilizando um cilindro de 125 cm<sup>3</sup> de volume. Qual a massa de solo seco dessa amostra?</p>
+<div class="fragment">
+<p>Resposta:</p>
+<p><span class="math display">\[1,08~g~cm^3= \frac{x~g}{125~cm^3}\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[x= 1,08*125= 135~g\]</span></p>
+</div>
+</section>
+<section id="exercícios-3" class="slide level2">
+<h2>Exercícios</h2>
+<hr>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_e89d74fc" minutes="5" seconds="0" update-every="1" tabindex="0" style="top:0;right:0;--countdown-margin:0%;--countdown-padding:5px;"></countdown-timer>
+</div>
+</div>
+<p>3 - Para a determinação da densidade, um pesquisador utilizou um cilindro com 84 mm de diâmetro e 112 mm de altura. Depois de seco, o solo tinha uma massa de 680 g. Qual a densidade desse solo?</p>
+<div class="fragment">
+<p>Resposta:</p>
+<p><span class="math display">\[V_c= \pi*r^2*h\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[V_c= \pi*(\frac{(84/10)}{2})^2*(112/10) = 620,678~cm^3\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[D_s= \frac{680~g}{620,68~cm^3}=1,10~g~cm^3\]</span></p>
+</div>
+</section>
+<section id="exercícios-4" class="slide level2">
+<h2>Exercícios</h2>
+<hr>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_8c0c3377" minutes="5" seconds="0" update-every="1" tabindex="0" style="top:0;right:0;--countdown-margin:0%;--countdown-padding:5px;"></countdown-timer>
+</div>
+</div>
+<p>4 - Dois solos agricultáveis possuem densidade de 1,3 g cm<sup>3</sup> para o solo “A” e de 1,7 g cm<sup>3</sup> para o solo “B”. Quais os fatores que podem estar associados a essa diferença de densidade?</p>
+<div class="fragment">
+<p>Resposta:</p>
+<ul>
+<li class="fragment">Solo B pode estar sob sistema de plantio direto em relação ao solo A;</li>
+<li class="fragment">O teor de argila do solo A pode ser maior do que o do solo B;</li>
+<li class="fragment">O manejo de solo em A é melhor e pode ter propiciado acúmulo de matéria orgânica;</li>
+<li class="fragment">Há um tráfego de máquinas menor no solo A (menos compactação);</li>
+</ul>
+</div>
+</section>
+<section id="exercícios-5" class="slide level2">
+<h2>Exercícios</h2>
+<hr>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_9218f4b9" minutes="3" seconds="0" update-every="1" tabindex="0" style="top:0;right:0;--countdown-margin:0%;--countdown-padding:5px;"></countdown-timer>
+</div>
+</div>
+<p>5 - Qual a diferença entre a densidade de partículas e do solo? Qual é maior?</p>
+<div class="fragment">
+<p>Resposta:</p>
+<ul>
+<li class="fragment">Densidade do solo leva em conta volume total (cilindro);</li>
+<li class="fragment">Densidade de partícula leva em conta apenas o volume das partículas (sem poros);</li>
+<li class="fragment">Densidade de partículas tende a ser maior que a densidade do solo (menor volume).</li>
+</ul>
+</div>
+</section>
+<section id="exercícios-6" class="slide level2">
+<h2>Exercícios</h2>
+<hr>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_33955398" minutes="3" seconds="0" update-every="1" tabindex="0" style="top:0;right:0;--countdown-margin:0%;--countdown-padding:5px;"></countdown-timer>
+</div>
+</div>
+<p>6 - É possível um solo apresentar densidade do solo igual a de partículas? O que isso indica (em teoria)?</p>
+<div class="fragment">
+<p>Resposta:</p>
+<ul>
+<li class="fragment">Se as densidades tenderem a uma igualdade, isso significaria que o volume de poros tende a zero (<span class="math inline">\(\lim_{V_p \rightarrow 0} D_s=D_p\)</span>)</li>
+</ul>
+</div>
+</section>
+<section id="exercícios-7" class="slide level2">
+<h2>Exercícios</h2>
+<hr>
+<p><strong>Atividade para o lar:</strong></p>
+<div class="fragment">
+<ul>
+<li>Buscar na literatura qual a densidade média dos principais solos do Brasil.</li>
+</ul>
+</div>
+</section>
+<section id="fim" class="slide level2">
+<h2>Fim!</h2>
+<hr>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="logo.png" class="slide-logo"></p>
@@ -395,6 +1098,82 @@ Gustavo Frosi
         ]
       });
     </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

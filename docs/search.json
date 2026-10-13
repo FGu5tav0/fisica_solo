@@ -1,933 +1,1724 @@
 [
   {
+    "objectID": "aula_7/aula_7.html#o-que-é-umidade-do-solo",
+    "href": "aula_7/aula_7.html#o-que-é-umidade-do-solo",
+    "title": "Física do solo:",
+    "section": "O que é umidade do solo?",
+    "text": "O que é umidade do solo?\n\n\nUmidade do solo é a quantidade de água presente nos poros do solo em determinado momento.\n\n\nPode ser expressa em relação à massa (umidade gravimétrica) ou ao volume (umidade volumétrica);\nÉ uma propriedade muito dinâmica: varia com chuva, irrigação, evapotranspiração e drenagem;\nDepende da porosidade, da textura, da estrutura e da matéria orgânica do solo."
+  },
+  {
+    "objectID": "aula_7/aula_7.html#por-que-medir-a-umidade-do-solo",
+    "href": "aula_7/aula_7.html#por-que-medir-a-umidade-do-solo",
+    "title": "Física do solo:",
+    "section": "Por que medir a umidade do solo?",
+    "text": "Por que medir a umidade do solo?\n\n\nIrrigação: define quando irrigar e qual lâmina de água aplicar;\nManejo: indica a melhor condição para preparo do solo, semeadura e tráfego de máquinas;\nPlanta: a água disponível controla a absorção de nutrientes, a transpiração e a produtividade;\nAmbiente: influencia a infiltração, o escoamento superficial e a atividade microbiana.\n\n\nA água do solo pode ser quantificada de duas formas: em base de massa ou em base de volume."
+  },
+  {
+    "objectID": "aula_7/aula_7.html#umidade-gravimétrica-u",
+    "href": "aula_7/aula_7.html#umidade-gravimétrica-u",
+    "title": "Física do solo:",
+    "section": "Umidade gravimétrica (U)",
+    "text": "Umidade gravimétrica (U)\n\nDefinição:\nA umidade gravimétrica é a relação entre a massa de água (Ma) e a massa de solo seco (Ms).\n\n\\[U = \\frac{M_a}{M_s} = \\frac{M_u - M_s}{M_s}\\]\n\n\nMu = massa do solo úmido (g); Ms = massa do solo seco em estufa (g); Ma = massa de água (g).\n\n\nUnidade: g g-1 ou kg kg-1 (para percentagem, multiplicar por 100);\nConsidera sempre a massa de solo seco como referência."
+  },
+  {
+    "objectID": "aula_7/aula_7.html#determinação-da-umidade-gravimétrica",
+    "href": "aula_7/aula_7.html#determinação-da-umidade-gravimétrica",
+    "title": "Física do solo:",
+    "section": "Determinação da umidade gravimétrica",
+    "text": "Determinação da umidade gravimétrica\n\nMétodo padrão: estufa\n\nColetar a amostra (estrutura preservada ou não) e acondicioná-la em recipiente de massa conhecida (tara);\nPesar imediatamente, obtendo a massa do solo úmido;\nSecar em estufa a 105 °C por 24 h, até massa constante;\nEsfriar em dessecador e pesar novamente, obtendo a massa do solo seco;\nCalcular U pela diferença entre as massas.\n\n\nMétodo direto, de baixo custo e usado como referência para calibrar sensores."
+  },
+  {
+    "objectID": "aula_7/aula_7.html#umidade-gravimétrica-exemplo",
+    "href": "aula_7/aula_7.html#umidade-gravimétrica-exemplo",
+    "title": "Física do solo:",
+    "section": "Umidade gravimétrica: exemplo",
+    "text": "Umidade gravimétrica: exemplo\n\n\nUma amostra de solo apresentou massa úmida de 180 g e, após secagem em estufa a 105 °C, massa seca de 150 g. Qual a umidade gravimétrica?\n\n\n\\[M_a = 180 - 150 = 30~g\\]\n\n\n\\[U = \\frac{30}{150} = 0,20~g~g^{-1}~(20\\%)\\]"
+  },
+  {
+    "objectID": "aula_7/aula_7.html#umidade-volumétrica-theta",
+    "href": "aula_7/aula_7.html#umidade-volumétrica-theta",
+    "title": "Física do solo:",
+    "section": "Umidade volumétrica (\\(\\theta\\))",
+    "text": "Umidade volumétrica (\\(\\theta\\))\n\nDefinição:\nA umidade volumétrica é a relação entre o volume de água (Va) e o volume total do solo (Vt).\n\n\\[\\theta = \\frac{V_a}{V_t}\\]\n\n\nUnidade: cm3 cm-3 ou m3 m-3 (para percentagem, multiplicar por 100);\nO valor máximo de \\(\\theta\\) é a porosidade total (solo saturado: \\(\\theta = P_t\\));"
+  },
+  {
+    "objectID": "aula_7/aula_7.html#relação-entre-u-e-theta",
+    "href": "aula_7/aula_7.html#relação-entre-u-e-theta",
+    "title": "Física do solo:",
+    "section": "Relação entre U e \\(\\theta\\)",
+    "text": "Relação entre U e \\(\\theta\\)\n\n\nComo \\(\\rho_{\\mathrm{água}} \\approx 1\\ \\text{g cm}^{-3}\\), o volume de água (cm3) é numericamente igual à sua massa (g):\n\\[\\theta = \\frac{V_a}{V_t} = \\frac{M_a}{V_t} = \\frac{M_a}{M_s}*\\frac{M_s}{V_t}\\]\n\n\n\\[\\theta = U * D_s\\]\n\n\nDs = densidade do solo (g cm-3). Logo, \\(\\theta\\) depende da densidade do solo: dois solos com a mesma U podem ter \\(\\theta\\) diferentes."
+  },
+  {
+    "objectID": "aula_7/aula_7.html#conversão-entre-u-e-theta-exemplo",
+    "href": "aula_7/aula_7.html#conversão-entre-u-e-theta-exemplo",
+    "title": "Física do solo:",
+    "section": "Conversão entre U e \\(\\theta\\): exemplo",
+    "text": "Conversão entre U e \\(\\theta\\): exemplo\n\n\nUm solo com umidade gravimétrica de 0,20 g g-1 e densidade de 1,30 g cm-3. Qual a umidade volumétrica?\n\n\n\\[\\theta = U * D_s\\]\n\n\n\\[\\theta = 0,20 * 1,30 = 0,26~cm^3~cm^{-3}~(26\\%)\\]\n\n\nEm um solo compactado (\\(D_s\\) = 1,60 g cm-3) com a mesma U: \\(\\theta = 0,20 * 1,60 = 0,32~cm^3~cm^{-3}\\)."
+  },
+  {
+    "objectID": "aula_7/aula_7.html#lâmina-de-água-armazenada",
+    "href": "aula_7/aula_7.html#lâmina-de-água-armazenada",
+    "title": "Física do solo:",
+    "section": "Lâmina de água armazenada",
+    "text": "Lâmina de água armazenada\n\nA umidade volumétrica permite calcular a lâmina de água (h) armazenada em uma camada de solo de espessura z:\n\n\\[h = \\theta * z\\]\n\n\nCom z em mm, h resulta em mm (1 mm de lâmina = 1 L m-2).\n\n\nExemplo: solo com \\(\\theta\\) = 0,26 cm3 cm-3 na camada de 0 a 30 cm (z = 300 mm):\n\\[h = 0,26 * 300 = 78~mm\\]"
+  },
+  {
+    "objectID": "aula_7/aula_7.html#umidade-gravimétrica-x-volumétrica",
+    "href": "aula_7/aula_7.html#umidade-gravimétrica-x-volumétrica",
+    "title": "Física do solo:",
+    "section": "Umidade gravimétrica x volumétrica",
+    "text": "Umidade gravimétrica x volumétrica\n\n\n\nGravimétrica (U)\n\nBase de massa: Ma / Ms;\nUnidade: g g-1 ou kg kg-1;\nNão depende do volume da amostra;\nObtida diretamente pelo método da estufa;\nDificulta o cálculo da lâmina de água.\n\n\nVolumétrica (\\(\\theta\\))\n\nBase de volume: Va / Vt;\nUnidade: cm3 cm-3 ou m3 m-3;\nDepende da densidade do solo;\nObtida por Ds ou por sensores;\nPermite calcular a lâmina e o manejo da irrigação."
+  },
+  {
+    "objectID": "aula_7/aula_7.html#exercícios",
+    "href": "aula_7/aula_7.html#exercícios",
+    "title": "Física do solo:",
+    "section": "Exercícios",
+    "text": "Exercícios\n\n\n\n\n\n\n1 - Uma amostra de solo apresentou massa úmida de 135 g e massa seca de 120 g. Qual a umidade gravimétrica dessa amostra?\n\nResposta:\n\\[M_a = 135 - 120 = 15~g\\]\n\n\n\\[U = \\frac{15}{120} = 0,125~g~g^{-1}~(12,5\\%)\\]"
+  },
+  {
+    "objectID": "aula_7/aula_7.html#exercícios-1",
+    "href": "aula_7/aula_7.html#exercícios-1",
+    "title": "Física do solo:",
+    "section": "Exercícios",
+    "text": "Exercícios\n\n\n\n\n\n\n2 - Um solo apresenta umidade gravimétrica de 0,25 g g-1 e densidade de 1,20 g cm-3. Qual a umidade volumétrica?\n\nResposta:\n\\[\\theta = U * D_s\\]\n\n\n\\[\\theta = 0,25 * 1,20 = 0,30~cm^3~cm^{-3}~(30\\%)\\]"
+  },
+  {
+    "objectID": "aula_7/aula_7.html#exercícios-2",
+    "href": "aula_7/aula_7.html#exercícios-2",
+    "title": "Física do solo:",
+    "section": "Exercícios",
+    "text": "Exercícios\n\n\n\n\n\n\n3 - Um cilindro de 100 cm3 coletado a campo apresentou massa úmida de 168 g e massa seca de 140 g. Determine a densidade do solo, a umidade gravimétrica, a umidade volumétrica e a lâmina de água na camada de 0 a 20 cm.\n\nResposta:\n\\[D_s = \\frac{140}{100} = 1,40~g~cm^{-3}\\]\n\n\n\\[U = \\frac{168-140}{140} = 0,20~g~g^{-1} \\qquad \\theta = 0,20 * 1,40 = 0,28~cm^3~cm^{-3}\\]\n\n\n\\[h = 0,28 * 200 = 56~mm\\]"
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-do-solo",
+    "href": "aula_5/aula_5.html#consistência-do-solo",
+    "title": "Física do Solo:",
+    "section": "Consistência do solo",
+    "text": "Consistência do solo\n\n\nO mesmo solo pode se apresentar duro, friável ou pegajoso em diferentes momentos do ano.\n\n\nO que muda não é o solo, mas o seu teor de água.\n\n\nA consistência descreve justamente esse comportamento."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-do-solo-1",
+    "href": "aula_5/aula_5.html#consistência-do-solo-1",
+    "title": "Física do Solo:",
+    "section": "Consistência do solo",
+    "text": "Consistência do solo\n\nDefinição:\n\n\nConsistência é a manifestação das forças físicas de coesão e adesão que atuam no solo, sob diferentes teores de umidade.\n\n\n\nÉ uma propriedade dinâmica: depende da umidade no momento da avaliação.\n\n\nTambém é um atributo morfológico, descrito no campo horizonte por horizonte.\n\n\nReforçar o contraste: textura é um atributo estático; consistência é dinâmica."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#por-que-estudar-consistência",
+    "href": "aula_5/aula_5.html#por-que-estudar-consistência",
+    "title": "Física do Solo:",
+    "section": "Por que estudar consistência?",
+    "text": "Por que estudar consistência?\n\n\nDefine a melhor umidade para o preparo do solo;\nIndica o risco de compactação pelo tráfego de máquinas;\nAuxilia na descrição e na classificação de solos;\nRelaciona-se com a resistência à penetração das raízes;\nÉ base para obras de engenharia (estradas, barragens, fundações)."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#coesão-e-adesão-1",
+    "href": "aula_5/aula_5.html#coesão-e-adesão-1",
+    "title": "Física do Solo:",
+    "section": "Coesão e adesão",
+    "text": "Coesão e adesão\n\nCoesão:\nAtração entre partículas sólidas iguais (partícula–partícula).\n\nPontes de hidrogênio e forças de van der Waals;\nLigações por agentes cimentantes (óxidos, carbonatos, sílica);\nPontes de matéria orgânica e de cátions.\n\n\nAdesão:\nAtração entre partículas sólidas e moléculas de água (sólido–líquido): depende da polaridade da água, aumenta com a ASE e é responsável pela pegajosidade nas mãos e nos implementos."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#coesão-e-adesão-2",
+    "href": "aula_5/aula_5.html#coesão-e-adesão-2",
+    "title": "Física do Solo:",
+    "section": "Coesão e adesão",
+    "text": "Coesão e adesão\n\n\n\n\n\n\n\n\n\n* até um valor máximo; depois o solo passa a fluir.\n\n\nExplicar: coesão máxima no solo seco e adesão máxima em umidade intermediária."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#coesão-e-adesão-3",
+    "href": "aula_5/aula_5.html#coesão-e-adesão-3",
+    "title": "Física do Solo:",
+    "section": "Coesão e adesão",
+    "text": "Coesão e adesão"
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-e-teor-de-água",
+    "href": "aula_5/aula_5.html#consistência-e-teor-de-água",
+    "title": "Física do Solo:",
+    "section": "Consistência e teor de água",
+    "text": "Consistência e teor de água\n\nA consistência é descrita em três condições de umidade:\n\n\n\n\nCondição de umidade\nPropriedade avaliada\nForça dominante\n\n\n\n\nSeco\nDureza (tenacidade)\nCoesão\n\n\nÚmido\nFriabilidade\nCoesão moderada\n\n\nMolhado\nPlasticidade e pegajosidade\nAdesão"
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-do-solo-seco-1",
+    "href": "aula_5/aula_5.html#consistência-do-solo-seco-1",
+    "title": "Física do Solo:",
+    "section": "Consistência do solo seco",
+    "text": "Consistência do solo seco\n\nDureza ou tenacidade:\n\nResistência do agregado seco ao ar à ruptura por pressão entre o polegar e o indicador.\n\n\nReflete o predomínio das forças de coesão, já que a água praticamente não atua como lubrificante.\n\n\nAvaliar em agregados de 2 a 3 cm, aplicando pressão lenta e crescente."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-do-solo-seco-2",
+    "href": "aula_5/aula_5.html#consistência-do-solo-seco-2",
+    "title": "Física do Solo:",
+    "section": "Consistência do solo seco",
+    "text": "Consistência do solo seco\n\nClasses de dureza:\n\n\n\n\nClasse\nCritério de campo\n\n\n\n\nSolta\nSem agregados coerentes (grãos simples)\n\n\nMacia\nRompe-se com pressão muito leve dos dedos\n\n\nLigeiramente dura\nRompe-se facilmente entre polegar e indicador\n\n\nDura\nDifícil de romper entre os dedos\n\n\nMuito dura\nRompe-se apenas entre as duas mãos\n\n\nExtremamente dura\nNão se rompe entre as mãos"
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-do-solo-seco-3",
+    "href": "aula_5/aula_5.html#consistência-do-solo-seco-3",
+    "title": "Física do Solo:",
+    "section": "Consistência do solo seco",
+    "text": "Consistência do solo seco\n\nImplicações práticas:\n\nSolo muito duro dificulta a emergência de plântulas (encrostamento);\nAumenta a resistência à penetração das raízes;\nExige maior demanda de potência no preparo;\nFavorece a formação de torrões e a pulverização de agregados."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-do-solo-úmido-1",
+    "href": "aula_5/aula_5.html#consistência-do-solo-úmido-1",
+    "title": "Física do Solo:",
+    "section": "Consistência do solo úmido",
+    "text": "Consistência do solo úmido\n\nFriabilidade:\n\nFacilidade com que o solo úmido se desfaz em agregados menores quando pressionado, sem se deformar plasticamente.\n\n\nÉ a condição de umidade ideal para o preparo do solo."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-do-solo-úmido-2",
+    "href": "aula_5/aula_5.html#consistência-do-solo-úmido-2",
+    "title": "Física do Solo:",
+    "section": "Consistência do solo úmido",
+    "text": "Consistência do solo úmido\n\nClasses de friabilidade:\n\n\n\n\nClasse\nCritério de campo\n\n\n\n\nSolta\nNão coeso, grãos simples\n\n\nMuito friável\nEsboroa-se sob pressão muito leve\n\n\nFriável\nEsboroa-se sob pressão leve a moderada\n\n\nFirme\nEsboroa-se sob pressão moderada a forte\n\n\nMuito firme\nEsboroa-se somente sob forte pressão\n\n\nExtremamente firme\nNão se esboroa entre os dedos"
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-do-solo-úmido-3",
+    "href": "aula_5/aula_5.html#consistência-do-solo-úmido-3",
+    "title": "Física do Solo:",
+    "section": "Consistência do solo úmido",
+    "text": "Consistência do solo úmido\n\nFaixa friável:\nSitua-se aproximadamente entre a capacidade de campo e o limite de plasticidade.\n\nO solo se fragmenta sem se deformar;\nMenor energia de tração exigida;\nMenor risco de compactação e de pulverização;\nMaior eficiência operacional das máquinas."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-do-solo-úmido-4",
+    "href": "aula_5/aula_5.html#consistência-do-solo-úmido-4",
+    "title": "Física do Solo:",
+    "section": "Consistência do solo úmido",
+    "text": "Consistência do solo úmido\n\nA amplitude da faixa friável varia entre solos:\n\nSolos arenosos: faixa ampla, pouco sensível ao manejo;\nLatossolos argilosos (caulinita e óxidos): faixa relativamente ampla;\nVertissolos (argila 2:1): faixa muito estreita, manejo crítico."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-do-solo-molhado-1",
+    "href": "aula_5/aula_5.html#consistência-do-solo-molhado-1",
+    "title": "Física do Solo:",
+    "section": "Consistência do solo molhado",
+    "text": "Consistência do solo molhado\n\nPlasticidade:\n\nCapacidade do solo molhado de ser moldado e de manter a forma após cessar a força aplicada.\n\n\nDepende do teor de argila e da orientação das partículas lamelares lubrificadas pela água.\n\n\nAreias puras são não plásticas."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-do-solo-molhado-2",
+    "href": "aula_5/aula_5.html#consistência-do-solo-molhado-2",
+    "title": "Física do Solo:",
+    "section": "Consistência do solo molhado",
+    "text": "Consistência do solo molhado\n\nClasses de plasticidade:\n\n\n\n\nClasse\nCritério de campo\n\n\n\n\nNão plástico\nNão forma cilindro (rolo)\n\n\nLigeiramente plástico\nForma cilindro que se rompe facilmente\n\n\nPlástico\nForma cilindro que resiste à deformação\n\n\nMuito plástico\nCilindro firme, exige pressão considerável\n\n\n\n\n\nTeste do rolo: cilindro de ~3 a 4 cm de comprimento e ~3 mm de diâmetro."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-do-solo-molhado-3",
+    "href": "aula_5/aula_5.html#consistência-do-solo-molhado-3",
+    "title": "Física do Solo:",
+    "section": "Consistência do solo molhado",
+    "text": "Consistência do solo molhado\n\nPegajosidade (aderência):\nCapacidade do solo molhado de aderir a outros corpos: dedos, ferramentas, pneus, discos de grade.\n\n\n\n\nClasse\nCritério de campo\n\n\n\n\nNão pegajoso\nNão adere aos dedos\n\n\nLigeiramente pegajoso\nAdere pouco e solta-se com facilidade\n\n\nPegajoso\nAdere a ambos os dedos e estira-se um pouco\n\n\nMuito pegajoso\nAdere fortemente e estira-se bastante"
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-do-solo-molhado-4",
+    "href": "aula_5/aula_5.html#consistência-do-solo-molhado-4",
+    "title": "Física do Solo:",
+    "section": "Consistência do solo molhado",
+    "text": "Consistência do solo molhado\n\nCuidados na avaliação:\n\nDestorroar a amostra e retirar fragmentos grosseiros;\nUmedecer gradualmente até o ponto de máxima plasticidade;\nNão avaliar com excesso de água (o solo passa a fluir);\nPadronizar a pressão entre polegar e indicador."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-do-solo-molhado-5",
+    "href": "aula_5/aula_5.html#consistência-do-solo-molhado-5",
+    "title": "Física do Solo:",
+    "section": "Consistência do solo molhado",
+    "text": "Consistência do solo molhado"
+  },
+  {
+    "objectID": "aula_5/aula_5.html#limites-de-consistência-1",
+    "href": "aula_5/aula_5.html#limites-de-consistência-1",
+    "title": "Física do Solo:",
+    "section": "Limites de consistência",
+    "text": "Limites de consistência\n\nLimites de Atterberg:\n\nPropostos por Albert Atterberg para a cerâmica e a agricultura e depois adaptados por Arthur Casagrande para a mecânica dos solos.\n\n\nDefinem os teores de água que separam os estados de consistência do solo:\n\nSólido;\nSemissólido;\nPlástico;\nLíquido (viscoso)."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#limites-de-consistência-2",
+    "href": "aula_5/aula_5.html#limites-de-consistência-2",
+    "title": "Física do Solo:",
+    "section": "Limites de consistência",
+    "text": "Limites de consistência\n\n\n\n\n\nLimite\nSigla\nTransição\n\n\n\n\nLimite de contração\nLC\nSólido → semissólido\n\n\nLimite de plasticidade\nLP\nSemissólido → plástico\n\n\nLimite de liquidez\nLL\nPlástico → líquido\n\n\n\n\nPodem ser encontrados em teor de água gravimétrico (%). No entanto, é recomendado não utilizar unidades."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#limites-de-consistência-3",
+    "href": "aula_5/aula_5.html#limites-de-consistência-3",
+    "title": "Física do Solo:",
+    "section": "Limites de consistência",
+    "text": "Limites de consistência\n\nLimite de contração (LC):\nTeor de água abaixo do qual a perda de água não provoca mais redução de volume do solo.\n\nAbaixo do LC o ar entra nos poros e o solo clareia;\nRelaciona-se com a formação de fendas de dessecação;\nImportante em Vertissolos e em solos com argila 2:1."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#limites-de-consistência-4",
+    "href": "aula_5/aula_5.html#limites-de-consistência-4",
+    "title": "Física do Solo:",
+    "section": "Limites de consistência",
+    "text": "Limites de consistência\n\nLimite de plasticidade (LP):\n\nMenor teor de água em que o solo ainda se comporta plasticamente.\n\n\nDeterminação: teor de água no qual o cilindro de 3 mm de diâmetro começa a se fragmentar ao ser rolado sobre placa de vidro.\n\n\nLimite de liquidez (LL):\n\n\nTeor de água a partir do qual o solo perde a capacidade de manter a forma e escoa como um líquido viscoso.\n\n\nDeterminação no aparelho de Casagrande: teor de água em que a ranhura se fecha em 1 cm após 25 golpes."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#limites-de-consistência-5",
+    "href": "aula_5/aula_5.html#limites-de-consistência-5",
+    "title": "Física do Solo:",
+    "section": "Limites de consistência",
+    "text": "Limites de consistência\n\nLimite de liquidez (LL):\n\n\n\n\n\n\nAparelho de Casagrande\n\n\n\n\n\n\n\nDeterminação do LP"
+  },
+  {
+    "objectID": "aula_5/aula_5.html#limites-de-consistência-6",
+    "href": "aula_5/aula_5.html#limites-de-consistência-6",
+    "title": "Física do Solo:",
+    "section": "Limites de consistência",
+    "text": "Limites de consistência\n\nÍndice de plasticidade (IP):\n\n\\[ IP = LL - LP \\]\n\n\nRepresenta a amplitude do estado plástico, ou seja, a faixa de umidade em que o solo pode ser moldado.\n\n\nQuanto maior o IP, mais crítico é o manejo hídrico do solo."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#limites-de-consistência-7",
+    "href": "aula_5/aula_5.html#limites-de-consistência-7",
+    "title": "Física do Solo:",
+    "section": "Limites de consistência",
+    "text": "Limites de consistência\n\nInterpretação do IP:\n\n\n\n\nIP (%)\nClassificação\nTipo de solo\n\n\n\n\n0\nNão plástico\nArenoso\n\n\n&lt; 7\nFracamente plástico\nSiltoso\n\n\n7 – 17\nMedianamente plástico\nArgilo siltoso\n\n\n&gt; 17\nAltamente plástico\nArgiloso"
+  },
+  {
+    "objectID": "aula_5/aula_5.html#limites-de-consistência-8",
+    "href": "aula_5/aula_5.html#limites-de-consistência-8",
+    "title": "Física do Solo:",
+    "section": "Limites de consistência",
+    "text": "Limites de consistência\n\nVolume:"
+  },
+  {
+    "objectID": "aula_5/aula_5.html#limites-de-consistência-9",
+    "href": "aula_5/aula_5.html#limites-de-consistência-9",
+    "title": "Física do Solo:",
+    "section": "Limites de consistência",
+    "text": "Limites de consistência\n\nResumo:"
+  },
+  {
+    "objectID": "aula_5/aula_5.html#limites-de-consistência-10",
+    "href": "aula_5/aula_5.html#limites-de-consistência-10",
+    "title": "Física do Solo:",
+    "section": "Limites de consistência",
+    "text": "Limites de consistência\n\nAplicações:\n\nClassificação geotécnica de solos;\nProjeto de estradas rurais e de barragens de terra;\nEstimativa da trafegabilidade em áreas agrícolas;\nDefinição da janela operacional de preparo;\nAvaliação do risco de compactação."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#fatores-que-influenciam",
+    "href": "aula_5/aula_5.html#fatores-que-influenciam",
+    "title": "Física do Solo:",
+    "section": "Fatores que influenciam",
+    "text": "Fatores que influenciam\n\n\nTextura;\nMineralogia da fração argila;\nMatéria orgânica;\nCátions trocáveis;\nÓxidos de Fe e Al e outros cimentantes;\nEstrutura e densidade do solo."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#fatores-que-influenciam-1",
+    "href": "aula_5/aula_5.html#fatores-que-influenciam-1",
+    "title": "Física do Solo:",
+    "section": "Fatores que influenciam",
+    "text": "Fatores que influenciam\n\nTextura:\n\nQuanto maior o teor de argila, maior a ASE e o número de pontos de contato;\nMaior coesão no seco e maior plasticidade e pegajosidade no molhado;\nSolos arenosos: soltos quando secos, não plásticos e não pegajosos;\nO silte contribui pouco para a plasticidade, mas favorece o encrostamento.\n\n\n\n\n\nClasse textural\nDureza (seco)\nFriabilidade\nPlasticidade\n\n\n\n\nArenosa\nSolta / macia\nSolta\nNão plástica\n\n\nMédia\nLig. dura\nFriável\nLig. plástica\n\n\nArgilosa\nDura\nFirme\nPlástica\n\n\nMuito argilosa\nMuito dura\nMuito firme\nMuito plástica"
+  },
+  {
+    "objectID": "aula_5/aula_5.html#fatores-que-influenciam-2",
+    "href": "aula_5/aula_5.html#fatores-que-influenciam-2",
+    "title": "Física do Solo:",
+    "section": "Fatores que influenciam",
+    "text": "Fatores que influenciam\n\nMineralogia:\n\nArgilas 2:1 expansivas (esmectita, vermiculita): alta ASE, alta plasticidade, alto LL e alto IP, forte expansão e contração.\n\n\nArgilas 1:1 (caulinita): baixa ASE, baixa plasticidade, comportamento mais estável com a variação da umidade."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#fatores-que-influenciam-3",
+    "href": "aula_5/aula_5.html#fatores-que-influenciam-3",
+    "title": "Física do Solo:",
+    "section": "Fatores que influenciam",
+    "text": "Fatores que influenciam\n\nMatéria orgânica:\n\nAumenta a agregação e a friabilidade;\nReduz a dureza no estado seco;\nAmplia a faixa de umidade friável;\nEm teores elevados, pode aumentar o LL e o LP;\nReduz a pegajosidade em relação a um solo argiloso sem matéria orgânica."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#fatores-que-influenciam-4",
+    "href": "aula_5/aula_5.html#fatores-que-influenciam-4",
+    "title": "Física do Solo:",
+    "section": "Fatores que influenciam",
+    "text": "Fatores que influenciam\n\nCátions trocáveis:\nO tipo de cátion adsorvido altera a espessura da dupla camada difusa.\n\nCa2+ e Mg2+: floculam e reduzem a plasticidade;\nNa+: dispersa e aumenta muito a plasticidade e a pegajosidade;\nSolos sódicos: extremamente duros quando secos e muito plásticos quando molhados."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#fatores-que-influenciam-5",
+    "href": "aula_5/aula_5.html#fatores-que-influenciam-5",
+    "title": "Física do Solo:",
+    "section": "Fatores que influenciam",
+    "text": "Fatores que influenciam\n\nCimentantes, estrutura e densidade:\n\nÓxidos de Fe e Al aumentam a agregação e reduzem a plasticidade;\nCarbonatos e sílica podem cimentar horizontes (fragipã, duripã);\nSolos bem estruturados são mais friáveis;\nO aumento da densidade eleva a dureza e a resistência à penetração;\nHorizontes coesos: duros quando secos e friáveis quando úmidos."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-e-manejo",
+    "href": "aula_5/aula_5.html#consistência-e-manejo",
+    "title": "Física do Solo:",
+    "section": "Consistência e manejo",
+    "text": "Consistência e manejo\n\nA questão central:\n\nQual é o momento certo de entrar na lavoura com as máquinas?\n\n\nResposta: quando o solo está na faixa friável, abaixo do limite de plasticidade."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-e-manejo-1",
+    "href": "aula_5/aula_5.html#consistência-e-manejo-1",
+    "title": "Física do Solo:",
+    "section": "Consistência e manejo",
+    "text": "Consistência e manejo\n\nPreparo com o solo molhado:\n\nDeformação plástica e compactação;\nFormação de pé de grade ou pé de arado;\nEspelhamento da camada subsuperficial;\nRedução da macroporosidade e da infiltração;\nRestrição ao crescimento radicular."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-e-manejo-2",
+    "href": "aula_5/aula_5.html#consistência-e-manejo-2",
+    "title": "Física do Solo:",
+    "section": "Consistência e manejo",
+    "text": "Consistência e manejo\n\nPreparo com o solo muito seco:\n\nFormação de torrões grandes;\nPulverização excessiva da camada superficial;\nMaior consumo de combustível e desgaste dos implementos;\nMaior risco de erosão eólica e hídrica."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-e-manejo-3",
+    "href": "aula_5/aula_5.html#consistência-e-manejo-3",
+    "title": "Física do Solo:",
+    "section": "Consistência e manejo",
+    "text": "Consistência e manejo\n\nTestes práticos de campo:\n\nColetar solo na profundidade de trabalho;\nBolinha que se molda e deforma → solo muito úmido, não trabalhar;\nTorrão que esboroa sob leve pressão → solo friável, momento adequado;\nTorrão duro que não se desfaz → solo muito seco;\nCilindro de 3 mm que não rompe → solo acima do limite de plasticidade."
+  },
+  {
+    "objectID": "aula_5/aula_5.html#consistência-e-manejo-4",
+    "href": "aula_5/aula_5.html#consistência-e-manejo-4",
+    "title": "Física do Solo:",
+    "section": "Consistência e manejo",
+    "text": "Consistência e manejo\n\nTrafegabilidade:\n\nSolos com alto IP têm janela operacional estreita;\nPressão de inflação dos pneus e carga por eixo são determinantes;\nO tráfego controlado reduz a área compactada;\nO plantio direto, com cobertura permanente, amortece a pressão aplicada.\n\n\nFormação do pé de arado e compactação do solo!"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#estrutura-e-agregação-do-solo-1",
+    "href": "aula_3/aula_3.html#estrutura-e-agregação-do-solo-1",
+    "title": "Física do solo:",
+    "section": "Estrutura e agregação do solo",
+    "text": "Estrutura e agregação do solo\n\nO que é estrutura?\n\n\nEstrutura do solo se refere ao arranjo das partículas e do espaço poroso entre elas, abrangendo a forma, o tamanho e a organização dos agregados ou unidades estruturais.\n\n\n\n\nEstrutura é o arranjamento e a organização das partículas do solo - Hillel (1980)."
+  },
+  {
+    "objectID": "aula_3/aula_3.html#estrutura-e-agregação-do-solo-2",
+    "href": "aula_3/aula_3.html#estrutura-e-agregação-do-solo-2",
+    "title": "Física do solo:",
+    "section": "Estrutura e agregação do solo",
+    "text": "Estrutura e agregação do solo\n\nO que são os agregados?\n\n\nAgregados ou unidades estruturais, são porções de solo nas quais as partículas estão dispostas obedecendo mais ou menos um padrão de organização."
+  },
+  {
+    "objectID": "aula_3/aula_3.html#estrutura-e-agregação-do-solo-3",
+    "href": "aula_3/aula_3.html#estrutura-e-agregação-do-solo-3",
+    "title": "Física do solo:",
+    "section": "Estrutura e agregação do solo",
+    "text": "Estrutura e agregação do solo\n\nO que são os agregados?\n\nEm um agregado, as partículas minerais (areia, silte e argila) e orgânicas e íons estão ligados entre si com mais força do que a força que existe entre as superfícies de agregados vizinhos em contato.\nA interface que delimita os agregados é chamada de superfície de fraqueza.\nMuitas vezes visíveis a olho nu.\n\nFratura por contração (secamento do solo)."
+  },
+  {
+    "objectID": "aula_3/aula_3.html#estrutura-e-agregação-do-solo-4",
+    "href": "aula_3/aula_3.html#estrutura-e-agregação-do-solo-4",
+    "title": "Física do solo:",
+    "section": "Estrutura e agregação do solo",
+    "text": "Estrutura e agregação do solo\n\nFormato, tamanho e resistência:\n\nGranulometria;\nComposição química;\nComposição mineralógica;\nAtividade biológica do solo."
+  },
+  {
+    "objectID": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-1",
+    "href": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-1",
+    "title": "Física do solo:",
+    "section": "Gênese da estrutura do solo",
+    "text": "Gênese da estrutura do solo\n\nA formação dos agregados é um processo de união de partículas do solo (minerais e orgânicas).\n\nForças para aproximar as partículas;\nAgentes ligantes (cimentantes) para estabilizar os agregados.\nProcessos: físicos, químicos e biológicos.\n\n\nHá um agrupamento, uma hierarquia nos agregados."
+  },
+  {
+    "objectID": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-2",
+    "href": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-2",
+    "title": "Física do solo:",
+    "section": "Gênese da estrutura do solo",
+    "text": "Gênese da estrutura do solo\n\nAgentes ligantes e cimentantes:\n\nSão responsáveis pela cimentação das partículas.\n\n\nMineral: íons, carbonatos, óxidos e aluminossilicatos;\nOrgânicos: atividade biológica das raízes e dos organismos.\nClassificação (tempo):\n\nTransientes;\nTemporários;\nPersistentes."
+  },
+  {
+    "objectID": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-3",
+    "href": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-3",
+    "title": "Física do solo:",
+    "section": "Gênese da estrutura do solo",
+    "text": "Gênese da estrutura do solo\n\nAgentes ligantes e cimentantes:\n\n\n\n\n\n\n\n\n\nA-&gt;B\n\n\n\n\n\nA-&gt;C\n\n\n\n\n\nB-&gt;D\n\n\n\n\n\nB-&gt;E\n\n\n\n\n\nB-&gt;F\n\n\n\n\n\nC-&gt;C_desc\n\n\n\n\nD-&gt;D_desc\n\n\n\n\nE-&gt;E_desc\n\n\n\n\nF-&gt;F_desc\n\n\n\n\nA\n\nAgentes de ligação\n\n\n\nB\n\nOrgânicos\n\n\n\nC\n\nInorgânicos\n\n\n\nD\n\nTransitórios\n\n\n\nE\n\nTemporários\n\n\n\nF\n\nPersistentes\n\n\n\nD_desc\n\n• Polissacarídeos\n• Produtos microbianos\n\n\n\nE_desc\n\n• Raízes\n• Hifas fúngicas\n• Subprodutos microbianos\n\n\n\nF_desc\n\n• Substâncias húmicas\n• Complexos organominerais\n• Materiais húmicos\n  desidratados\n• Complexos de sesquióxidos\n\n\n\nC_desc\n\n• Carbonatos\n• Sesquióxidos\n• Aluminosilicatos\n• Silicatos desidratados"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-4",
+    "href": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-4",
+    "title": "Física do solo:",
+    "section": "Gênese da estrutura do solo",
+    "text": "Gênese da estrutura do solo\n\nAgentes ligantes e cimentantes:\n\nTransientes: materiais orgânicos frescos com decomposição muito rápida;\n\nAssociados à formação de agregados grandes e estáveis (\\(250~\\mathrm{\\mu m}\\) de diâmetro);\n\nTemporários: raízes, hifas dos fungos e bioprodutos microbianos;\n\nRaízes laterais finas atuam na união de microagregados por meio dos pelos radiculares e por exsudatos;\nEfeitos podem durar meses e até anos."
+  },
+  {
+    "objectID": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-5",
+    "href": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-5",
+    "title": "Física do solo:",
+    "section": "Gênese da estrutura do solo",
+    "text": "Gênese da estrutura do solo\n\nAgentes ligantes e cimentantes:\n\nPersistentes: alta estabilidade dos microagregados;\n\nPolímeros fortemente adsorvidos (complexo organomineral);\nÁcidos húmicos e fúlvicos associados com ferro amorfo;\nAlumínio e aluminossilicatos."
+  },
+  {
+    "objectID": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-6",
+    "href": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-6",
+    "title": "Física do solo:",
+    "section": "Gênese da estrutura do solo",
+    "text": "Gênese da estrutura do solo\n\nProcessos químicos:\n\nInteração de argilas, óxidos, moléculas orgânicas e íons.\n\nFloculação, expansão e contração do solo e ciclos de secagem e umedecimento (Aproximação de partículas)."
+  },
+  {
+    "objectID": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-7",
+    "href": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-7",
+    "title": "Física do solo:",
+    "section": "Gênese da estrutura do solo",
+    "text": "Gênese da estrutura do solo\n\nFloculação da argila:"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-8",
+    "href": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-8",
+    "title": "Física do solo:",
+    "section": "Gênese da estrutura do solo",
+    "text": "Gênese da estrutura do solo\n\nPonte entre argila e cátions:"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-9",
+    "href": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-9",
+    "title": "Física do solo:",
+    "section": "Gênese da estrutura do solo",
+    "text": "Gênese da estrutura do solo\n\nPonte entre argila e cátions polivalentes:\n\n\n\n\n\n\n\n\n\nclay0--mg_top1\n\n\n\n\nclay0--be_left1\n\n\n\n\nclay0--fe_center\n\n\n\n\nclay0--th\n\n\n\n\nmg_top1--oh_top\n\n\n\n\noh_top--mg_top2\n\n\n\n\nmg_top2--clay_top\n\n\n\n\nbe_left1--oh_left\n\n\n\n\noh_left--be_left2\n\n\n\n\nbe_left2--clay_left\n\n\n\n\nfe_center--oh_ru\n\n\n\n\nfe_center--oh_rd\n\n\n\n\noh_ru--fe_ru\n\n\n\n\nfe_ru--clay_ru\n\n\n\n\noh_rd--fe_rd\n\n\n\n\nfe_rd--clay_rd\n\n\n\n\nth--oh_bl\n\n\n\n\nth--oh_b\n\n\n\n\nth--oh_br\n\n\n\n\noh_bl--clay_bl\n\n\n\n\noh_b--clay_b\n\n\n\n\noh_br--clay_br\n\n\n\n\nclay0\n\nArgila\n\n\n\nmg_top1\nMg\n\n\n\noh_top\nOH\n\n\n\nmg_top2\nMg\n\n\n\nclay_top\n\nArgila\n\n\n\nbe_left1\nBe\n\n\n\noh_left\nOH\n\n\n\nbe_left2\nBe\n\n\n\nclay_left\n\nArgila\n\n\n\nfe_center\nFe\n\n\n\noh_ru\nOH\n\n\n\nfe_ru\nFe\n\n\n\nclay_ru\n\nArgila\n\n\n\noh_rd\nOH\n\n\n\nfe_rd\nFe\n\n\n\nclay_rd\n\nArgila\n\n\n\nth\nTh\n\n\n\noh_bl\nOH\n\n\n\nclay_bl\n\nArgila\n\n\n\noh_b\nOH\n\n\n\nclay_b\n\nArgila\n\n\n\noh_br\nOH\n\n\n\nclay_br\n\nArgila"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-10",
+    "href": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-10",
+    "title": "Física do solo:",
+    "section": "Gênese da estrutura do solo",
+    "text": "Gênese da estrutura do solo\n\nProcessos físicos:\n\n\n\nAbióticos e/ou biológicos;\nCiclos de umedecimento e secagem (altera o volume);\n\nContração do solo;\nExpansão do solo;\n\nFissuras em solos expansivos nos planos de fraqueza."
+  },
+  {
+    "objectID": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-11",
+    "href": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-11",
+    "title": "Física do solo:",
+    "section": "Gênese da estrutura do solo",
+    "text": "Gênese da estrutura do solo\n\nProcessos biológicos:\n\nAtividade dos microrganismos, da fauna e das plantas;\nAproximação e união de partículas minerais por compostos orgânicos produzidos por microrganismos;"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-12",
+    "href": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-12",
+    "title": "Física do solo:",
+    "section": "Gênese da estrutura do solo",
+    "text": "Gênese da estrutura do solo\n\nProcessos biológicos:\n\nBactérias: gomas, polissacarídeos;\n\nCompostos “pegajosos” que unem os agregados;\n\nFungos: hifas;\n\nEstabilizam os agregados;\n\nMinhocas, formigas e cupins: criam galerias e deslocam partículas do solo;\n\nFragmentam agregados em unidades menores (poros)."
+  },
+  {
+    "objectID": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-13",
+    "href": "aula_3/aula_3.html#gênese-da-estrutura-do-solo-13",
+    "title": "Física do solo:",
+    "section": "Gênese da estrutura do solo",
+    "text": "Gênese da estrutura do solo\n\nProcessos biológicos:"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#organização-hierárquica-dos-agregados-1",
+    "href": "aula_3/aula_3.html#organização-hierárquica-dos-agregados-1",
+    "title": "Física do solo:",
+    "section": "Organização hierárquica dos agregados",
+    "text": "Organização hierárquica dos agregados"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#organização-hierárquica-dos-agregados-2",
+    "href": "aula_3/aula_3.html#organização-hierárquica-dos-agregados-2",
+    "title": "Física do solo:",
+    "section": "Organização hierárquica dos agregados",
+    "text": "Organização hierárquica dos agregados\n\nClassificação:\n\nMicroagregados: menores que 0,25 mm;\nMacroagregados: maiores que 0,25 mm."
+  },
+  {
+    "objectID": "aula_3/aula_3.html#organização-hierárquica-dos-agregados-3",
+    "href": "aula_3/aula_3.html#organização-hierárquica-dos-agregados-3",
+    "title": "Física do solo:",
+    "section": "Organização hierárquica dos agregados",
+    "text": "Organização hierárquica dos agregados\n\nClassificação:"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#organização-hierárquica-dos-agregados-4",
+    "href": "aula_3/aula_3.html#organização-hierárquica-dos-agregados-4",
+    "title": "Física do solo:",
+    "section": "Organização hierárquica dos agregados",
+    "text": "Organização hierárquica dos agregados\n\nClassificação:"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#abordagens-para-avaliar-a-estrutura",
+    "href": "aula_3/aula_3.html#abordagens-para-avaliar-a-estrutura",
+    "title": "Física do solo:",
+    "section": "Abordagens para avaliar a estrutura",
+    "text": "Abordagens para avaliar a estrutura\n\nImportante para avaliar o efeito da gênese e das práticas de uso e manejo do solo na agregação.\n\nMétodos qualitativos e quantitativos\n\n\nAbordagem pedológica, mecânica e ecológica."
+  },
+  {
+    "objectID": "aula_3/aula_3.html#abordagens-para-avaliar-a-estrutura-1",
+    "href": "aula_3/aula_3.html#abordagens-para-avaliar-a-estrutura-1",
+    "title": "Física do solo:",
+    "section": "Abordagens para avaliar a estrutura",
+    "text": "Abordagens para avaliar a estrutura\n\nAbordagem pedológica:\nA estrutura é avaliada qualitativamente pelo formato, tamanho e grau de desenvolvimento.\n\nOs agregados são separados por planos de fraqueza;\nRetira-se um bloco e se separam as unidades por meio da aplicação de força de tração;"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#abordagens-para-avaliar-a-estrutura-2",
+    "href": "aula_3/aula_3.html#abordagens-para-avaliar-a-estrutura-2",
+    "title": "Física do solo:",
+    "section": "Abordagens para avaliar a estrutura",
+    "text": "Abordagens para avaliar a estrutura\n\nAbordagem pedológica:\nClassificação dos formatos\n\nGrãos (granular);\nLâminas (laminar);\nCubos (blocos);\nColunas (colunar);\nPrismas (prismática);\n\n\nObs: Na maior parte dos solos temos um tipo granular e blocos subangulares."
+  },
+  {
+    "objectID": "aula_3/aula_3.html#abordagens-para-avaliar-a-estrutura-3",
+    "href": "aula_3/aula_3.html#abordagens-para-avaliar-a-estrutura-3",
+    "title": "Física do solo:",
+    "section": "Abordagens para avaliar a estrutura",
+    "text": "Abordagens para avaliar a estrutura\n\nAbordagem pedológica:\nClassificação dos formatos"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#abordagens-para-avaliar-a-estrutura-4",
+    "href": "aula_3/aula_3.html#abordagens-para-avaliar-a-estrutura-4",
+    "title": "Física do solo:",
+    "section": "Abordagens para avaliar a estrutura",
+    "text": "Abordagens para avaliar a estrutura\n\nAbordagem pedológica:\nClassificação dos tamanhos das unidades\n\n\n\n\n\n\n\n\n\n\nClasse de tamanho\nLaminar (mm)\nPrismática e colunar (mm)\nBlocos angulares e subangulares (mm)\nGranular (mm)\n\n\n\n\nMuito pequena\n&lt; 1\n&lt; 10\n&lt; 5\n&lt; 1\n\n\nPequena\n1 a 2\n10 a 20\n5 a 10\n1 a 2\n\n\nMédia\n2 a 5\n20 a 50\n10 a 20\n2 a 5\n\n\nGrande\n5 a 10\n50 a 100\n20 a 50\n5 a 10\n\n\nMuito grande\n&gt; 10\n&gt; 100\n&gt; 50\n&gt; 10"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#abordagens-para-avaliar-a-estrutura-5",
+    "href": "aula_3/aula_3.html#abordagens-para-avaliar-a-estrutura-5",
+    "title": "Física do solo:",
+    "section": "Abordagens para avaliar a estrutura",
+    "text": "Abordagens para avaliar a estrutura\n\nAbordagem pedológica:\nClassificação do grau de desenvolvimento da estrutura\n\nRepresenta a coesão de dentro e de fora dos agregados (força de cimentação e de estabilização).\n\n\n3 categorias: grãos simples, maciça e agregada"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#abordagens-para-avaliar-a-estrutura-6",
+    "href": "aula_3/aula_3.html#abordagens-para-avaliar-a-estrutura-6",
+    "title": "Física do solo:",
+    "section": "Abordagens para avaliar a estrutura",
+    "text": "Abordagens para avaliar a estrutura\n\nAbordagem pedológica:\nClassificação do grau de desenvolvimento da estrutura\n\nGrãos simples: Solos arenosos;\nMaciça: Solos hidromórficos ou solos com alta compactação;\nAgregada: Mais adequada para desenvolvimento de plantas;\n\nFraco: Unidades estruturais pouco frequentes em relação ao solo que não está agregado;\nModerada: Unidades estruturais em quantidade semelhante ao solo não agregado;\nForte: Unidades estruturais de fácil separação e maior quantidade em relação ao solo não agregado."
+  },
+  {
+    "objectID": "aula_3/aula_3.html#abordagens-para-avaliar-a-estrutura-7",
+    "href": "aula_3/aula_3.html#abordagens-para-avaliar-a-estrutura-7",
+    "title": "Física do solo:",
+    "section": "Abordagens para avaliar a estrutura",
+    "text": "Abordagens para avaliar a estrutura\n\nAbordagem ecológica ou edafológica:\nConsidera a estrutura quanto à forma, ao tamanho e à resistência de agregados do solo.\nTambém leva em conta a funcionalidade da estrutura\n\nReter e transmitir fluidos e materiais;\nSuporte ao crescimento de raízes."
+  },
+  {
+    "objectID": "aula_3/aula_3.html#abordagens-para-avaliar-a-estrutura-8",
+    "href": "aula_3/aula_3.html#abordagens-para-avaliar-a-estrutura-8",
+    "title": "Física do solo:",
+    "section": "Abordagens para avaliar a estrutura",
+    "text": "Abordagens para avaliar a estrutura\n\nAbordagem ecológica ou edafológica:\n\nBaseada em 3 aspectos\n\nGraus de agregação: distribuição por tamanho e estabilidade;\nPorosidade: tamanho, forma, tortuosidade, continuidade e estabilidade de poros;\nAlteração espacial e temporal em agregados e poros em relação a fatores naturais e antropogênicos."
+  },
+  {
+    "objectID": "aula_3/aula_3.html#avaliação-da-estrutura",
+    "href": "aula_3/aula_3.html#avaliação-da-estrutura",
+    "title": "Física do solo:",
+    "section": "Avaliação da estrutura",
+    "text": "Avaliação da estrutura\n\nMétodos:\n\n\n\n\n\n\n\n\n\nA\n\nAvaliação da agregação do\nsolo\n\n\n\nCAMPO\n\nMétodos de\ncampo\n\n\n\nA-&gt;CAMPO\n\n\n\n\nLAB\n\nMétodos de\nlaboratório\n\n\n\nA-&gt;LAB\n\n\n\n\nPERFIL\n\nPerfil cultural\n\n\n\nCAMPO-&gt;PERFIL\n\n\n\n\nVESS\n\nVESS\n\n\n\nCAMPO-&gt;VESS\n\n\n\n\nDRES\n\nDRES\n\n\n\nCAMPO-&gt;DRES\n\n\n\n\nRES\n\nResistência dos\nagregados\n\n\n\nLAB-&gt;RES\n\n\n\n\nSECO\n\nPeneiramento\nseco\n\n\n\nLAB-&gt;SECO\n\n\n\n\nUMIDO\n\nPeneiramento\númido\n\n\n\nLAB-&gt;UMIDO"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#avaliação-da-estrutura-1",
+    "href": "aula_3/aula_3.html#avaliação-da-estrutura-1",
+    "title": "Física do solo:",
+    "section": "Avaliação da estrutura",
+    "text": "Avaliação da estrutura\n\nCampo:\nQualitativos (perfil cultural)\n\nObservação da organização e da morfologia das estruturas no perfil. Delimitação de porções em profundidade e lateralmente com base em critérios de forma, tamanho, dureza e distribuição dos agregados. Presença ou ausência de poros visíveis a olho nu e continuidade.\nArtigo"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#avaliação-da-estrutura-2",
+    "href": "aula_3/aula_3.html#avaliação-da-estrutura-2",
+    "title": "Física do solo:",
+    "section": "Avaliação da estrutura",
+    "text": "Avaliação da estrutura\n\nCampo:\nVESS - Visual Evaluation of Soil Structure\nRápido e de baixo custo para qualificar a camada superficial em condições de campo.\n\nExtração de uma fatia de solo com 25 cm de profundidade, 10 cm de espessura e 20 cm de largura;\nFragmentação manual dos agregados em seus limites naturais ou pontos de fraqueza;"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#avaliação-da-estrutura-3",
+    "href": "aula_3/aula_3.html#avaliação-da-estrutura-3",
+    "title": "Física do solo:",
+    "section": "Avaliação da estrutura",
+    "text": "Avaliação da estrutura\n\nCampo:\nVESS - Visual Evaluation of Soil Structure\n\nTamanho, estabilidade e a porosidade dos agregados e raízes;\nComparação com uma chave visual (5 níveis de qualidade);\n\n1 estrutura boa e 5 estrutura pobre.\n\nCalculada uma nota ou índice de qualidade para a estrutura do solo.\n\n\nAdequado para monitorar e prever futuras melhorias ou ações de readequação de manejos adotados na área agrícola.\n\n\nChave de avaliação"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#avaliação-da-estrutura-4",
+    "href": "aula_3/aula_3.html#avaliação-da-estrutura-4",
+    "title": "Física do solo:",
+    "section": "Avaliação da estrutura",
+    "text": "Avaliação da estrutura\n\nCampo:\nDRES - Diagnóstico Rápido da Estrutura do Solo (Feito no Brasil!)\n\nColeta de fatia de solo: 10 cm de espessura, 20 cm de largura e até 25 cm de profundidade;\nAlocação em bandeja.\nManipulação do solo para se observar a forma e o tamanho dos agregados;\n\nPresença ou não de feições de compactação;\nForma e orientação das fissuras;\nRugosidade das faces de ruptura;\nResistência à ruptura;\nDistribuição e o aspecto do sistema radicular;\nAtividade biológica."
+  },
+  {
+    "objectID": "aula_3/aula_3.html#avaliação-da-estrutura-5",
+    "href": "aula_3/aula_3.html#avaliação-da-estrutura-5",
+    "title": "Física do solo:",
+    "section": "Avaliação da estrutura",
+    "text": "Avaliação da estrutura\n\nCampo:\nDRES - Diagnóstico Rápido da Estrutura do Solo (Feito no Brasil!)\nPontos de 1 até 6\n\n1 é indicativo de solo degradado;\n6 indicativo de melhor condição estrutural;\n\nAvaliação"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#avaliação-da-estrutura-métodos-1",
+    "href": "aula_3/aula_3.html#avaliação-da-estrutura-métodos-1",
+    "title": "Física do solo:",
+    "section": "Avaliação da estrutura métodos",
+    "text": "Avaliação da estrutura métodos\n\nLaboratório:\n\nPeneiramento seco: determina a quantidade de agregados estáveis;\nPeneiramento úmido: simula a quantidade de agregados estáveis após serem submetidos à energia disruptiva (água);"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#avaliação-da-estrutura-métodos-2",
+    "href": "aula_3/aula_3.html#avaliação-da-estrutura-métodos-2",
+    "title": "Física do solo:",
+    "section": "Avaliação da estrutura métodos",
+    "text": "Avaliação da estrutura métodos\n\nLaboratório:"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#avaliação-da-estrutura-métodos-3",
+    "href": "aula_3/aula_3.html#avaliação-da-estrutura-métodos-3",
+    "title": "Física do solo:",
+    "section": "Avaliação da estrutura métodos",
+    "text": "Avaliação da estrutura métodos\n\nLaboratório:\n\\[AGR_{c1} = \\frac{mag_1}{mag_t}*100\\]\n\\(AGR_{c1}=percentual~de~agregados~estáveis~na~classe~1\\)\n\\(mag_1= massa~de~agregados~retido~na~c1\\)\n\\(mag_t=massa~de~agregados~em~todas~as~classes\\)"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#avaliação-da-estrutura-métodos-4",
+    "href": "aula_3/aula_3.html#avaliação-da-estrutura-métodos-4",
+    "title": "Física do solo:",
+    "section": "Avaliação da estrutura métodos",
+    "text": "Avaliação da estrutura métodos\n\nLaboratório:\n\\[DMP = \\sum^n_{i=1} \\frac{Dm_i*mag_i}{mag_t}\\] \\(DMP=Diâmetro~médio~ponderado\\)\n\\(Dm_i=diâmetro~médio~da~classe_i\\)"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#melhoria-da-estrutura-1",
+    "href": "aula_3/aula_3.html#melhoria-da-estrutura-1",
+    "title": "Física do solo:",
+    "section": "Melhoria da estrutura",
+    "text": "Melhoria da estrutura"
+  },
+  {
+    "objectID": "aula_3/aula_3.html#melhoria-da-estrutura-2",
+    "href": "aula_3/aula_3.html#melhoria-da-estrutura-2",
+    "title": "Física do solo:",
+    "section": "Melhoria da estrutura",
+    "text": "Melhoria da estrutura"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#o-que-é-física-do-solo-1",
+    "href": "aula_1/aula_1.html#o-que-é-física-do-solo-1",
+    "title": "Física do solo:",
+    "section": "O que é física do solo?",
+    "text": "O que é física do solo?\n\n\nÉ o ramo da ciência do solo que têm como objetivo caracterizar os atributos físicos do solo…\n\n\n…Atributos caracterizados por meio de medição, predição e controle dos processos físicos.\n\n\nTrata do estudo das fases sólida, líquida e gasosa e dos fluxos de fluidos e energia do solo.\n\n\nEstabeleceu-se como disciplina científica no início do século XX (1901 - 2000)"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#o-que-é-o-solo-fisicamente",
+    "href": "aula_1/aula_1.html#o-que-é-o-solo-fisicamente",
+    "title": "Física do solo:",
+    "section": "O que é o solo fisicamente?",
+    "text": "O que é o solo fisicamente?\n\n\n…meio poroso, não rígido, trifásico, formado de partículas que possuem complexidade de forma, tamanho e estrutura mineralógica.\n\n\n…Sistema (pedosfera) que está relacionado com outros sistemas (litosfera, hidrosfera, atmosfera e biosfera) e que faz parte de sistemas maiores…"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#importância-das-propriedades-físicas-do-solo-1",
+    "href": "aula_1/aula_1.html#importância-das-propriedades-físicas-do-solo-1",
+    "title": "Física do solo:",
+    "section": "Importância das propriedades físicas do solo",
+    "text": "Importância das propriedades físicas do solo\n\n\nAs principais propriedades são:\n\nTextura.\nAgregação e estrutura (estabilidade de agregados).\nConsistência.\nDensidade do solo e de partículas.\nPorosidade (macro, micro, total,).\nÁgua no solo.\n\nImportância na relação solo-planta-atmosfera e solo-homem.\n\nCondição ideal para trabalhar no solo.\nEntendimento do solo como meio de suporte para as plantas.\nRedução da degradação do solo.\nPreservação de recursos."
+  },
+  {
+    "objectID": "aula_1/aula_1.html#importância-das-propriedades-físicas-do-solo-2",
+    "href": "aula_1/aula_1.html#importância-das-propriedades-físicas-do-solo-2",
+    "title": "Física do solo:",
+    "section": "Importância das propriedades físicas do solo",
+    "text": "Importância das propriedades físicas do solo\n\n\nAlgumas delas são alteráveis por meio da ação do homem.\nConhecimento aplicado em:\n\nErosão;\nManejo do solo;\nCompactação;\nIrrigação;\nDrenagem;\nUso de água;"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#unidades-de-medida-do-si",
+    "href": "aula_1/aula_1.html#unidades-de-medida-do-si",
+    "title": "Física do solo:",
+    "section": "Unidades de medida do SI",
+    "text": "Unidades de medida do SI\n\n\nComprimento: metro (m);\nMassa: quilograma (kg);\nTempo: segundo (s);\nCorrente elétrica: ampere (A);\nTemperatura termodinâmica: kelvin (K);\nQuantidade de matéria: mol (mol);\nIntensidade luminosa: candela (cd)."
+  },
+  {
+    "objectID": "aula_1/aula_1.html#unidades-de-medida-do-si-1",
+    "href": "aula_1/aula_1.html#unidades-de-medida-do-si-1",
+    "title": "Física do solo:",
+    "section": "Unidades de medida do SI",
+    "text": "Unidades de medida do SI"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#área-de-superfícies-planas",
+    "href": "aula_1/aula_1.html#área-de-superfícies-planas",
+    "title": "Física do solo:",
+    "section": "Área de superfícies planas",
+    "text": "Área de superfícies planas\n\nO que é área?\n\nÉ a medida da superfície de uma figura. Expressa comumente na unidade de metros quadrado (m2), centímetro quadrado (cm2) ou quilômetro quadrado (km2)."
+  },
+  {
+    "objectID": "aula_1/aula_1.html#área-de-superfícies-planas-1",
+    "href": "aula_1/aula_1.html#área-de-superfícies-planas-1",
+    "title": "Física do solo:",
+    "section": "Área de superfícies planas",
+    "text": "Área de superfícies planas\n\nRetângulo\nPossui 4 lados e 4 ângulos retos (90º). Lados opostos possuem a mesma medida e são paralelos.\n\n\n\n\nÁrea de retângulo:\n\\(Área = base * altura\\)\n\\(A = b*h\\)"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#área-de-superfícies-planas-2",
+    "href": "aula_1/aula_1.html#área-de-superfícies-planas-2",
+    "title": "Física do solo:",
+    "section": "Área de superfícies planas",
+    "text": "Área de superfícies planas\n\nQuadrado\nTipo especial de retângulo onde todos os lados possuem a mesma medida.\n\n\n\n\nÁrea de quadrado:\n\\(Área = lado * lado\\)\n\\(A = l^2\\)"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#área-de-superfícies-planas-3",
+    "href": "aula_1/aula_1.html#área-de-superfícies-planas-3",
+    "title": "Física do solo:",
+    "section": "Área de superfícies planas",
+    "text": "Área de superfícies planas\n\nParalelogramo\nFigura com 4 lados, em que os lados opostos são paralelos e têm a mesma medida.\n\n\n\n\nÁrea de paralelogramo:\n\\(Área = base * altura\\)\n\\(A = b*h\\)"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#área-de-superfícies-planas-4",
+    "href": "aula_1/aula_1.html#área-de-superfícies-planas-4",
+    "title": "Física do solo:",
+    "section": "Área de superfícies planas",
+    "text": "Área de superfícies planas\n\nLosango\nTodos os lados com mesma medida. Diagonais se cruzam em ângulo reto (90º).\n\n\n\n\nÁrea de losango:\n\\(Área = \\frac{diagonal~maior~*~diagonal~menor}{2}\\)\n\\(A = \\frac{D~*~d}{2}\\)"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#área-de-superfícies-planas-5",
+    "href": "aula_1/aula_1.html#área-de-superfícies-planas-5",
+    "title": "Física do solo:",
+    "section": "Área de superfícies planas",
+    "text": "Área de superfícies planas\n\nTrapézio\nQuadrilátero que tem apenas um par de lados paralelos.\n\n\n\n\nÁrea de trapézio:\n\\(Área = \\frac{(base~maior~+~base~menor)~*~altura}{2}\\)\n\\(A = \\frac{(B~+~b)~*~h}{2}\\)"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#área-de-superfícies-planas-6",
+    "href": "aula_1/aula_1.html#área-de-superfícies-planas-6",
+    "title": "Física do solo:",
+    "section": "Área de superfícies planas",
+    "text": "Área de superfícies planas\n\nTriângulo\nFigura com três lados. Vários tipos, mas mesma fórmula de área.\n\n\n\n\nÁrea de triângulo:\n\\(Área = \\frac{base~*~altura}{2}\\)\n\\(A = \\frac{b~*~h}{2}\\)"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#área-de-superfícies-planas-7",
+    "href": "aula_1/aula_1.html#área-de-superfícies-planas-7",
+    "title": "Física do solo:",
+    "section": "Área de superfícies planas",
+    "text": "Área de superfícies planas\n\nCírculo\nFigura formata por todos os pontos que estão a uma distância menor ou igual ao raio de um ponto central, chamado de centro.\n\n\n\n\nÁrea de círculo:\n\\(Área = altura~(r)*base~(\\pi*r)\\)\n\\(A = \\pi * r * r = \\pi * r^2\\)"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#área-de-superfícies-planas-8",
+    "href": "aula_1/aula_1.html#área-de-superfícies-planas-8",
+    "title": "Física do solo:",
+    "section": "Área de superfícies planas",
+    "text": "Área de superfícies planas"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#área-de-superfícies-3d",
+    "href": "aula_1/aula_1.html#área-de-superfícies-3d",
+    "title": "Física do solo:",
+    "section": "Área de superfícies 3d",
+    "text": "Área de superfícies 3d\n\nCilindro\n\n\\(Área = (2*\\pi*r^2) + (2*\\pi*r*h)\\)"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#volume-de-objetos",
+    "href": "aula_1/aula_1.html#volume-de-objetos",
+    "title": "Física do solo:",
+    "section": "Volume de objetos",
+    "text": "Volume de objetos\n\nO volume de um corpo diz respeito ao espaço que ele ocupa em termos das 3 dimensões.\n\n\n\\(Volume = 10 x 10 x 10 = 1000 cm^3\\)"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#volume",
+    "href": "aula_1/aula_1.html#volume",
+    "title": "Física do solo:",
+    "section": "Volume",
+    "text": "Volume\n\nCilindro\n\n\\(Área = (2*\\pi*r^2) + (2*\\pi*r*h)\\) e \\(Volume = \\pi * r^2 * h\\)"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#transformação-de-unidades",
+    "href": "aula_1/aula_1.html#transformação-de-unidades",
+    "title": "Física do solo:",
+    "section": "Transformação de unidades",
+    "text": "Transformação de unidades"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#outros-cálculos-importantes",
+    "href": "aula_1/aula_1.html#outros-cálculos-importantes",
+    "title": "Física do solo:",
+    "section": "Outros cálculos importantes",
+    "text": "Outros cálculos importantes\n\nRegra de 3\n\n\n\nA regra de três simples é uma proporção entre duas grandezas.\n\nex: Um carro gasta 10 L de gasolina a cada 140 km, quanto o carro gasta em 1000 km:\n\\[\n\\begin{array}{c|c}\n\\text{Distância (km)} & \\text{Combustível (L)}\\\\\n\\hline\n140 & 10\\\\\n1000 & x\n\\end{array}\n\\]\n\n\n\\[\n\\frac{140}{1000} = \\frac{10}{x}\n\\]\n\\[\n140x = 1000 \\cdot 10\n\\]\n\\[\nx = \\frac{10000}{140}\n\\]\n\\[\n\\boxed{x = 71,43\\text{ L}}\n\\]"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#outros-cálculos-importantes-1",
+    "href": "aula_1/aula_1.html#outros-cálculos-importantes-1",
+    "title": "Física do solo:",
+    "section": "Outros cálculos importantes",
+    "text": "Outros cálculos importantes\n\nPorcentagem\n\n\n\nForma de medir uma parte em relação ao todo.\n\nex: Tenho 10% de umidade no solo. Significa que do peso ou do volume total de solo 10 partes são ocupadas pela água. Se for em 100 g de solo são 10 g de água, como:\n\\(10\\%= \\frac{10*100}{100}= 10g\\)\n\\(10\\%= 0,1*100= 10g\\)\n\n\n\\(Valor~\\%=\\frac{valor~final-valor~inicial}{valor~inicial}*100\\)\n\n\nPorcentagens são comutativas.\n\nex: 10% de 50 é igual que 50% de 10.\n\\(0,1*50 = 5\\)\n\\(0,5*10 = 5\\)"
+  },
+  {
+    "objectID": "aula_1/aula_1.html#prática-1-1",
+    "href": "aula_1/aula_1.html#prática-1-1",
+    "title": "Física do solo:",
+    "section": "Prática 1",
+    "text": "Prática 1\n\nLista de questões relacionadas ao conhecimento básico e intermediário em matematica, transformação de unidades e cálculos de área e volume.\n\nLista enviada amanhã (11/08/2026) via email.\nEntrega no início da próxima aula teórica (18/08/2026)."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Mecanização agrícola - IFPR 2026/02",
+    "title": "Física do solo - IFPR 2026/02",
     "section": "",
-    "text": "Aula 1\n        História e desenvolvimento\n        \n      \n\n      \n        Aula 2\n        Em breve\n        Conteúdo será disponibilizado em breve.\n      \n\n    \n  \n\n  \n  \n    \n      📖\n      Selecione uma aula acima para visualizá-la aqui."
+    "text": "Aula 1\n        Características físicas do solo\n        \n      \n\n      \n        Aula 2\n        Composição do solo e textura\n        \n      \n      \n      \n        Aula 3\n        Agregação e estrutura do solo\n        \n      \n\n      \n        Aula 4\n        Densidade de partículas e do solo\n        \n      \n      \n      \n        Aula 5\n        Consistência do solo\n        \n      \n\n      \n        Aula 6\n        Porosidade do solo\n        \n      \n\n      \n        Aula 7\n        Umidade gravimétrica e volumétrica do solo\n        \n      \n      \n\n      \n        Aula 8\n        Em breve\n        Conteúdo será disponibilizado em breve.\n      \n\n    \n  \n\n  \n  \n    \n      📖\n      Selecione uma aula acima para visualizá-la aqui."
   },
   {
-    "objectID": "aula_3/aula_3.html#sistema-de-arrefecimento-1",
-    "href": "aula_3/aula_3.html#sistema-de-arrefecimento-1",
-    "title": "Mecanização agrícola:",
-    "section": "Sistema de arrefecimento",
-    "text": "Sistema de arrefecimento"
+    "objectID": "aula_2/aula_2.html#composição-do-solo",
+    "href": "aula_2/aula_2.html#composição-do-solo",
+    "title": "Física do solo:",
+    "section": "Composição do solo",
+    "text": "Composição do solo\n\nO solo é um corpo natural, trifásico, tridimensional, heterogêneo, dinâmico, formado por materiais minerais e orgânicos, contém matéria viva e pode ser vegetado.\nFases:\n\nFase sólida (matriz do solo).\nFase líquida.\nFase gasosa."
   },
   {
-    "objectID": "aula_3/aula_3.html#sistema-de-lubrificação-1",
-    "href": "aula_3/aula_3.html#sistema-de-lubrificação-1",
-    "title": "Mecanização agrícola:",
-    "section": "Sistema de lubrificação",
-    "text": "Sistema de lubrificação"
+    "objectID": "aula_2/aula_2.html#composição-do-solo-1",
+    "href": "aula_2/aula_2.html#composição-do-solo-1",
+    "title": "Física do solo:",
+    "section": "Composição do solo",
+    "text": "Composição do solo\n\n\n\nRepresentação de um solo (em volume) de textura média em condições ótimas para o crescimento das plantas."
   },
   {
-    "objectID": "aula_1/aula_1.html#uso-de-ferramentas",
-    "href": "aula_1/aula_1.html#uso-de-ferramentas",
-    "title": "Mecanização agrícola:",
-    "section": "Uso de ferramentas",
-    "text": "Uso de ferramentas\n\n\nHumanos possuem dois sistemas parientais envolvidos no comportamento das ferramentas.\n\nCircuito biológico que permite agarrar objetos;\nSistema artifático dedicado ao uso das ferramentas.\n\nPermite a compreensão a relação causal entre uso da ferramenta e obtenção de objetivo.\n\n\n\nHumanos criam ferramentas ou ferramentas criam humanos?"
+    "objectID": "aula_2/aula_2.html#composição-do-solo-2",
+    "href": "aula_2/aula_2.html#composição-do-solo-2",
+    "title": "Física do solo:",
+    "section": "Composição do solo",
+    "text": "Composição do solo\n\nFase líquida\n\nOcupa parcialmente ou totalmente o espaço poroso do solo;\nVariação espacial e temporal (condições climáticas, estado de energia no solo e relações solo-planta-atmosfera);\nResponsável pela dissolução e transporte de íons e compostos às plantas;\nÁgua do solo é diferente de solução do solo;\nGoverna a maior parte dos processos que ocorrem no solo, direta ou indiretamente."
   },
   {
-    "objectID": "aula_1/aula_1.html#modelo-em-espiral-expansiva",
-    "href": "aula_1/aula_1.html#modelo-em-espiral-expansiva",
-    "title": "Mecanização agrícola:",
-    "section": "Modelo em espiral expansiva",
-    "text": "Modelo em espiral expansiva\nJ. Navarro e P. A. Hancock criam o “Modelo em espiral expansiva” para descrever o caminho evolutivo da simbiose humano-ferramenta \n\nRotações sucessivas da espiral denotam um “progresso” acumulado ao longo do tempo\n\n\n\nJ. Navarro\n\n\n\n\nAqui, não vemos os humanos como os criadores iniciais das ferramentas. Na verdade, a presença a priori de ferramentas no ambiente ambiente explica, ab initio, por que a espécie homo sapiens evoluiu da forma que a história registra. Assim, propomos que as ferramentas criem os humanos. A simbiose subsequente entre humanos e essas ferramentas, retratada como uma estrutura espiral cumulativa, serve para enquadrar essa evolução de tecnologias elaborativas que foram usadas ao longo do tempo para alcançar objetivos socialmente desejados. A partir de nossa premissa, imaginamos linhas evidentes de progresso que podem ser antecipadas para o futuro dessa díade humano-ferramenta."
+    "objectID": "aula_2/aula_2.html#composição-do-solo-3",
+    "href": "aula_2/aula_2.html#composição-do-solo-3",
+    "title": "Física do solo:",
+    "section": "Composição do solo",
+    "text": "Composição do solo\n\nFase gasosa\n\nEspaço poroso momentaneamente não ocupado por água;\nPode ser considerado o “ar” ou a “atmosfera” do solo;\nComposto por diversos gases.\n\nN2, O2, CO2, CH4, C2H6, H2S, N2O, NO."
   },
   {
-    "objectID": "aula_1/aula_1.html#modelo-em-espiral-expansiva-1",
-    "href": "aula_1/aula_1.html#modelo-em-espiral-expansiva-1",
-    "title": "Mecanização agrícola:",
-    "section": "Modelo em espiral expansiva",
-    "text": "Modelo em espiral expansiva\nO término de cada ciclo corresponde a uma etapa no desenvolvimento pontual das ferramentas associadas. Isso é marcado por um ponto vermelho\n\nJ. Navarro"
+    "objectID": "aula_2/aula_2.html#composição-do-solo-4",
+    "href": "aula_2/aula_2.html#composição-do-solo-4",
+    "title": "Física do solo:",
+    "section": "Composição do solo",
+    "text": "Composição do solo\n\nFase sólida orgânica\n\nGeralmente menos de 5%;\nMaterial orgânico em diferentes estágios de alteração;\nHúmus: substâncias húmicas (80-90% da MOS).\nFração com alta área superficial específica (ASE);\nDensidade de cargas elétricas na superfície;\nCapacidade de troca de cátions (CTC);\nAfinidade com água;\nDensidade de partícula."
   },
   {
-    "objectID": "aula_1/aula_1.html#modelo-em-espiral-expansiva-2",
-    "href": "aula_1/aula_1.html#modelo-em-espiral-expansiva-2",
-    "title": "Mecanização agrícola:",
-    "section": "Modelo em espiral expansiva",
-    "text": "Modelo em espiral expansiva\n1 - O primeiro ciclo vai dos pés descalços, caminhando (ou correndo), até o uso de calçados.\n\nOs calçados podem ser feitos de peles de animais, folhagens ou outros materiais não manufaturados. Cada um desses materiais diferentes pode oferecer proteção aos pés. Ao final desse ciclo inicial, os pés estão protegidos de forma eficiente. As solas dos calçados oferecem a vantagem adicional de evitar escorregões, quedas e lesões nos pés. No entanto, o uso prolongado de calçados tem um preço. A eficácia do amortecimento natural do calcanhar é reduzida e A biomecânica da caminhada e da corrida sofre algumas modificações. Isso resulta em certa perda de eficiência energética em comparação com a caminhada descalça.\n\n\nJ. Navarro"
+    "objectID": "aula_2/aula_2.html#composição-do-solo-5",
+    "href": "aula_2/aula_2.html#composição-do-solo-5",
+    "title": "Física do solo:",
+    "section": "Composição do solo",
+    "text": "Composição do solo\n\nFase sólida mineral\n\nPartículas minerais herdadas do material de origem do solo ou formadas por processos pedogenéticos;\nPropriedades químicas das partículas minerais;\nDiâmetro das partículas (tamanho);\nASE;\nMineralogia influência nas propriedades globais dos solos;"
   },
   {
-    "objectID": "aula_1/aula_1.html#modelo-em-espiral-expansiva-3",
-    "href": "aula_1/aula_1.html#modelo-em-espiral-expansiva-3",
-    "title": "Mecanização agrícola:",
-    "section": "Modelo em espiral expansiva",
-    "text": "Modelo em espiral expansiva\n2 - O segundo ciclo de mobilidade vai do uso de calçados à montaria em animais.\n\nMontar a cavalo melhora a eficiência da mobilidade, principalmente em termos de velocidade de deslocamento e gasto energético pessoal. No entanto, também acarreta o potencial de redução das capacidades físicas humanas (por exemplo, capacidade aeróbica de longa duração, etc.).\n\n\nJ. Navarro"
+    "objectID": "aula_2/aula_2.html#composição-do-solo-6",
+    "href": "aula_2/aula_2.html#composição-do-solo-6",
+    "title": "Física do solo:",
+    "section": "Composição do solo",
+    "text": "Composição do solo\n\nComposição do solo em volume e peso"
   },
   {
-    "objectID": "aula_1/aula_1.html#modelo-em-espiral-expansiva-4",
-    "href": "aula_1/aula_1.html#modelo-em-espiral-expansiva-4",
-    "title": "Mecanização agrícola:",
-    "section": "Modelo em espiral expansiva",
-    "text": "Modelo em espiral expansiva\n3 - O terceiro ciclo emerge do transporte animal para bicicletas e, posteriormente, para veículos motorizados.\n\nOs veículos motorizados aprimoram ainda mais a mobilidade, mas também têm o potencial de diminuir a utilidade inerente e comparativa da locomoção física humana, caso esta não seja praticada com a mesma frequência de antes.\n\n\nJ. Navarro"
+    "objectID": "aula_2/aula_2.html#composição-do-solo-7",
+    "href": "aula_2/aula_2.html#composição-do-solo-7",
+    "title": "Física do solo:",
+    "section": "Composição do solo",
+    "text": "Composição do solo\n\nClassificação de diâmetro das partículas\n\n\n\n\nDenominação\nDiâmetro (mm)\n\n\n\n\nMatacões\n&gt; 200\n\n\nCalhaus\n200 - 20\n\n\nCascalhos\n20 - 2\n\n\nAreia grossa\n2 - 0,2\n\n\nAreia fina\n0,2 - 0,05\n\n\nSilte\n0,05 - 0,002\n\n\nArgila\n&lt; 0,002"
   },
   {
-    "objectID": "aula_1/aula_1.html#modelo-em-espiral-expansiva-5",
-    "href": "aula_1/aula_1.html#modelo-em-espiral-expansiva-5",
-    "title": "Mecanização agrícola:",
-    "section": "Modelo em espiral expansiva",
-    "text": "Modelo em espiral expansiva\n4 - O quarto ciclo, e atualmente o último, vai de veículos motorizados controlados manualmente a veículos autônomos.\n\nEste ciclo também inclui o desenvolvimento de veículos terrestres, aéreos e marítimos, juntamente com diferentes soluções de automação associadas (por exemplo, controle parcial e compartilhado). Os veículos autônomos prometem aprimorar ainda mais a mobilidade social, que eventualmente se tornará quase sem esforço, tanto em termos físicos quanto cognitivos. No entanto, isso também tem um preço, com a redução da habilidade de direção e de outras habilidades, como capacidade de navegação, leitura de mapas e consciência espacial.\n\n\nJ. Navarro"
+    "objectID": "aula_2/aula_2.html#composição-do-solo-8",
+    "href": "aula_2/aula_2.html#composição-do-solo-8",
+    "title": "Física do solo:",
+    "section": "Composição do solo",
+    "text": "Composição do solo\n\nClassificação de diâmetro das partículas\n\n\n\n\n\n\nMatacões (&gt; 200 mm)\n\n\n\n\n\n\n\nCalhaus (20 - 200 mm)"
   },
   {
-    "objectID": "aula_1/aula_1.html#modelo-em-espiral-expansiva-6",
-    "href": "aula_1/aula_1.html#modelo-em-espiral-expansiva-6",
-    "title": "Mecanização agrícola:",
-    "section": "Modelo em espiral expansiva",
-    "text": "Modelo em espiral expansiva\n5 - Um quinto ciclo de mobilidade pode ser facilmente concebido. Ele começaria com a automação parcial e evoluiria para um sistema de transporte totalmente autônomo, que opera sem motoristas humanos. No entanto, as questões de mobilidade não serão resolvidas apenas por esses veículos autônomos. Novos problemas serão identificados, já que a mobilidade ainda poderá ser considerada limitada. Consequentemente, outras opções de mobilidade poderão ser previstas.\n\nNosso modelo em espiral desenvolve uma série de previsões. Primeiro, os humanos continuarão a criar novas ferramentas para gerar melhorias, alterando a natureza do trabalho mais uma vez. Segundo, nosso modelo em espiral prevê que as ferramentas não apenas nos empoderam, como também necessariamente alteram o problema inicial para o qual foram criadas; e, por sua vez, nos transformam. Terceiro, o modelo em espiral também captura a natureza cumulativa das ferramentas que criamos e usamos. Novas ferramentas são projetadas com base em ferramentas desenvolvidas anteriormente que modificaram o problema original. Quarto, o modelo também demonstra que a criação de uma ferramenta, mesmo as muito eficazes, não elimina todas as ferramentas preexistentes dedicadas a resolver o mesmo desafio."
+    "objectID": "aula_2/aula_2.html#composição-do-solo-9",
+    "href": "aula_2/aula_2.html#composição-do-solo-9",
+    "title": "Física do solo:",
+    "section": "Composição do solo",
+    "text": "Composição do solo\n\nClassificação de diâmetro das partículas\n\nCascalho (2 - 20 mm)"
   },
   {
-    "objectID": "aula_1/aula_1.html#modelo-em-espiral-expansiva-7",
-    "href": "aula_1/aula_1.html#modelo-em-espiral-expansiva-7",
-    "title": "Mecanização agrícola:",
-    "section": "Modelo em espiral expansiva",
-    "text": "Modelo em espiral expansiva\nE qual será o preço pago por delegar o pensamento para a tecnologia?"
+    "objectID": "aula_2/aula_2.html#composição-do-solo-10",
+    "href": "aula_2/aula_2.html#composição-do-solo-10",
+    "title": "Física do solo:",
+    "section": "Composição do solo",
+    "text": "Composição do solo\n\nClassificação de diâmetro das partículas\n\n\n\n\n\nflowchart TD\n\n    A[\"&lt;b&gt;Fase sólida do solo&lt;/b&gt;\"]\n\n    A --&gt; B[\"Areia&lt;br&gt;&lt;b&gt;2000–53 µm&lt;/b&gt;\"]\n    A --&gt; C[\"Silte&lt;br&gt;&lt;b&gt;53–2 µm&lt;/b&gt;\"]\n    A --&gt; D[\"Argila&lt;br&gt;&lt;b&gt;&lt; 2 µm&lt;/b&gt;\"]\n\n    D --&gt; E[\"Mineral\"]\n    D --&gt; F[\"Orgânica\"]\n\n    E --&gt; G[\"Argilominerais\"]\n    G --&gt; H[\"Minerais 2:1\"]\n    G --&gt; I[\"Minerais 1:1\"]\n\n    E --&gt; J[\"Óxidos\"]\n    J --&gt; K[\"Óxidos de ferro\"]\n    J --&gt; L[\"Óxidos de alumínio\"]\n\n    style A fill:#000,color:#fff,stroke:#000\n    style B fill:#000,color:#fff,stroke:#000\n    style C fill:#000,color:#fff,stroke:#000\n    style D fill:#000,color:#fff,stroke:#000\n    style E fill:#000,color:#fff,stroke:#000\n    style F fill:#000,color:#fff,stroke:#000\n    style G fill:#000,color:#fff,stroke:#000\n    style H fill:#000,color:#fff,stroke:#000\n    style I fill:#000,color:#fff,stroke:#000\n    style J fill:#000,color:#fff,stroke:#000\n    style K fill:#000,color:#fff,stroke:#000\n    style L fill:#000,color:#fff,stroke:#000"
   },
   {
-    "objectID": "aula_1/aula_1.html#section",
-    "href": "aula_1/aula_1.html#section",
-    "title": "Mecanização agrícola:",
-    "section": "",
-    "text": "Era Paleolítica (Idade da pedra)\n\n\nMarcado pelo uso de ferramentas de pedra e pelo desenvolvimento das primeiras sociedades de caça e coleta.\n\n\n\n\n\nA. Falcucci\n\n\n\n\n\n\n\nEra Mesolítica\n\n\nDesenvolvimento de ferramentas e estratégias mais sofisticadas para sobrevivência.\nVida mais sedentária (domesticação)\n\n\n\n\n\nI. G. Yaroslavski\n\n\n\nMicrolitos que são pequenas lâminas, ferramentas de pesca e redes\n\n\n\nEra Neolítica (Nova idade da Pedra)\n\n\nPrimeira revolução agrícola (caça/coleta para agricultura).\nAssentamentos permanentes.\n\n\n\n\n\nN. Mazzucco\n\n\n\n\nIdade dos metais\n\n\nAvanço na metalurgia (produção de ferramentas e armas)\nAumento da produtividade agrícola"
+    "objectID": "aula_2/aula_2.html#minerais-do-solo-1",
+    "href": "aula_2/aula_2.html#minerais-do-solo-1",
+    "title": "Física do solo:",
+    "section": "Minerais do solo",
+    "text": "Minerais do solo\n\nComposição da crosta terrestre (Massa)"
   },
   {
-    "objectID": "aula_1/aula_1.html#revolução-agrícola-e-uso-de-máquinas-1",
-    "href": "aula_1/aula_1.html#revolução-agrícola-e-uso-de-máquinas-1",
-    "title": "Mecanização agrícola:",
-    "section": "Revolução agrícola e uso de máquinas",
-    "text": "Revolução agrícola e uso de máquinas\naqui vai umas bobagens de revolução agrícola (Grã-Bretanha e europa basicamente)"
+    "objectID": "aula_2/aula_2.html#minerais-do-solo-2",
+    "href": "aula_2/aula_2.html#minerais-do-solo-2",
+    "title": "Física do solo:",
+    "section": "Minerais do solo",
+    "text": "Minerais do solo\n\nRespeitando regras, ânions de oxigênio se organizam em torno de cátions centrais (Si, Al e Fe). São formados os tetraedros e os octaedros."
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-1",
-    "href": "aula_1/aula_1.html#definições-1",
-    "title": "Mecanização agrícola:",
-    "section": "Definições",
-    "text": "Definições\nOperação agrícola:\n\n\nToda atividade diretamente e permanentemente relacionada com a execução do trabalho de produção agropecuária.\n\n\n\nA mecanização é uma operação agrícola\nOutras operações:\n\n\n\n\nManejo de pragas;\nIrrigação;\nCalagem do solo;\nProdução de mudas;\n\n\n\nPlantio e semeadura;\nColheira;\nArmazenamento;\nComercialização\n\n\n\n\nMuitas disciplinas do curso de agronomia é voltado em aprender “operações agrícolas”."
+    "objectID": "aula_2/aula_2.html#minerais-do-solo-3",
+    "href": "aula_2/aula_2.html#minerais-do-solo-3",
+    "title": "Física do solo:",
+    "section": "Minerais do solo",
+    "text": "Minerais do solo\n\n\nMinerais primários\nNão alterado quimicamente desde sua deposição e cristalização da lava derretida.\n\n\nMinerais secundários\nResulta da intemperização dos minerais primários."
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-2",
-    "href": "aula_1/aula_1.html#definições-2",
-    "title": "Mecanização agrícola:",
-    "section": "Definições",
-    "text": "Definições\nO que é mecanização agrícola?\n\n\nProcesso de utilizar máquinas com objetivo de realizar terefas ou operações.\n\n\n\n\nUso de um conjunto de máquinas, implementos e ferramentas de forma técnica, racional e economicamente organizada, para a execução das tarefas exigidas nos sistemas de produção agrícola.\n\n\n\n\nProcesso pelo qual o trabalho humano ao longo de toda a cadeia de valor agrícola é substituído por outras fontes de energia, como energia animal, energia fóssil ou energia renovável.\n\n\n\nCada máquina tem sua função e é projetada para determinado objetivo específico"
+    "objectID": "aula_2/aula_2.html#minerais-do-solo-4",
+    "href": "aula_2/aula_2.html#minerais-do-solo-4",
+    "title": "Física do solo:",
+    "section": "Minerais do solo",
+    "text": "Minerais do solo\n\n\n\n\n\n\n\nÓxido de Al\n\n\n\n\n\n\n\nCaulinita\n\n\n\n\n\n\n\nCamada 2:1"
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-3",
-    "href": "aula_1/aula_1.html#definições-3",
-    "title": "Mecanização agrícola:",
-    "section": "Definições",
-    "text": "Definições\nMáquina agrícola:\n\n\nTodo equipamento, motorizado ou não, cujos componentes apresentam movimentos relativos, além do deslocamento próprio ou gerado por outra máquina, que seja especificamente projetado para converter energia e transmitir a ação de forças, a fim de realizar tarefas agrícolas."
+    "objectID": "aula_2/aula_2.html#textura-do-solo-1",
+    "href": "aula_2/aula_2.html#textura-do-solo-1",
+    "title": "Física do solo:",
+    "section": "Textura do solo",
+    "text": "Textura do solo\n\nÉ a característica do solo que diz respeito as proporções relativas das frações areia, silte e argila do solo. Essas frações são advindas da fração geral chamada Terra Fina.\n\nA textura refere-se à sensação que a amostra oferece ao tato.\n\n\nA textura é a forma de determinar a granulometria do solo (distribuição do tamanho das partículas)."
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-4",
-    "href": "aula_1/aula_1.html#definições-4",
-    "title": "Mecanização agrícola:",
-    "section": "Definições",
-    "text": "Definições\nMáquina agrícola:\n\n\nMáquina agrícola é o conjunto de órgãos constrangidos em seus movimentos por obstáculos fixos e de resistência suficiente para transmitir o efeito de forças e transformar energia - Mialhe (1974)\n\n\n\nórgãos constrangidos: órgãos são as partes e constrangidos pq possuem movimento limitado."
+    "objectID": "aula_2/aula_2.html#textura-do-solo-2",
+    "href": "aula_2/aula_2.html#textura-do-solo-2",
+    "title": "Física do solo:",
+    "section": "Textura do solo",
+    "text": "Textura do solo\n\n\nTerra fina seca ao ar (TFSA) é a fração do solo menor que 2 mm.\n\n\nInterações mecânicas, físicas, biológicas e químicas"
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-5",
-    "href": "aula_1/aula_1.html#definições-5",
-    "title": "Mecanização agrícola:",
-    "section": "Definições",
-    "text": "Definições\nExemplos de máquina agrícola:\n\n\n\n\n\n\nColheitadeira\n\n\n\n\n\n\n\nTrator"
+    "objectID": "aula_2/aula_2.html#textura-do-solo-3",
+    "href": "aula_2/aula_2.html#textura-do-solo-3",
+    "title": "Física do solo:",
+    "section": "Textura do solo",
+    "text": "Textura do solo\n\nTamanho das partículas"
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-6",
-    "href": "aula_1/aula_1.html#definições-6",
-    "title": "Mecanização agrícola:",
-    "section": "Definições",
-    "text": "Definições\n\n\nMáquina motora:\n\n\nÉ aquela “responsável pela conversão da energia natural em trabalho motor” - Mialhe (1996)\n\n\n\nMáquina movida:\n\n\nÉ aquela “responsável pela execução das operações e onde ocorrem resistências passivas (atrito e inércia) que para serem vencidas requerem a realização de trabalho resistente” - Mialhe (1996)"
+    "objectID": "aula_2/aula_2.html#textura-do-solo-4",
+    "href": "aula_2/aula_2.html#textura-do-solo-4",
+    "title": "Física do solo:",
+    "section": "Textura do solo",
+    "text": "Textura do solo\n\nMinerais por fração"
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-7",
-    "href": "aula_1/aula_1.html#definições-7",
-    "title": "Mecanização agrícola:",
-    "section": "Definições",
-    "text": "Definições\nÓrgãos ativos:\n\nÉ a parte de um equipamento projetada para realizar sua função principal.\n\n\nNo arado de discos são os discos.\n\nCorta, levanta e inverte o solo."
+    "objectID": "aula_2/aula_2.html#textura-do-solo-5",
+    "href": "aula_2/aula_2.html#textura-do-solo-5",
+    "title": "Física do solo:",
+    "section": "Textura do solo",
+    "text": "Textura do solo\n\nTamanho das partículas\n\n\n\n\n\n\n\n\n\nPropriedade\nAreia\nSilte\nArgila\n\n\n\n\nForma\nDenteada\nLigeiramente irregular\nLâminas/tubos\n\n\nSensação\nAspereza\nSuave/talco\nPegajoso\n\n\nPlasticidade\nNão plástica\nLigeiramente plástica\nPlástica\n\n\nCoesão\nNão coesiva\nLigeiramente coesiva\nCoesiva/gelatinosa\n\n\nÁrea superficial\nMuito baixa\nModerada\nMuito alta\n\n\nCapacidade de retenção de água\nAusente/pouca\nModerada\nMuito alta\n\n\nCTC\nAusente\nMuito baixa\nAlta ou muito alta\n\n\nMineralogia\nminerais primários\nminerais primários\nminerais secundários"
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-8",
-    "href": "aula_1/aula_1.html#definições-8",
-    "title": "Mecanização agrícola:",
-    "section": "Definições",
-    "text": "Definições\nImplemento agrícola:\n\n\nTodo equipamento movido concebido para realizar trabalhos agrícolas, que transforma energia devido à execução de sua função, podendo apresentar movimento relativo entre seus componentes decorrente unicamente da interação com o meio.\n\n\n\n\nConjunto de órgãos que não apresentam movimentos relativos e não têm capacidade para transformar energia; seu único movimento é o de deslocamento, normalmente imprimido por uma máquina motora - Mialhe (1974)\n\n\n\nórgãos constrangidos: órgãos são as partes e constrangidos pq possuem movimento limitado."
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-1",
+    "href": "aula_2/aula_2.html#determinação-da-textura-1",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nDuas formas: no campo e no laboratório"
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-9",
-    "href": "aula_1/aula_1.html#definições-9",
-    "title": "Mecanização agrícola:",
-    "section": "Definições",
-    "text": "Definições\nExemplos de implementos agrícola:\n\n\n\n\n\n\nGrade de discos\n\n\n\n\n\n\n\nSemeador"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-2",
+    "href": "aula_2/aula_2.html#determinação-da-textura-2",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nNo campo"
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-10",
-    "href": "aula_1/aula_1.html#definições-10",
-    "title": "Mecanização agrícola:",
-    "section": "Definições",
-    "text": "Definições\nMáquinas vs implementos agrícolas:\n\n\n\nMáquinas Agrícolas\nImplementos Agrícolas\n\n\n\n\nColhedora/Recolhedora\nArados de aivecas\n\n\nDistribuidor de fertilizantes\nArados de discos\n\n\nEnfardadora\nCultivadores\n\n\nPlantadora/Semeadora\nEscarificadores\n\n\nPulverizador\nGrades de dentes\n\n\nRoçadora\nGrades de molas\n\n\nTransplantadora\nGrades de discos\n\n\nTrator\nRolo-faca\n\n\nTriturador de resíduos\nSubsoladores"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-3",
+    "href": "aula_2/aula_2.html#determinação-da-textura-3",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nNo campo\n\nBaseado na correlação entre a sensibilidade ao tato com o tamanho e distribuição das partículas unitárias do solo;\nAreia: Sensação de atrito (aspereza).\n\nSolta em grão simples, não-plastica, não-pegajosa, não-deformada.\n\nSilte: Sensação sedosa.\n\nLigeira coesão quando seca.\n\nArgila: Sensação de pegajosidade e de plasticidade.\n\nMuito pegajosa quando úmida, dura e muito coesa quando seca.\n\nAtenção! É uma avaliação muito subjetiva e ligada a experiência da pessoa."
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-11",
-    "href": "aula_1/aula_1.html#definições-11",
-    "title": "Mecanização agrícola:",
-    "section": "Definições",
-    "text": "Definições\nFerramenta agrícola:\n\n\nQualquer instrumento, utensílio ou dispositivo necessário para o desempenho de uma atividade, utilizado para auxiliar as tarefas agrícolas."
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-4",
+    "href": "aula_2/aula_2.html#determinação-da-textura-4",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nNo laboratório\nObtenção da TFSA:"
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-12",
-    "href": "aula_1/aula_1.html#definições-12",
-    "title": "Mecanização agrícola:",
-    "section": "Definições",
-    "text": "Definições\nExemplos de ferramentas agrícola"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-5",
+    "href": "aula_2/aula_2.html#determinação-da-textura-5",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nNo laboratório\nEtapas:\n\nPré-tratamento;\nDispersão;\nSeparação das frações do solo."
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-13",
-    "href": "aula_1/aula_1.html#definições-13",
-    "title": "Mecanização agrícola:",
-    "section": "Definições",
-    "text": "Definições\nSistema\n\nConjunto de elmentos interligados e interdependentes que funcionam juntos para realizar uma função.\n\n\nSistema de cultivo\n\nRefere-se às práticas comuns de manejo associadas a uma determinada espécie vegetal, visando sua produção a partir da combinação lógica e ordenada de um conjunt ode atividades e operações. - EMBRAPA"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-6",
+    "href": "aula_2/aula_2.html#determinação-da-textura-6",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nNo laboratório\nPré-tratamentos:\n\nRemoção da matéria orgânica via oxidação com peróxido de hidrogênio;\nRemoção dos óxidos de ferro e alumínio*;\nRemoção de carbonados por meio de tratamento com ácidos (HCl);\nRemoção de sais solúveis por meio de lixiviação (diálise).\n\n\nSolos do Brasil, de forma geral, é removido apenas a matéria orgânica."
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-14",
-    "href": "aula_1/aula_1.html#definições-14",
-    "title": "Mecanização agrícola:",
-    "section": "Definições",
-    "text": "Definições\nSistema de produção\n\nComposto pelo conjunto de ssistemas de cultivo no âmbito de uma propriedade rural, definidos a partir dos fatores de produção e interligados por um processo de gestão. - EMBRAPA"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-7",
+    "href": "aula_2/aula_2.html#determinação-da-textura-7",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nNo laboratório\nDispersão:\n\nFinalidade de destruir os agregados do solo, transformando-os em partículas individualizadas.\nDispersão física e química.\n\nDispersão física por meio de agitação mecânica.\nDispersão química por meio de produto químico (NaOH 1 mol).\n\nDispersão física por meio de agitação horizontal (choque de partículas).\nDispersão química por meio do aumento da espessura da dupla camada difusa das partículas de argila com cátions monovalentes com hidratação. A mudança do pH também altera o balanço eletroquímico do meio (aumento de cargas negativas)."
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-relacionadas-ao-solo-para-cultivo-1",
-    "href": "aula_1/aula_1.html#definições-relacionadas-ao-solo-para-cultivo-1",
-    "title": "Mecanização agrícola:",
-    "section": "Definições relacionadas ao solo para cultivo",
-    "text": "Definições relacionadas ao solo para cultivo\nCampo de cultivo\n\nSão glebas de terra subdivididas por divisores naturais (rios, valas, montanhas, etc) ou artificiais (estradas, cercas, carreadores, etc.)."
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-8",
+    "href": "aula_2/aula_2.html#determinação-da-textura-8",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nNo laboratório\nDispersão:\n\n\n\nVideo"
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-relacionadas-ao-solo-para-cultivo-2",
-    "href": "aula_1/aula_1.html#definições-relacionadas-ao-solo-para-cultivo-2",
-    "title": "Mecanização agrícola:",
-    "section": "Definições relacionadas ao solo para cultivo",
-    "text": "Definições relacionadas ao solo para cultivo\nPartes de um campo de cultivo"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-9",
+    "href": "aula_2/aula_2.html#determinação-da-textura-9",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nNo laboratório\nDispersão:"
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-relacionadas-ao-solo-para-cultivo-3",
-    "href": "aula_1/aula_1.html#definições-relacionadas-ao-solo-para-cultivo-3",
-    "title": "Mecanização agrícola:",
-    "section": "Definições relacionadas ao solo para cultivo",
-    "text": "Definições relacionadas ao solo para cultivo\n\nCarreadores são vias de acesso de talhões que se interligam entre si e com as estradas da propriedade.\n\n\nCabeceiras são as faixas de terreno deixadasem cada extremidade do talhão. Serve para o giro de máquinas.\n\n\nLeiras são faixas estreitas de terreno deixadas de cada lado do talhão desde uma cabeceira à outra. Servem para manter a largura dos carreadores e evitar a destruição de seus sangradores e canais de escoamento de água."
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-10",
+    "href": "aula_2/aula_2.html#determinação-da-textura-10",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nNo laboratório\nSeparação das frações:\n\nA fração areia é removida por meio de peneiramento úmido (peneira com malha de 0,053 mm);\nToda a amostra é lavada para remover a argila e o silte da peneira e reter apenas a areia;\nTodo conteúdo é armazenado em uma proveta com volume de 1 L (não pode ultrapassar).\nA determinação do silte e da argila ocorre por sedimentação."
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-relacionadas-ao-solo-para-cultivo-4",
-    "href": "aula_1/aula_1.html#definições-relacionadas-ao-solo-para-cultivo-4",
-    "title": "Mecanização agrícola:",
-    "section": "Definições relacionadas ao solo para cultivo",
-    "text": "Definições relacionadas ao solo para cultivo\nTalhão\n\nSão parcelas dos campos de cultivos que são efetivamente mobilizadas através das operações de preparo periódico do solo e que serão, futuramente ocupadas pelas plantas da cultura a ser instalada."
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-11",
+    "href": "aula_2/aula_2.html#determinação-da-textura-11",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nNo laboratório\nSeparação das frações:"
   },
   {
-    "objectID": "aula_1/aula_1.html#definições-relacionadas-ao-solo-para-cultivo-5",
-    "href": "aula_1/aula_1.html#definições-relacionadas-ao-solo-para-cultivo-5",
-    "title": "Mecanização agrícola:",
-    "section": "Definições relacionadas ao solo para cultivo",
-    "text": "Definições relacionadas ao solo para cultivo\nTipos e formatos de talhões"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-12",
+    "href": "aula_2/aula_2.html#determinação-da-textura-12",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nNo laboratório\nSeparação das frações:"
   },
   {
-    "objectID": "aula_1/aula_1.html#por-que-mecanizar",
-    "href": "aula_1/aula_1.html#por-que-mecanizar",
-    "title": "Mecanização agrícola:",
-    "section": "Por que mecanizar?",
-    "text": "Por que mecanizar?\n\nReduz o tempo para o término das terefas;\nAumento da produtividade;\nMelhora a qualidade das operações;\nReduz o desgaste do trabalhador;"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-13",
+    "href": "aula_2/aula_2.html#determinação-da-textura-13",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nNo laboratório\nA determinação do teor de argila é baseada no tempo necessário para que uma quantidade (cm) da solução da proveta contenha apenas argila.\n\nIsso está relacionado com a lei de Stokes:\n\nA velocidade de queda (sedimentação) de um material sólido no líquido ocorre de acordo com o seu diãmetro (esférico) e a viscosidade do líquido"
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-1",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-1",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nTempo gasto nas operações"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-14",
+    "href": "aula_2/aula_2.html#determinação-da-textura-14",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nLei de Stokes\n\\[\n\\vec{F} = -6\\pi r\\eta\\vec{v}\n\\]\nonde:\n\n\\(\\vec{F}\\) é a força de fricção;\n\\(r\\) é o raio de Stokes da partícula;\n\\(\\eta\\) é a viscosidade do fluido; e\n\\(\\vec{v}\\) é a velocidade da partícula."
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-2",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-2",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nTempo gasto nas operações"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-15",
+    "href": "aula_2/aula_2.html#determinação-da-textura-15",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nLei de Stokes\n\\[\nV_s = \\frac{2}{9}\\frac{r^2 g(\\rho_p-\\rho_f)}{\\eta}\n\\]\nonde:\n\n\\(V_s\\) é a velocidade de sedimentação das partículas (velocidade limite);\n\\(g\\) é a aceleração da gravidade;\n\\(r\\) é o raio de Stokes da partícula;\n\\(\\rho_p\\) é a densidade das partículas;\n\\(\\eta\\) é a viscosidade do fluido;\n\\(\\rho_f\\) é a densidade do fluido."
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-3",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-3",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nTempo gasto nas operações\n\nO ganho na eficiência do trabalho agrícola com a mecanização é enorme: são necessárias apenas 2 a 5 horas de trabalho agrícola para produzir o alimento consumido por uma pessoa em um ano. Esse valor é muito menor do que o tempo que uma pessoa média gasta comprando comida, cozinhando ou comendo. - Ibarrola-Rivas et al. (2016)\n\n\nSe, cada trabalhador rural produzir trabalho gerando comida por ~21 horas, temos comida para suprir toda a população mundial por uma ano."
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-16",
+    "href": "aula_2/aula_2.html#determinação-da-textura-16",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nLei de Stokes\n\\[\nt = \\frac{18~\\eta~h}{g(\\rho_s-\\rho_l)\\phi^2}\n\\]\n\n\\(t\\) é o tempo de queda (s);\n\\(h\\) é altura da queda (cm) - 10 ou 5 cm desde a superfície da solução;\n\\(\\eta\\) é a viscosidade da água (g/cm/s) - 0,008007 (20ºC);\n\\(g\\) é a aceleração da gravidade (cm/s2) - 980;\n\\(\\rho_s\\) é a viscosidade do sólido (cm/cm3) - 2,65;\n\\(\\rho_l\\) é a densidade do líquido (g/cm3) - 0,99949 (20ºC);\n\\(\\phi^2\\) é o diâmetro da partícula (cm) - 0,0002"
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-4",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-4",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nA condição ideal do solo depende de uma janela de tempo específica; portanto, o tempo disponível para a realização das operações é indispensável.\n\n\nDiferentes tipos de solos = Tempos distintos"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-17",
+    "href": "aula_2/aula_2.html#determinação-da-textura-17",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nLei de Stokes exemplo\nQual é o tempo de queda necessário para obter apenas partículas de tamanho argila a uma profundidade de 5 cm?\n\n\\[\nt = \\frac{18* 0,008007*5}{980*(2,65-0,099949)*0,0002^2}\n\\]\n\n\n\\(t = 11138,02~s\\) ou \\(t = 3.09~h\\)"
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-5",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-5",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nDesgaste do trabalhador"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-18",
+    "href": "aula_2/aula_2.html#determinação-da-textura-18",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nExemplo de sedimentação das partículas"
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-6",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-6",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nDesgaste do trabalhador"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-19",
+    "href": "aula_2/aula_2.html#determinação-da-textura-19",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nMétodo do hidrômetro ou densímetro\n\nProposto por Bouyoucos em 1927 é baseado na densidade da solução (silte + argila);\nRelaciona as densidades com o tempo de leitura e com a temperatura;\nResultados em g L-1;\nMétodo rápido, mas menos preciso."
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-7",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-7",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nDesgaste do trabalhador\nPrevalência de dor lombar em agricultores\n\nSilva, M.R. (2017)\ncontexto de agricultura menos mecanizada"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-20",
+    "href": "aula_2/aula_2.html#determinação-da-textura-20",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nMétodo do densímetro"
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-8",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-8",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nAumento da potência de trabalho"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-21",
+    "href": "aula_2/aula_2.html#determinação-da-textura-21",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nMétodo do densímetro\n\n50g de TFSA são dispersas de forma mecânica e química;\n\n250 ml de água mais 10 ml de NaOH 1 mol L-1;\n\nContéudo transferido para proveta de 1 L;\nAgitação por 40 s;\nImediatamente após a agitação o densímetro de Bouyoucos é adicionado;\nLeitura é realizada após 40 s (argila + silte);\nApós 1 hora e meia é realizada uma segunda medição (apenas argila)."
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-9",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-9",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nAumento da potência de trabalho\n\\(\\text{Energia humana (kWh)} =\n\\text{Potência total de trabalho disponível}\n\\times\n\\text{Horas efetivas de trabalho humano}\\)\nUm humano em boa forma pode gerar 75 W em um turno de 8 horas de trabalho (0.075 kW h)."
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-22",
+    "href": "aula_2/aula_2.html#determinação-da-textura-22",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nMétodo da pipeta\n\nDesenvolvido em 1922 é adequado para a determinação da fração argila;\nUtiliza-se de uma pipeta para coletar uma alíquota da suspensão a profundidade e tempo determinados;\nMétodo mais lento, mas mais preciso;"
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-10",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-10",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nAumento da potência de trabalho\n\nEnergia produzida por animais/máquina durante uma jornada de trabalho (8 h).\n\n\nAnimal\nPotência correspondente (kW)\n\n\n\n\nCavalo\n0.7457\n\n\nJumento\n0.3729\n\n\nMula\n0.5966\n\n\nVaca de trabalho\n0.5966\n\n\nTouro\n0.5966\n\n\nHumano\n0.075\n\n\nSolis 26 (Yanmar)\n141.2\n\n\nColheitadeira TC 4.90\n1216"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-23",
+    "href": "aula_2/aula_2.html#determinação-da-textura-23",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nMétodo da pipeta"
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-11",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-11",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nAumento da potência de trabalho\nUm MeriCrusher MT-700 possui 768.4 CV ou 565 kW. Em 8 horas ele é capaz de disponibilizar ~2260 kW."
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-24",
+    "href": "aula_2/aula_2.html#determinação-da-textura-24",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nMétodo da pipeta\n\n20 g de TFSA com 100 ml de água e 10 ml de NaOH 1 mol L-1;\nAgitar por 16 horas a 50 rpm;\nRemover a areia por peneiramento;\nAgitação a suspensão por 1 minuto de forma vigorosa;\nMediar a temperatura e calcular o tempo de sedimentação para 5 cm;\nApós a sedimentação coletar 50 ml da suspensão com pipeta em profundidade de 5 cm;\nDeixar secar em estufa e calcular o peso dos recipientes de areia e de argila."
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-12",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-12",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nEvolução da potência disponível\n\nSteenwyk, P. et al. (2022)"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-25",
+    "href": "aula_2/aula_2.html#determinação-da-textura-25",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nNo laboratório\nSeparação das frações:"
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-13",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-13",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nEvolução da potência disponível por tratores no Brasil\n\n\n\n\n\n\nAnziliero D. 2025\n\n\n\n\n\n\n\nAnziliero D. 2025"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-26",
+    "href": "aula_2/aula_2.html#determinação-da-textura-26",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nZonas de amostragem dos diferentes métodos\n\nDurner et al., 2017"
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-14",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-14",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nTrabalho físico por humanos, outros animais e máquinas\n\n\n\n\n\n\nSteenwyk, P. et al. (2022)\n\n\n\n\n\n\n\nSteenwyk, P. et al. (2022)\n\n\n\n\n\n\nSérie temporal de contribuições físicas de trabalho por músculos (humanos e animais) e máquinas (diesel + gás e elétrica) 1920–2010. Os dados para máquinas Diesel + Gás foram extrapolados (“Extr”) antes de 1971"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-27",
+    "href": "aula_2/aula_2.html#determinação-da-textura-27",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nEx: Em 20 g de TFSA, 7 g de areia foram retidas na peneira. Após determinação do tempo, 50 ml da suspensão foi coletada a 5 cm de profundidade, coloca em recipiente e pesada, totalizando 0,548 g.\n\n\nAreia: 350 g kg-1\nArgila: 548 g kg-1\nSilte: ???"
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-15",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-15",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nAumento da potência de trabalho\n\nCherkos B.G (2024)"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-28",
+    "href": "aula_2/aula_2.html#determinação-da-textura-28",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nTriângulo textural (A + S + Ar = 100%)\n\nSiBCS"
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-16",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-16",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nCusto e retorno"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-29",
+    "href": "aula_2/aula_2.html#determinação-da-textura-29",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\n\nISRIC"
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-17",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-17",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nAumento da produtividade"
+    "objectID": "aula_2/aula_2.html#determinação-da-textura-30",
+    "href": "aula_2/aula_2.html#determinação-da-textura-30",
+    "title": "Física do solo:",
+    "section": "Determinação da textura",
+    "text": "Determinação da textura\n\nExemplo:\n\nFonte: Frosi G, 2026"
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-18",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-18",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nAumento da produtividade\n\n\n(imagens/Padrões de desenvolvimento do Brasil. Nota: O painel (a) mostra a fração de emprego na agricultura utilizando dados do Banco de Dados de 10 Setores da GGDC (1960–2011) e do Banco de Dados de Transformação Econômica da GGDC/UNU (2012–2018). O painel (b) mostra a fração de terra na agricultura intensiva em mão de obra entre 1961 e 2018, utilizando dados da FAO. O painel (c) mostra a intensidade de capital na agricultura em relação à não agrícola, utilizando dados do Banco de Dados Mundial de Insumos e Saídas 2012, disponível para 1995–2009. O painel (d) mostra a produtividade agrícola em relação à produtividade não agrícola a preços constantes de 2015, utilizando dados do Banco de Dados de 10 Setores da GGDC (1960–2011) e do Banco de Dados de Transformação Econômica mais ampla da GGDC/UNU (2012–2018). Todos os dados são para o Brasil.)"
+    "objectID": "aula_2/aula_2.html#importância-da-textura-1",
+    "href": "aula_2/aula_2.html#importância-da-textura-1",
+    "title": "Física do solo:",
+    "section": "Importância da textura",
+    "text": "Importância da textura\n\n\nValor da terra e exploração de uso (agrícola, descartes).\nEm classificação do solo, às vezes é a primeira e mais importante característica a ser determinada.\nZoneamento agrícola e de risco climático."
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-19",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-19",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nAumento da produtividade (Nigeria)\n\nOlaoye, J.O. e Rotimi, A.O. (2012)"
+    "objectID": "aula_2/aula_2.html#importância-da-textura-2",
+    "href": "aula_2/aula_2.html#importância-da-textura-2",
+    "title": "Física do solo:",
+    "section": "Importância da textura",
+    "text": "Importância da textura\n\n\n\n\n\nPropriedades no solo\nArgiloso\nArenoso\n\n\n\n\nRetenção de água\nAlta\nBaixa\n\n\nMovimentação de água no perfil\nDifícil\nFácil\n\n\nCoesão\nElevada\nBaixa\n\n\nDensidade\nMenor\nMaior\n\n\nPorosidade total\nMaior\nMenor\n\n\nMicroporosidade\nMaior\nMenor\n\n\nSuperfície específica\nElevada\nBaixa\n\n\nEstruturação\nBem estruturado\nSem estrutura\n\n\nCTC\nAlta\nBaixa\n\n\nDificuldade de preparo\nMaior\nMenor\n\n\nAmplitude térmica\nMenor\nMaior"
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-20",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-20",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nAumento da produtividade (China)\n\n\n\n\n\n\nXiaoshi Zhou & Wanglin Ma (2022)\n\n\n\n\n\n\n\n\n\n1 mu igual há 666.67 metros quadrado\nYuan moeda chinesa"
+    "objectID": "aula_4/aula_4.html#o-que-é-densidade-1",
+    "href": "aula_4/aula_4.html#o-que-é-densidade-1",
+    "title": "Física do solo:",
+    "section": "O que é densidade?",
+    "text": "O que é densidade?\n\n\n\nDensidade é a relação da massa de um corpo com o volume que ele ocupa no espaço.\n\n\nTodos os corpos apresentam uma densidade;\nA densidade absoluta é uma característica própria de cada material (ex);\nDensidade de sólidos &gt; líquidos &gt; gases;"
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-21",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-21",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nAumento da produtividade (EUA)\n\nHans B. (1986)\n1 bushel de milho = 56 lb = 25,401 kg;\n1 bushel de soja ou de trigo = 60 lb = 27,216 kg."
+    "objectID": "aula_4/aula_4.html#o-que-é-densidade-2",
+    "href": "aula_4/aula_4.html#o-que-é-densidade-2",
+    "title": "Física do solo:",
+    "section": "O que é densidade?",
+    "text": "O que é densidade?\n\nA densidade do solo é a relação entre a massa de solo seco (Ms, g) com o seu volume total (Vt, cm3).\n\nO volume, no caso do solo, leva em conta o espaço poroso e os sólidos.\nA densidade é variável no espaço, no tempo e na profundidade do solo;\nVaria em relação ao tipo de solo e à sua composição."
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-22",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-22",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nAumento da produtividade (EUA)\n\nHans B. (1986)"
+    "objectID": "aula_4/aula_4.html#densidade-do-solo",
+    "href": "aula_4/aula_4.html#densidade-do-solo",
+    "title": "Física do solo:",
+    "section": "Densidade do solo",
+    "text": "Densidade do solo\n\nA densidade é fixa?\n\nComo modificar?\n\n\n\nO solo é um sistema trifásico e o volume ocupado pela fração sólida pode mudar!"
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-23",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-23",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nMelhora a qualidade das operações"
+    "objectID": "aula_4/aula_4.html#densidade-do-solo-1",
+    "href": "aula_4/aula_4.html#densidade-do-solo-1",
+    "title": "Física do solo:",
+    "section": "Densidade do solo",
+    "text": "Densidade do solo\n\nOnde a densidade é maior?"
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-24",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-24",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nMelhora a qualidade das operações"
+    "objectID": "aula_4/aula_4.html#determinação-da-densidade-do-solo-1",
+    "href": "aula_4/aula_4.html#determinação-da-densidade-do-solo-1",
+    "title": "Física do solo:",
+    "section": "Determinação da densidade do solo",
+    "text": "Determinação da densidade do solo\n\nOs métodos devem ser capazes de determinar a massa de solo seco, bem como o volume total em que ele se encontra na natureza.\n\nAmostras com estrutura preservada!\n\n\nDois métodos principais:\n\nMétodo do cilindro volumétrico;\nMétodo do torrão parafinado."
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-25",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-25",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nMelhora a qualidade das operações"
+    "objectID": "aula_4/aula_4.html#determinação-da-densidade-do-solo-2",
+    "href": "aula_4/aula_4.html#determinação-da-densidade-do-solo-2",
+    "title": "Física do solo:",
+    "section": "Determinação da densidade do solo",
+    "text": "Determinação da densidade do solo\n\nMétodo do cilindro volumétrico:\n\nUtiliza-se um cilindro metálico de volume conhecido, o qual é inserido no solo para a coleta das amostras com estrutura preservada.\n\n\nEtapas:\n\nInserção de cilindro com volume conhecido no solo (Vt);\nLimpeza de bordas;\nAmostra de solo contida no cilindro é levada ao laboratório;\nA amostra é seca em estufa para obter a Ms"
   },
   {
-    "objectID": "aula_1/aula_1.html#objetivos-da-mecanização-26",
-    "href": "aula_1/aula_1.html#objetivos-da-mecanização-26",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivos da mecanização",
-    "text": "Objetivos da mecanização\nReduz o abandono das terras\n\nW. MA et al. (2021)"
+    "objectID": "aula_4/aula_4.html#determinação-da-densidade-do-solo-3",
+    "href": "aula_4/aula_4.html#determinação-da-densidade-do-solo-3",
+    "title": "Física do solo:",
+    "section": "Determinação da densidade do solo",
+    "text": "Determinação da densidade do solo\n\nMétodo do cilindro volumétrico:"
   },
   {
-    "objectID": "aula_1/aula_1.html#mecanização-no-mundo-1",
-    "href": "aula_1/aula_1.html#mecanização-no-mundo-1",
-    "title": "Mecanização agrícola:",
-    "section": "Mecanização no Mundo",
-    "text": "Mecanização no Mundo\nFrota de tratores em regiões do mundo a cada 1000 ha de área cultivada\n\nPingali P. (2007)"
+    "objectID": "aula_4/aula_4.html#determinação-da-densidade-do-solo-4",
+    "href": "aula_4/aula_4.html#determinação-da-densidade-do-solo-4",
+    "title": "Física do solo:",
+    "section": "Determinação da densidade do solo",
+    "text": "Determinação da densidade do solo\n\nMétodo do cilindro volumétrico:"
   },
   {
-    "objectID": "aula_1/aula_1.html#mecanização-no-mundo-2",
-    "href": "aula_1/aula_1.html#mecanização-no-mundo-2",
-    "title": "Mecanização agrícola:",
-    "section": "Mecanização no Mundo",
-    "text": "Mecanização no Mundo\nFontes de energia agrícola em fazendas dos EUA\n\nBanco Mundial (1986)"
+    "objectID": "aula_4/aula_4.html#determinação-da-densidade-do-solo-5",
+    "href": "aula_4/aula_4.html#determinação-da-densidade-do-solo-5",
+    "title": "Física do solo:",
+    "section": "Determinação da densidade do solo",
+    "text": "Determinação da densidade do solo\n\nMétodo do cilindro volumétrico:\nExemplos:\n\nEm uma área de vegetação nativa foi realizada a coleta para densidade do solo. O cilindro utilizado possui 8 cm de diâmetro interno e 12 cm de altura. Após a secagem, a amostra continha 881 g. Qual a densidade desse solo?\n\n\nVolume:\n\\[V (cm^3) = \\pi*\\frac{D^2}{4}*h\\]\n\\(D = Diâmetro~interno~(cm)\\) e \\(h = Altura~do~cilindro~(cm)\\)"
   },
   {
-    "objectID": "aula_1/aula_1.html#mecanização-no-mundo-3",
-    "href": "aula_1/aula_1.html#mecanização-no-mundo-3",
-    "title": "Mecanização agrícola:",
-    "section": "Mecanização no Mundo",
-    "text": "Mecanização no Mundo\nTratores no mundo 1920-1979\n\nBanco Mundial (1986)"
+    "objectID": "aula_4/aula_4.html#determinação-da-densidade-do-solo-6",
+    "href": "aula_4/aula_4.html#determinação-da-densidade-do-solo-6",
+    "title": "Física do solo:",
+    "section": "Determinação da densidade do solo",
+    "text": "Determinação da densidade do solo\n\nMétodo do cilindro volumétrico:\nExemplos:\nEm uma área de vegetação nativa foi realizada a coleta para densidade do solo. O cilindro utilizado possui 8 cm de diâmetro interno e 12 cm de altura. Após a secagem, a amostra continha 881 g. Qual a densidade desse solo?\n\nVolume:\n\\[V (cm^3) = \\pi*\\frac{8^2}{4}*12\\]\n\\[V = 603,1858~cm^3\\]"
   },
   {
-    "objectID": "aula_1/aula_1.html#mecanização-no-mundo-4",
-    "href": "aula_1/aula_1.html#mecanização-no-mundo-4",
-    "title": "Mecanização agrícola:",
-    "section": "Mecanização no Mundo",
-    "text": "Mecanização no Mundo\nProdução, importação, vendas, exportações e estoque de tratores Brasil, 1960-82\n\nNeto, J.A. (1985)"
+    "objectID": "aula_4/aula_4.html#determinação-da-densidade-do-solo-7",
+    "href": "aula_4/aula_4.html#determinação-da-densidade-do-solo-7",
+    "title": "Física do solo:",
+    "section": "Determinação da densidade do solo",
+    "text": "Determinação da densidade do solo\n\nMétodo do cilindro volumétrico:\nExemplos:\nEm uma área de vegetação nativa foi realizada a coleta para densidade do solo. O cilindro utilizado possui 8 cm de diâmetro interno e 12 cm de altura. Após a secagem, a amostra continha 881 g. Qual a densidade desse solo?\n\n\\[D_s=\\frac{M_s}{V_t}\\]"
   },
   {
-    "objectID": "aula_1/aula_1.html#mecanização-no-mundo-5",
-    "href": "aula_1/aula_1.html#mecanização-no-mundo-5",
-    "title": "Mecanização agrícola:",
-    "section": "Mecanização no Mundo",
-    "text": "Mecanização no Mundo\nEstoque de tratores no Brasil 1920-2006\n\nSilva, R.P. et al. (2015)"
+    "objectID": "aula_4/aula_4.html#determinação-da-densidade-do-solo-8",
+    "href": "aula_4/aula_4.html#determinação-da-densidade-do-solo-8",
+    "title": "Física do solo:",
+    "section": "Determinação da densidade do solo",
+    "text": "Determinação da densidade do solo\n\nMétodo do cilindro volumétrico:\nExemplos:\nEm uma área de vegetação nativa foi realizada a coleta para densidade do solo. O cilindro utilizado possui 8 cm de diâmetro interno e 12 cm de altura. Após a secagem, a amostra continha 881 g. Qual a densidade desse solo?\n\n\\[D_s=\\frac{881~g}{603,1858~cm^3}\\]\n\n\n\\[D_s=1,46~g~cm^3\\]"
   },
   {
-    "objectID": "aula_1/aula_1.html#mecanização-no-mundo-6",
-    "href": "aula_1/aula_1.html#mecanização-no-mundo-6",
-    "title": "Mecanização agrícola:",
-    "section": "Mecanização no Mundo",
-    "text": "Mecanização no Mundo\nVenda de tratores no Brasil 1960-2014\n\nSilva, R.P. et al. (2015)"
+    "objectID": "aula_4/aula_4.html#determinação-da-densidade-do-solo-9",
+    "href": "aula_4/aula_4.html#determinação-da-densidade-do-solo-9",
+    "title": "Física do solo:",
+    "section": "Determinação da densidade do solo",
+    "text": "Determinação da densidade do solo\n\nMétodo do torrão parafinado:\n\nUtilizado para determinar a densidade em solos com presença de fragmentos de rochas e concreções, os quais impossibilitam a utilização do método do cilindro metálico."
   },
   {
-    "objectID": "aula_1/aula_1.html#mecanização-no-mundo-7",
-    "href": "aula_1/aula_1.html#mecanização-no-mundo-7",
-    "title": "Mecanização agrícola:",
-    "section": "Mecanização no Mundo",
-    "text": "Mecanização no Mundo\nTratores no Brasil por região geográfica\n\nSilva, R.P. et al. (2015)"
+    "objectID": "aula_4/aula_4.html#determinação-da-densidade-do-solo-10",
+    "href": "aula_4/aula_4.html#determinação-da-densidade-do-solo-10",
+    "title": "Física do solo:",
+    "section": "Determinação da densidade do solo",
+    "text": "Determinação da densidade do solo\n\nMétodo do torrão parafinado:\n\nEtapas:\n\nUtiliza-se um torrão de solo como amostra;\n\nCom volume aproximado de 100 cm3 (3 a 5 cm de diâmetro);\nColeta em campo e com proteção;\n\nPesagem da amostra em laboratório;\nAmostra é imersa em parafina líquida (aquecida);\n\nImpermeabilização;\n\nSegunda pesagem (amostra + parafina);\nAdicionar um béquer com água em seu limite máximo sobre uma balança;"
   },
   {
-    "objectID": "aula_1/aula_1.html#mecanização-no-mundo-8",
-    "href": "aula_1/aula_1.html#mecanização-no-mundo-8",
-    "title": "Mecanização agrícola:",
-    "section": "Mecanização no Mundo",
-    "text": "Mecanização no Mundo\nTratores no Brasil por tempo de uso\n\nSilva, R.P. et al. (2015)"
+    "objectID": "aula_4/aula_4.html#determinação-da-densidade-do-solo-11",
+    "href": "aula_4/aula_4.html#determinação-da-densidade-do-solo-11",
+    "title": "Física do solo:",
+    "section": "Determinação da densidade do solo",
+    "text": "Determinação da densidade do solo\n\nMétodo do torrão parafinado:\nEtapas:\n\nMedir a massa da água;\nRemover parte da água e adicionar o torrão;\nO torrão é então suspenso ao ar;\nCompletar o béquer para o volume máximo novamente;\nMedir a massa da água mais o torrão;\n\nO espaço ocupado pelo torrão é determinado pela diferença entre o volume total e o volume até completar após a adição do torrão;"
   },
   {
-    "objectID": "aula_1/aula_1.html#índice-de-mecanização-uma-das-formas-de-medir",
-    "href": "aula_1/aula_1.html#índice-de-mecanização-uma-das-formas-de-medir",
-    "title": "Mecanização agrícola:",
-    "section": "Índice de mecanização (uma das formas de medir)",
-    "text": "Índice de mecanização (uma das formas de medir)\n\\[IM = \\frac{\\sum Me}{X li}\\]\n\\(Im = Índice~de~mecanização\\)\n\\(Me = Total~de~potência~devido~à~mecanização\\)\n\\(Xli = Área~total~cultivada~no~Brasil\\)\n\nQual é o índice de mecanização do Brasil?"
+    "objectID": "aula_4/aula_4.html#determinação-da-densidade-do-solo-12",
+    "href": "aula_4/aula_4.html#determinação-da-densidade-do-solo-12",
+    "title": "Física do solo:",
+    "section": "Determinação da densidade do solo",
+    "text": "Determinação da densidade do solo\n\nMétodo do torrão parafinado:"
   },
   {
-    "objectID": "aula_1/aula_1.html#mecanização-no-mundo-9",
-    "href": "aula_1/aula_1.html#mecanização-no-mundo-9",
-    "title": "Mecanização agrícola:",
-    "section": "Mecanização no mundo",
-    "text": "Mecanização no mundo\nÍndice de mecanização\n\nAnziliero D. 2025"
+    "objectID": "aula_4/aula_4.html#fatores-que-afetam-a-densidade-do-solo-1",
+    "href": "aula_4/aula_4.html#fatores-que-afetam-a-densidade-do-solo-1",
+    "title": "Física do solo:",
+    "section": "Fatores que afetam a densidade do solo",
+    "text": "Fatores que afetam a densidade do solo\n\n\n\n\nIntrínsecos\n\nTextura;\nPotencial de água;\nEstrutura;\nDensidade inicial;\nMineralogia.\n\n\n\n\nExtrínsecos\n\nMáquinas e implementos agrícolas;\nTráfego de máquinas e animais;\nManejo do solo."
   },
   {
-    "objectID": "aula_1/aula_1.html#mecanização-no-brasil",
-    "href": "aula_1/aula_1.html#mecanização-no-brasil",
-    "title": "Mecanização agrícola:",
-    "section": "Mecanização no Brasil",
-    "text": "Mecanização no Brasil\nÍndice de mecanização\n\nAnziliero D. 2025"
+    "objectID": "aula_4/aula_4.html#fatores-que-afetam-a-densidade-do-solo-2",
+    "href": "aula_4/aula_4.html#fatores-que-afetam-a-densidade-do-solo-2",
+    "title": "Física do solo:",
+    "section": "Fatores que afetam a densidade do solo",
+    "text": "Fatores que afetam a densidade do solo\n\nGranulometria:\nRelação entre o peso da amostra (TFSA) e seu teor de areia considerando um volume fixo (2,5 ml)"
   },
   {
-    "objectID": "aula_1/aula_1.html#mecanização-no-brasil-1",
-    "href": "aula_1/aula_1.html#mecanização-no-brasil-1",
-    "title": "Mecanização agrícola:",
-    "section": "Mecanização no Brasil",
-    "text": "Mecanização no Brasil\nVenda de colheitadeiras\n\nAnziliero D. 2025"
+    "objectID": "aula_4/aula_4.html#fatores-que-afetam-a-densidade-do-solo-3",
+    "href": "aula_4/aula_4.html#fatores-que-afetam-a-densidade-do-solo-3",
+    "title": "Física do solo:",
+    "section": "Fatores que afetam a densidade do solo",
+    "text": "Fatores que afetam a densidade do solo\n\nGranulometria:\nRelação entre o peso da amostra (TFSA) e seu teor de argila considerando um volume fixo (2,5 ml)"
   },
   {
-    "objectID": "aula_1/aula_1.html#mecanização-no-brasil-2",
-    "href": "aula_1/aula_1.html#mecanização-no-brasil-2",
-    "title": "Mecanização agrícola:",
-    "section": "Mecanização no Brasil",
-    "text": "Mecanização no Brasil\nVenda de tratores\n\nAnziliero D. 2025"
+    "objectID": "aula_4/aula_4.html#fatores-que-afetam-a-densidade-do-solo-4",
+    "href": "aula_4/aula_4.html#fatores-que-afetam-a-densidade-do-solo-4",
+    "title": "Física do solo:",
+    "section": "Fatores que afetam a densidade do solo",
+    "text": "Fatores que afetam a densidade do solo\n\nGranulometria:\n\nMarcolin, C. D e Klein, V. A. 2011"
   },
   {
-    "objectID": "aula_1/aula_1.html#mecanização-no-brasil-3",
-    "href": "aula_1/aula_1.html#mecanização-no-brasil-3",
-    "title": "Mecanização agrícola:",
-    "section": "Mecanização no Brasil",
-    "text": "Mecanização no Brasil\nParque de tratores (frota)\n\nAnziliero D. 2025"
+    "objectID": "aula_4/aula_4.html#fatores-que-afetam-a-densidade-do-solo-5",
+    "href": "aula_4/aula_4.html#fatores-que-afetam-a-densidade-do-solo-5",
+    "title": "Física do solo:",
+    "section": "Fatores que afetam a densidade do solo",
+    "text": "Fatores que afetam a densidade do solo\n\nGranulometria:\n\nMarcolin, C. D e Klein, V. A. 2011"
   },
   {
-    "objectID": "aula_1/aula_1.html#mecanização-no-brasil-4",
-    "href": "aula_1/aula_1.html#mecanização-no-brasil-4",
-    "title": "Mecanização agrícola:",
-    "section": "Mecanização no Brasil",
-    "text": "Mecanização no Brasil\nParque de colhedoras (frota)\n\nAnziliero D. 2025"
+    "objectID": "aula_4/aula_4.html#relação-entre-a-densidade-e-aspectos-agronômicos-1",
+    "href": "aula_4/aula_4.html#relação-entre-a-densidade-e-aspectos-agronômicos-1",
+    "title": "Física do solo:",
+    "section": "Relação entre a densidade e aspectos agronômicos",
+    "text": "Relação entre a densidade e aspectos agronômicos\n\n\n\nPlantio direto:\nPlantio direto modifica a densidade? De que forma?\n\n\nNoroeste do Estado do Paraná;\nAno agrícola 1999/2000;\nLatossolo Vermelho distrófico.\n\n\n\n\n\n\n\nTormena, C. A. et al. 2002"
   },
   {
-    "objectID": "aula_1/aula_1.html#mecanização-no-brasil-5",
-    "href": "aula_1/aula_1.html#mecanização-no-brasil-5",
-    "title": "Mecanização agrícola:",
-    "section": "Mecanização no Brasil",
-    "text": "Mecanização no Brasil\nPor marca\n\nAnziliero D. 2025"
+    "objectID": "aula_4/aula_4.html#relação-entre-a-densidade-e-aspectos-agronômicos-2",
+    "href": "aula_4/aula_4.html#relação-entre-a-densidade-e-aspectos-agronômicos-2",
+    "title": "Física do solo:",
+    "section": "Relação entre a densidade e aspectos agronômicos",
+    "text": "Relação entre a densidade e aspectos agronômicos\n\nPlantio direto:\n\nSanto Antônio de Goiás, GO;\nLatossolo Vermelho distrófico;\nO trabalho foi conduzido sob irrigação por aspersão, sistema pivô central, por seis anos consecutivos, 1999 a 2004, durante os quais foram realizados doze cultivos.\n\n\n\n\n\nSilveira, P. M. et al. 2008"
   },
   {
-    "objectID": "aula_1/aula_1.html#mecanização-no-brasil-6",
-    "href": "aula_1/aula_1.html#mecanização-no-brasil-6",
-    "title": "Mecanização agrícola:",
-    "section": "Mecanização no Brasil",
-    "text": "Mecanização no Brasil\nÁrea produtiva vs potência\n\n\n\n\n\n\nAnziliero D. 2025\n\n\n\n\n\n\n\nAnziliero D. 2025"
+    "objectID": "aula_4/aula_4.html#relação-entre-a-densidade-e-aspectos-agronômicos-3",
+    "href": "aula_4/aula_4.html#relação-entre-a-densidade-e-aspectos-agronômicos-3",
+    "title": "Física do solo:",
+    "section": "Relação entre a densidade e aspectos agronômicos",
+    "text": "Relação entre a densidade e aspectos agronômicos\n\nPlantio direto:\n\nUberaba, Minas Gerais;\nLatossolo Vermelho distrófico;\n\n\n\n\n\nSilva, V. R. et al. 2020"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
+    "objectID": "aula_4/aula_4.html#relação-entre-a-densidade-e-aspectos-agronômicos-4",
+    "href": "aula_4/aula_4.html#relação-entre-a-densidade-e-aspectos-agronômicos-4",
+    "title": "Física do solo:",
+    "section": "Relação entre a densidade e aspectos agronômicos",
+    "text": "Relação entre a densidade e aspectos agronômicos\n\nRotação de culturas:\n\nMontividiu, Goiás;\nLatossolo Vermelho distrófico;\n\n\n\n\n\nRosa, V. C. S. et al. 2025"
   },
   {
-    "objectID": "aula_2/aula_2.html#definições-1",
-    "href": "aula_2/aula_2.html#definições-1",
-    "title": "Mecanização agrícola:",
-    "section": "Definições",
-    "text": "Definições\nMotor\n\nUma máquina que transforma energia térmica em energia mecânica\n\n\n\nOs motores de combustão interna, transformam a energia térmica gerada pela combustão da mistura ar/combustível em energia mecânica"
+    "objectID": "aula_4/aula_4.html#relação-entre-a-densidade-e-aspectos-agronômicos-5",
+    "href": "aula_4/aula_4.html#relação-entre-a-densidade-e-aspectos-agronômicos-5",
+    "title": "Física do solo:",
+    "section": "Relação entre a densidade e aspectos agronômicos",
+    "text": "Relação entre a densidade e aspectos agronômicos\n\nRotação de culturas:\n\nMontividiu, Goiás;\nLatossolo Vermelho distrófico;\n\n\nRosa, V. C. S. et al. 2025"
   },
   {
-    "objectID": "aula_2/aula_2.html#quanto-a-fonte-geradora",
-    "href": "aula_2/aula_2.html#quanto-a-fonte-geradora",
-    "title": "Mecanização agrícola:",
-    "section": "Quanto a fonte geradora",
-    "text": "Quanto a fonte geradora\n\n\n\n\nMotor a combustão\n\n\n\n\nMotor elétrico\n\n\n\n\nMotor híbrido: Que é um sistema que se utiliza de ambos os tipos de motores para gerar movimento"
+    "objectID": "aula_4/aula_4.html#relação-entre-a-densidade-e-aspectos-agronômicos-6",
+    "href": "aula_4/aula_4.html#relação-entre-a-densidade-e-aspectos-agronômicos-6",
+    "title": "Física do solo:",
+    "section": "Relação entre a densidade e aspectos agronômicos",
+    "text": "Relação entre a densidade e aspectos agronômicos\n\nProdução das culturas:\n\nTuzzin, M. et al. 2020\n\nProdutividade de soja;\na = densidade, b = comprimento de raízes (RLD);\n0 a 20 cm, em um Latossolo Vermelho.\nMTC: sistema de cultivo mínimo com escarificação do solo; NT: sistema de plantio direto; e plantio direto com compactação adicional por quatro passadas do trator (NTC4) ou oito passadas da colhedora (NTC8)."
   },
   {
-    "objectID": "aula_2/aula_2.html#quanto-a-combustão",
-    "href": "aula_2/aula_2.html#quanto-a-combustão",
-    "title": "Mecanização agrícola:",
-    "section": "Quanto a combustão",
-    "text": "Quanto a combustão\n\n\nCombustão externa (máquina a vapor)\nCombustão interna\n\nDe pistão (ciclo otto e diesel)\nÊmbolo rotativo (wankel)"
+    "objectID": "aula_4/aula_4.html#densidade-de-partícula-dp",
+    "href": "aula_4/aula_4.html#densidade-de-partícula-dp",
+    "title": "Física do solo:",
+    "section": "Densidade de partícula (Dp)",
+    "text": "Densidade de partícula (Dp)\n\nÉ a relação entre a massa (Ms) e o volume das partículas do solo (Vs)…\n\n…partículas sólidas.\n\n\nA Dp é importante para o tempo de sedimentação das partículas do solo em água, em estudos sobre erosão e granulometria.\n\nUtilizada para calcular a porosidade total do solo."
   },
   {
-    "objectID": "aula_2/aula_2.html#como-ocorre-a-combustão",
-    "href": "aula_2/aula_2.html#como-ocorre-a-combustão",
-    "title": "Mecanização agrícola:",
-    "section": "Como ocorre a combustão",
-    "text": "Como ocorre a combustão\nA combustão é uma reação química exotérmica (libera calor) entre uma substãncia (combustível) e um gás (comburente) para liberar calor."
+    "objectID": "aula_4/aula_4.html#densidade-de-partícula-dp-1",
+    "href": "aula_4/aula_4.html#densidade-de-partícula-dp-1",
+    "title": "Física do solo:",
+    "section": "Densidade de partícula (Dp)",
+    "text": "Densidade de partícula (Dp)"
   },
   {
-    "objectID": "aula_2/aula_2.html#como-ocorre-a-combustão-1",
-    "href": "aula_2/aula_2.html#como-ocorre-a-combustão-1",
-    "title": "Mecanização agrícola:",
-    "section": "Como ocorre a combustão",
-    "text": "Como ocorre a combustão"
+    "objectID": "aula_4/aula_4.html#densidade-de-partícula-dp-2",
+    "href": "aula_4/aula_4.html#densidade-de-partícula-dp-2",
+    "title": "Física do solo:",
+    "section": "Densidade de partícula (Dp)",
+    "text": "Densidade de partícula (Dp)\n\n\n\nDensidade do solo vs densidade de partícula"
   },
   {
-    "objectID": "aula_2/aula_2.html#como-ocorre-a-combustão-2",
-    "href": "aula_2/aula_2.html#como-ocorre-a-combustão-2",
-    "title": "Mecanização agrícola:",
-    "section": "Como ocorre a combustão",
-    "text": "Como ocorre a combustão\nFórmula química da combustão\n\\[CH_{4} + 20_2 = CO_2 + 2H_{2}O + Calor\\]\n\nGasolina = C8H18 (octano)\nDiesel (estrutura complexa) = CH3(CH2)14CH3(C16H34) (cetano)"
+    "objectID": "aula_4/aula_4.html#densidade-de-partícula-dp-3",
+    "href": "aula_4/aula_4.html#densidade-de-partícula-dp-3",
+    "title": "Física do solo:",
+    "section": "Densidade de partícula (Dp)",
+    "text": "Densidade de partícula (Dp)\n\n\\[Dp = \\frac{Mp}{Vp}\\]\n\\(Dp = Densidade~de~partículas\\)\n\\(Mp = Massa~de~partículas\\)\n\\(Vp = Volume~de~partículas\\)"
   },
   {
-    "objectID": "aula_2/aula_2.html#combustão-externa",
-    "href": "aula_2/aula_2.html#combustão-externa",
-    "title": "Mecanização agrícola:",
-    "section": "Combustão externa",
-    "text": "Combustão externa\nEx: máquinas a vapor\n\n\nquando a água é aquecida ela se torna vapor e ocupa maior espaço o que gera pressão"
+    "objectID": "aula_4/aula_4.html#densidade-de-partícula-dp-4",
+    "href": "aula_4/aula_4.html#densidade-de-partícula-dp-4",
+    "title": "Física do solo:",
+    "section": "Densidade de partícula (Dp)",
+    "text": "Densidade de partícula (Dp)\n\nDensidade do solo e das partículas:\n\n\nDensidade do solo\n\\(D_s = \\frac{M_s}{V_t}\\)\n\nDensidade de partícula\n\\(D_p = \\frac{M_s}{V_p}\\)"
   },
   {
-    "objectID": "aula_2/aula_2.html#quanto-a-combustão-1",
-    "href": "aula_2/aula_2.html#quanto-a-combustão-1",
-    "title": "Mecanização agrícola:",
-    "section": "Quanto a combustão",
-    "text": "Quanto a combustão\nExemplo de máquina a vapor"
+    "objectID": "aula_4/aula_4.html#densidade-de-partícula-dp-5",
+    "href": "aula_4/aula_4.html#densidade-de-partícula-dp-5",
+    "title": "Física do solo:",
+    "section": "Densidade de partícula (Dp)",
+    "text": "Densidade de partícula (Dp)\n\nDensidade do solo e das partículas:\nConsidere: Massa de solo: 1,8 g; Volume total: 1 cm3; Volume de partícula: 0,5 cm3.\n\n\n\nDensidade do solo\n\\(D_s = \\frac{M_s}{V_t}\\)\n\\(D_s = \\frac{1,8}{1} = 1,8~g~cm^3\\)\n\n\n\nDensidade de partícula\n\\(D_p = \\frac{M_s}{V_p}\\)\n\\(D_p = \\frac{1,8}{0,5}=3,6~g~cm^3\\)"
   },
   {
-    "objectID": "aula_2/aula_2.html#combustão-interna-1",
-    "href": "aula_2/aula_2.html#combustão-interna-1",
-    "title": "Mecanização agrícola:",
-    "section": "Combustão interna",
-    "text": "Combustão interna\n\nCiclo Otto\nUtilizam combustível de baixa volatilidade, como gasolina e álcool. Para ignição necessitam de centelha produzida pelo sistema elétrico.\n\n\nCiclo Diesel\nUtilizam como combustível o óleo diesel. A inflamação do combustível injetado sobe pressão na câmara de combustão ocorre pela ocmpressão de ar e consequente elevação da temperatura."
+    "objectID": "aula_4/aula_4.html#determinação-da-densidade-de-partículas-1",
+    "href": "aula_4/aula_4.html#determinação-da-densidade-de-partículas-1",
+    "title": "Física do solo:",
+    "section": "Determinação da densidade de partículas",
+    "text": "Determinação da densidade de partículas\n\nMétodo do balão volumétrico:\n\nDeterminação da massa do solo em balança;\n\nAmostra seca em estufa a 105ºC;\n\nDeterminação do volume por deslocamento de líquidos."
   },
   {
-    "objectID": "aula_2/aula_2.html#quanto-ao-número-de-ciclos",
-    "href": "aula_2/aula_2.html#quanto-ao-número-de-ciclos",
-    "title": "Mecanização agrícola:",
-    "section": "Quanto ao número de ciclos",
-    "text": "Quanto ao número de ciclos\n\nMotor de 4 tempos\nMotor de 2 tempos"
+    "objectID": "aula_4/aula_4.html#determinação-da-densidade-de-partículas-2",
+    "href": "aula_4/aula_4.html#determinação-da-densidade-de-partículas-2",
+    "title": "Física do solo:",
+    "section": "Determinação da densidade de partículas",
+    "text": "Determinação da densidade de partículas\n\nMétodo do balão volumétrico:\n\nQuantidade de líquido (álcool) para preencher um balão volumétrico vazio;\nQuantidade de líquido para preencher um balão contendo partículas de solo.\n\nMedida via bureta.\n\n\n\n\\[D_p = \\frac{M_s}{(V_b-V_u)}\\]\n\nVb é o volume do balão volumétrico (cm3), Vu é o volume de álcool utilizado para completar o balão com a amostra (cm3)."
   },
   {
-    "objectID": "aula_2/aula_2.html#objetivo-do-motor",
-    "href": "aula_2/aula_2.html#objetivo-do-motor",
-    "title": "Mecanização agrícola:",
-    "section": "Objetivo do motor",
-    "text": "Objetivo do motor\nGerar trabalho!\n\n\\(Trabalho~(J) = Força(N) * deslocamento(m)\\)\n\n\n\\(Força(N) = mass(kg) * aceleração(\\Delta_v/\\Delta_t)\\)\n\n\nPotência: Capacidade de transmitir energia por tempo.\n\nRealização de trabalho ou transmissão de calor.\n\nEx de potência: 1 cavalo puxa 75 kg em 1 s."
+    "objectID": "aula_4/aula_4.html#densidade-de-partículas",
+    "href": "aula_4/aula_4.html#densidade-de-partículas",
+    "title": "Física do solo:",
+    "section": "Densidade de partículas",
+    "text": "Densidade de partículas\n\n\n\n\n\nMineral\nDensidade (\\(g\\,cm^{-3}\\))\n\n\n\n\nCaulinita\n2,65\n\n\nQuartzo\n2,65\n\n\nHematita\n5,26\n\n\nMagnetita\n5,18\n\n\nAnatásio\n3,90\n\n\nGibbsita\n2,35\n\n\n\nFonte: Azevedo e Dalmolin (2006)."
   },
   {
-    "objectID": "aula_2/aula_2.html#histórico",
-    "href": "aula_2/aula_2.html#histórico",
-    "title": "Mecanização agrícola:",
-    "section": "Histórico",
-    "text": "Histórico\n\n\n\nAlphonse Beau de Rochas (França)\nPublica e registra os termos teóricos de um “princípio” de um motor a 4 tempos com compressão prévia da mistura antes da ignição.\n\n\nExposição de Paris\nNikolaus August Otto apresenta um motor a combustão interna (4 tempos). \n\n\nMotor a quatro tempos funcional de Otto\nOtto e Deutz produzem o primeiro motor prático e confiável no ciclo de 4 tempo (admissão, compressão, combustão e escape).\nO ciclo ficou conhecido como ciclo Otto\n\n\nQueda da patente de Otto na Alemanha\nO documento de Beau de Rocha é redescoberto, assim a patente de Otto é invalidade.\nVárias fabricantes podem recriar o motor.\n\n\nDois tempos\nDugald Clerk patenteia um motor de 2 tempo com compressão estabelecendo uma alternativa ao ciclo Otto de 4 tempos.\n\n\nCiclo Otto em veículos\nOcorre a primeira aplicação do motor de ciclo Otto em veículos utilizando combustível a gasolina.\n\n\nCiclo Diesel\nEngenheiro Rudolf Diesel descreve um novo motor, no qual a ignição da mistura ar mais combustível era feita por compressão (motor Diesel)."
+    "objectID": "aula_4/aula_4.html#densidade-de-partículas-e-propriedades-do-solo-1",
+    "href": "aula_4/aula_4.html#densidade-de-partículas-e-propriedades-do-solo-1",
+    "title": "Física do solo:",
+    "section": "Densidade de partículas e propriedades do solo",
+    "text": "Densidade de partículas e propriedades do solo\n\nO manejo e uso do solo podem alterar a densidade de partículas?\n\nO que podemos alterar do solo?\n\n\nMineralogia ou matéria orgânica?"
   },
   {
-    "objectID": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-1",
-    "href": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-1",
-    "title": "Mecanização agrícola:",
-    "section": "Funcionamento do motor a combustão interna",
-    "text": "Funcionamento do motor a combustão interna"
+    "objectID": "aula_4/aula_4.html#densidade-de-partículas-e-propriedades-do-solo-2",
+    "href": "aula_4/aula_4.html#densidade-de-partículas-e-propriedades-do-solo-2",
+    "title": "Física do solo:",
+    "section": "Densidade de partículas e propriedades do solo",
+    "text": "Densidade de partículas e propriedades do solo\n\nPodemos alterar a distribuição mineral do solo?\n\nRuehlmann, J e Körschens, M. 2020"
   },
   {
-    "objectID": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-2",
-    "href": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-2",
-    "title": "Mecanização agrícola:",
-    "section": "Funcionamento do motor a combustão interna",
-    "text": "Funcionamento do motor a combustão interna\n4 tempos ciclo diesel\n\n\nAdmissão: O pistão desce, a válvula de admissão se abre e a de escape fecha. Ao descer, o pistão cria pressão no cilindor. O ar é forçado pela pressão atmosféria a entrar no cilindro pelo filtro de ar e pela tubulação de admissão. A quantidade que entra é sempre a mesma, independente da aceleração.\n\n\n\n\nCompressão: O pistão sobe, as válvulas de admissão e de escape ficam fechadas. O ar admitido é comprimido até ocupar o volume da câmara de combustão. O ar se aquece, e ao fim da compressão, o bico injeto pulveriza óleo diesel no interior da câmara de combustão."
+    "objectID": "aula_4/aula_4.html#densidade-de-partículas-e-propriedades-do-solo-3",
+    "href": "aula_4/aula_4.html#densidade-de-partículas-e-propriedades-do-solo-3",
+    "title": "Física do solo:",
+    "section": "Densidade de partículas e propriedades do solo",
+    "text": "Densidade de partículas e propriedades do solo\n\n\nPodemos incrementar matéria orgânica!\n\n\n\nMcBride et al. 2012"
   },
   {
-    "objectID": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-3",
-    "href": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-3",
-    "title": "Mecanização agrícola:",
-    "section": "Funcionamento do motor a combustão interna",
-    "text": "Funcionamento do motor a combustão interna\n4 tempos ciclo diesel\n\n\nCombustão: O pistão desce, acionado pela força de expansão dos gases queimados. As válvulas de admissão e de escape estão fechadas. A força de expansão é transmitida pelo piestão à biela e desta ao virabrequim, provocando assim movimento de rotação do motor.\n\n\n\n\nEscape: O pistão sobe, estando a válvula de escape aberta e a de admissão fechada. Os gases queimados são expulsos através da passagem dada pela válvula de escape."
+    "objectID": "aula_4/aula_4.html#exercícios-1",
+    "href": "aula_4/aula_4.html#exercícios-1",
+    "title": "Física do solo:",
+    "section": "Exercícios",
+    "text": "Exercícios\n\n\n\n\n\n\n1 - Uma amostra de solo foi coletada para determinação da densidade pelo método do cilindro. A massa de solo seca foi de 600 g e o volume do cilindro é de 350 cm3. Qual a densidade desse solo?\n\nResposta:\n\\[D_s= \\frac{600g}{350cm^3}\\]\n\n\n\\[D_s= 1,714~g~cm^3\\]"
   },
   {
-    "objectID": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-4",
-    "href": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-4",
-    "title": "Mecanização agrícola:",
-    "section": "Funcionamento do motor a combustão interna",
-    "text": "Funcionamento do motor a combustão interna\nAdmissão"
+    "objectID": "aula_4/aula_4.html#exercícios-2",
+    "href": "aula_4/aula_4.html#exercícios-2",
+    "title": "Física do solo:",
+    "section": "Exercícios",
+    "text": "Exercícios\n\n\n\n\n\n\n2 - Uma amostra de solo apresentou uma densidade de 1,08 g cm3 quando medida utilizando um cilindro de 125 cm3 de volume. Qual a massa de solo seco dessa amostra?\n\nResposta:\n\\[1,08~g~cm^3= \\frac{x~g}{125~cm^3}\\]\n\n\n\\[x= 1,08*125= 135~g\\]"
   },
   {
-    "objectID": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-5",
-    "href": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-5",
-    "title": "Mecanização agrícola:",
-    "section": "Funcionamento do motor a combustão interna",
-    "text": "Funcionamento do motor a combustão interna\nCompressão"
+    "objectID": "aula_4/aula_4.html#exercícios-3",
+    "href": "aula_4/aula_4.html#exercícios-3",
+    "title": "Física do solo:",
+    "section": "Exercícios",
+    "text": "Exercícios\n\n\n\n\n\n\n3 - Para a determinação da densidade, um pesquisador utilizou um cilindro com 84 mm de diâmetro e 112 mm de altura. Depois de seco, o solo tinha uma massa de 680 g. Qual a densidade desse solo?\n\nResposta:\n\\[V_c= \\pi*r^2*h\\]\n\n\n\\[V_c= \\pi*(\\frac{(84/10)}{2})^2*(112/10) = 620,678~cm^3\\]\n\n\n\\[D_s= \\frac{680~g}{620,68~cm^3}=1,10~g~cm^3\\]"
   },
   {
-    "objectID": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-6",
-    "href": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-6",
-    "title": "Mecanização agrícola:",
-    "section": "Funcionamento do motor a combustão interna",
-    "text": "Funcionamento do motor a combustão interna\nExplosão"
+    "objectID": "aula_4/aula_4.html#exercícios-4",
+    "href": "aula_4/aula_4.html#exercícios-4",
+    "title": "Física do solo:",
+    "section": "Exercícios",
+    "text": "Exercícios\n\n\n\n\n\n\n4 - Dois solos agricultáveis possuem densidade de 1,3 g cm3 para o solo “A” e de 1,7 g cm3 para o solo “B”. Quais os fatores que podem estar associados a essa diferença de densidade?\n\nResposta:\n\nSolo B pode estar sob sistema de plantio direto em relação ao solo A;\nO teor de argila do solo A pode ser maior do que o do solo B;\nO manejo de solo em A é melhor e pode ter propiciado acúmulo de matéria orgânica;\nHá um tráfego de máquinas menor no solo A (menos compactação);"
   },
   {
-    "objectID": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-7",
-    "href": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-7",
-    "title": "Mecanização agrícola:",
-    "section": "Funcionamento do motor a combustão interna",
-    "text": "Funcionamento do motor a combustão interna\nDescarga"
+    "objectID": "aula_4/aula_4.html#exercícios-5",
+    "href": "aula_4/aula_4.html#exercícios-5",
+    "title": "Física do solo:",
+    "section": "Exercícios",
+    "text": "Exercícios\n\n\n\n\n\n\n5 - Qual a diferença entre a densidade de partículas e do solo? Qual é maior?\n\nResposta:\n\nDensidade do solo leva em conta volume total (cilindro);\nDensidade de partícula leva em conta apenas o volume das partículas (sem poros);\nDensidade de partículas tende a ser maior que a densidade do solo (menor volume)."
   },
   {
-    "objectID": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-8",
-    "href": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-8",
-    "title": "Mecanização agrícola:",
-    "section": "Funcionamento do motor a combustão interna",
-    "text": "Funcionamento do motor a combustão interna"
+    "objectID": "aula_4/aula_4.html#exercícios-6",
+    "href": "aula_4/aula_4.html#exercícios-6",
+    "title": "Física do solo:",
+    "section": "Exercícios",
+    "text": "Exercícios\n\n\n\n\n\n\n6 - É possível um solo apresentar densidade do solo igual a de partículas? O que isso indica (em teoria)?\n\nResposta:\n\nSe as densidades tenderem a uma igualdade, isso significaria que o volume de poros tende a zero (\\(\\lim_{V_p \\rightarrow 0} D_s=D_p\\))"
   },
   {
-    "objectID": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-9",
-    "href": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-9",
-    "title": "Mecanização agrícola:",
-    "section": "Funcionamento do motor a combustão interna",
-    "text": "Funcionamento do motor a combustão interna"
+    "objectID": "aula_4/aula_4.html#exercícios-7",
+    "href": "aula_4/aula_4.html#exercícios-7",
+    "title": "Física do solo:",
+    "section": "Exercícios",
+    "text": "Exercícios\n\nAtividade para o lar:\n\n\nBuscar na literatura qual a densidade média dos principais solos do Brasil."
   },
   {
-    "objectID": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-10",
-    "href": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-10",
-    "title": "Mecanização agrícola:",
-    "section": "Funcionamento do motor a combustão interna",
-    "text": "Funcionamento do motor a combustão interna"
+    "objectID": "aula_4/aula_4.html#fim",
+    "href": "aula_4/aula_4.html#fim",
+    "title": "Física do solo:",
+    "section": "Fim!",
+    "text": "Fim!"
   },
   {
-    "objectID": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-11",
-    "href": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-11",
-    "title": "Mecanização agrícola:",
-    "section": "Funcionamento do motor a combustão interna",
-    "text": "Funcionamento do motor a combustão interna"
+    "objectID": "aula_6/aula_6.html#o-que-é-porosidade-1",
+    "href": "aula_6/aula_6.html#o-que-é-porosidade-1",
+    "title": "Física do solo:",
+    "section": "O que é porosidade?",
+    "text": "O que é porosidade?\n\n\nPorosidade é o espaço do solo não ocupado pela fração sólida, onde circulam o ar e a água.\n\n\nO solo é um sistema trifásico: sólido, líquido e gasoso;\nOs poros correspondem ao espaço ocupado pelas frações líquida e gasosa;\nA porosidade é variável no espaço, no tempo e na profundidade do solo."
   },
   {
-    "objectID": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-12",
-    "href": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-12",
-    "title": "Mecanização agrícola:",
-    "section": "Funcionamento do motor a combustão interna",
-    "text": "Funcionamento do motor a combustão interna"
+    "objectID": "aula_6/aula_6.html#o-que-é-porosidade-2",
+    "href": "aula_6/aula_6.html#o-que-é-porosidade-2",
+    "title": "Física do solo:",
+    "section": "O que é porosidade?",
+    "text": "O que é porosidade?\n\nA porosidade total (Pt) é a relação entre o volume de poros (Vp) e o volume total (Vt) do solo.\n\nPode ser expressa em decimal ou em percentagem;\nEstá diretamente relacionada com a densidade do solo e a densidade de partículas;\nQuanto maior a densidade do solo, menor tende a ser a porosidade."
   },
   {
-    "objectID": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-13",
-    "href": "aula_2/aula_2.html#funcionamento-do-motor-a-combustão-interna-13",
-    "title": "Mecanização agrícola:",
-    "section": "Funcionamento do motor a combustão interna",
-    "text": "Funcionamento do motor a combustão interna"
+    "objectID": "aula_6/aula_6.html#porosidade-do-solo",
+    "href": "aula_6/aula_6.html#porosidade-do-solo",
+    "title": "Física do solo:",
+    "section": "Porosidade do solo",
+    "text": "Porosidade do solo\n\n\n\n\\[Pt = \\frac{Vpo}{Vt}=\\frac{Var+Vag}{Vt}\\]"
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-1",
-    "href": "aula_2/aula_2.html#componente-do-motor-1",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor",
-    "text": "Componente do motor"
+    "objectID": "aula_6/aula_6.html#porosidade-do-solo-1",
+    "href": "aula_6/aula_6.html#porosidade-do-solo-1",
+    "title": "Física do solo:",
+    "section": "Porosidade do solo",
+    "text": "Porosidade do solo\n\nA porosidade é fixa?\n\nComo modificar?\n\n\nO arranjo das partículas sólidas define o espaço poroso, o qual pode ser alterado por manejo!"
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nBloco dos cilindros"
+    "objectID": "aula_6/aula_6.html#porosidade-do-solo-2",
+    "href": "aula_6/aula_6.html#porosidade-do-solo-2",
+    "title": "Física do solo:",
+    "section": "Porosidade do solo",
+    "text": "Porosidade do solo\n\nTipos de poros:\n\nMacroporos: poros de maior diâmetro (&gt; 0,05 mm);\n\nResponsáveis pela aeração e drenagem da água por gravidade;\n\nMicroporos: poros de menor diâmetro (&lt; 0,05 mm);\n\nResponsáveis pela retenção de água por capilaridade (força maior do que a força gravitacional);\n\n\n\n\\[P_t = Macroporosidade + Microporosidade\\]"
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-1",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-1",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nBloco dos cilindros\nFunção:\n\nBase onde se encontram todos os demais elementos do funcionamento do motor.\n\nCabeçote, válvulas, árvore de comando, cilindros, pistão, aníes de segmento, biela, casquilhos, árvore dde manivelas, volante e cárter.\n\nEm máquinas agrícolas apresenta função estrutural e de sustentação.\n\nCaracterísticas:\n\nPeça de fundição.\nEm seu interior apresenta grandes orifícios cilíndricos (cilindros) onde se realiza a combustão.\nApresenta cavidades para a passagem de água de arrefecimento."
+    "objectID": "aula_6/aula_6.html#porosidade-do-solo-3",
+    "href": "aula_6/aula_6.html#porosidade-do-solo-3",
+    "title": "Física do solo:",
+    "section": "Porosidade do solo",
+    "text": "Porosidade do solo"
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-2",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-2",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nÁrvore de manivelas (virabrequim )"
+    "objectID": "aula_6/aula_6.html#porosidade-do-solo-4",
+    "href": "aula_6/aula_6.html#porosidade-do-solo-4",
+    "title": "Física do solo:",
+    "section": "Porosidade do solo",
+    "text": "Porosidade do solo\n\nClassificação dos poros do solo\n\nMacroporos — &gt; 0,05 mm\n\nDrenagem da água gravitacional.\nFavorecem a circulação de ar.\nPermitem o crescimento das raízes.\nPodem constituir habitat de organismos do solo.\n\nMesoporos — 0,03–0,05 mm\n\nRetêm água após a drenagem.\nMovimentam a água por capilaridade.\nAssociados à atividade de fungos e pelos radiculares."
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-3",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-3",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nÁrvore de manivelas (virabrequim )\nFunção:\n\nAtua em conjunto com a biela como órgão transformador do movimento alternativo do pistão em movimento de rotação, transformando o trabalho realizado pelo pistão em torque.\n\nCaracterísticas:\n\nPeça de aço forjado com canais para conduzir o óleo lubrificante até os mancais e cabeças das bielas.\nSeu formato deriva do número e da distribuição dos cilindros (manivelas iguais ao número de cilindros)."
+    "objectID": "aula_6/aula_6.html#porosidade-do-solo-5",
+    "href": "aula_6/aula_6.html#porosidade-do-solo-5",
+    "title": "Física do solo:",
+    "section": "Porosidade do solo",
+    "text": "Porosidade do solo\n\nClassificação dos poros do solo\n\nMicroporos — 0,005–0,03 mm\n\nGeralmente presentes no interior dos agregados.\nRetêm água disponível às plantas.\nConstituem habitat de muitas bactérias.\n\nUltramicroporos — 0,0001–0,005 mm\n\nAssociados a agrupamentos de argila.\nRetêm água pouco ou não disponível às plantas.\nLimitam o acesso da maioria dos microrganismos."
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-4",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-4",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nBiela e pistão"
+    "objectID": "aula_6/aula_6.html#porosidade-do-solo-6",
+    "href": "aula_6/aula_6.html#porosidade-do-solo-6",
+    "title": "Física do solo:",
+    "section": "Porosidade do solo",
+    "text": "Porosidade do solo\n\nClassificação dos poros do solo\n\nCriptoporos — &lt; 0,0001 mm\n\nRetêm água fortemente.\nDimensão que restringe a presença de microrganismos e moléculas maiores."
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-5",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-5",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nPistão\nFunção:\n\nPistão é o órgão receptor do movimento de expansão dos gases resultantes da combustão. Primeiro componente a se movimentar.\nResponsável pela conversão da energia da combustão em trabalho mecânico.\nTrasfere a energia para o virabrequim.\n\nCaracterísticas:\n\nPeça cilíndrica localizada dentro do cilindro sem contato com o mesmo."
+    "objectID": "aula_6/aula_6.html#determinação-da-porosidade-do-solo-1",
+    "href": "aula_6/aula_6.html#determinação-da-porosidade-do-solo-1",
+    "title": "Física do solo:",
+    "section": "Determinação da porosidade do solo",
+    "text": "Determinação da porosidade do solo\n\nOs métodos podem ser diretos (medindo diretamente o espaço poroso) ou indiretos (calculados a partir da massa de água).\n\nAmostras com estrutura preservada!\n\n\nPrincipais métodos:\n\nCálculo a partir da massa de água;\nMesa de tensão (separação de macro e microporos);"
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-6",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-6",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nAnéis do pistão"
+    "objectID": "aula_6/aula_6.html#determinação-da-porosidade-total-do-solo",
+    "href": "aula_6/aula_6.html#determinação-da-porosidade-total-do-solo",
+    "title": "Física do solo:",
+    "section": "Determinação da porosidade total do solo",
+    "text": "Determinação da porosidade total do solo\n\nMétodo direto:\nA porosidade total pode ser obtida pela determinação do volume de água contido nos poros do solo.\n\nIsso é feito saturando-se uma amostra de solo com volume conhecido. Considerando que a densidade da água é aproximadamente \\(1\\ \\text{g cm}^{-3}\\), a massa de água, em gramas, é numericamente igual ao seu volume, em \\(\\text{cm}^3\\).\n\n\nApós a saturação, a amostra é pesada, obtendo-se a massa do solo saturado. Em seguida, a amostra é seca em estufa a 105 °C até massa constante e novamente pesada, obtendo-se a massa do solo seco."
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-7",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-7",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nAnéis do pistão\nFunção:\n\nOs de compressão são responsáveis pela vedaão da câmara do cilindro (fechamento hermético)\nOs de lubrificação executam o controle do fluxo de óleo entre o pistão e o cilindro.\nDissipação do calor do pistão pelas paredes do cilindro.\nRedução da área de contato direta entre as paredes do cilindro e do pistão."
+    "objectID": "aula_6/aula_6.html#determinação-da-porosidade-total-do-solo-1",
+    "href": "aula_6/aula_6.html#determinação-da-porosidade-total-do-solo-1",
+    "title": "Física do solo:",
+    "section": "Determinação da porosidade total do solo",
+    "text": "Determinação da porosidade total do solo\n\n\nA diferença entre as massas corresponde à massa de água presente nos poros:\n\\[\nm_{\\mathrm{água}} =\nm_{\\mathrm{saturado}} -\nm_{\\mathrm{seco}}\n\\]\nComo \\(\\rho_{\\mathrm{água}} \\approx 1\\ \\text{g cm}^{-3}\\):\n\\[\nV_{\\mathrm{poros}}\n\\approx\nV_{\\mathrm{água}}\n=\nm_{\\mathrm{água}}\n\\]\n\n\nAssim, conhecendo o volume total da amostra:\n\\[\n\\text{Porosidade} =\n\\frac{V_{\\mathrm{poros}}}{V_{\\mathrm{total}}}\n\\times 100\n\\]"
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-8",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-8",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nBiela\nFunção:\n\nÉ um órgão transformador do movimento alternativo do pistão em movimento de rotação no virabrequim.\nElemento de ligação entre o pistão e o virabrequim.\n\nCaracterísticas:\n\nFeita em aço, é resistente para poder transferir a energia entre as partes.\nPossui 3 partes\n\nCabeça: Orifício circular que permite ligação com o virabrequim.\nCorpo: Fas a ligação entre o pé e a cabeça.\nPé: Orifício circular que permite ligação com o pistão."
+    "objectID": "aula_6/aula_6.html#determinação-da-porosidade-do-solo-2",
+    "href": "aula_6/aula_6.html#determinação-da-porosidade-do-solo-2",
+    "title": "Física do solo:",
+    "section": "Determinação da porosidade do solo",
+    "text": "Determinação da porosidade do solo"
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-9",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-9",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nCárter de óleo"
+    "objectID": "aula_6/aula_6.html#determinação-da-porosidade-do-solo-3",
+    "href": "aula_6/aula_6.html#determinação-da-porosidade-do-solo-3",
+    "title": "Física do solo:",
+    "section": "Determinação da porosidade do solo",
+    "text": "Determinação da porosidade do solo\n\nMesa de tensão:\n\nUtilizada para separar a macro e a microporosidade, a partir da umidade retida sob determinada tensão.\n\n\nEtapas:\n\nAmostras com estrutura preservada são saturadas com água;\nAs amostras são submetidas a uma tensão de 6 kPa (60 cm de coluna de água);\nA água retida acima dessa tensão corresponde à microporosidade;\nA diferença entre a saturação e a microporosidade corresponde à macroporosidade."
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-10",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-10",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nCárter de óleo\nFunção:\n\nDepósito para o óleo lubrificante do motor.\nAssegura a lubrificação do motor.\nReservatório do óleo de lubrificação e de eventuais detritos não retido pelos filtros.\n\nCaracterísticas:\n\nInvólucro rígido que fecha o bloco em sua parte inferior."
+    "objectID": "aula_6/aula_6.html#determinação-da-porosidade-do-solo-4",
+    "href": "aula_6/aula_6.html#determinação-da-porosidade-do-solo-4",
+    "title": "Física do solo:",
+    "section": "Determinação da porosidade do solo",
+    "text": "Determinação da porosidade do solo\n\nMesa de tensão:\n\n\\[Microporosidade = \\frac{(M_{u}-M_{s})}{V_t}=\\frac{V_a}{V_t}\\]\nMu = massa da amostra saturada após tensão de 6 kPa (g); Ms = massa da amostra seca em estufa (g); Vt = volume total do cilindro (cm3).\n\n\n\\[Macroporosidade = P_t - Microporosidade\\]"
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-11",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-11",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nVolante do motor"
+    "objectID": "aula_6/aula_6.html#determinação-da-porosidade-do-solo-5",
+    "href": "aula_6/aula_6.html#determinação-da-porosidade-do-solo-5",
+    "title": "Física do solo:",
+    "section": "Determinação da porosidade do solo",
+    "text": "Determinação da porosidade do solo\n\nMesa de tensão:\nExemplos:\n\nUm cilindro de 100 cm3 apresentou porosidade total de 55%. Após submetida à tensão de 6 kPa, a amostra reteve 30 cm3 de água. Qual a macro e a microporosidade?\n\n\n\\[Microporosidade = \\frac{30}{100}*100 = 30\\%\\]\n\n\n\\[Macroporosidade = 55-30 = 25\\%\\]"
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-12",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-12",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nVálvulas"
+    "objectID": "aula_6/aula_6.html#fatores-que-afetam-a-porosidade-do-solo-1",
+    "href": "aula_6/aula_6.html#fatores-que-afetam-a-porosidade-do-solo-1",
+    "title": "Física do solo:",
+    "section": "Fatores que afetam a porosidade do solo",
+    "text": "Fatores que afetam a porosidade do solo\n\n\n\n\nIntrínsecos\n\nTextura;\nEstrutura;\nMineralogia;\nMatéria orgânica.\n\n\n\n\nExtrínsecos\n\nMáquinas e implementos agrícolas;\nTráfego de máquinas e animais;\nManejo e sistema de cultivo."
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-13",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-13",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nCabeçote"
+    "objectID": "aula_6/aula_6.html#fatores-que-afetam-a-porosidade-do-solo-2",
+    "href": "aula_6/aula_6.html#fatores-que-afetam-a-porosidade-do-solo-2",
+    "title": "Física do solo:",
+    "section": "Fatores que afetam a porosidade do solo",
+    "text": "Fatores que afetam a porosidade do solo\n\nTextura:\n\nSolos arenosos: poros maiores, porém em menor quantidade (menor Pt total, maior macroporosidade relativa);\nSolos argilosos: poros menores e em maior quantidade (maior Pt total, maior microporosidade relativa)."
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-14",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-14",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nComando de válvulas"
+    "objectID": "aula_6/aula_6.html#fatores-que-afetam-a-porosidade-do-solo-3",
+    "href": "aula_6/aula_6.html#fatores-que-afetam-a-porosidade-do-solo-3",
+    "title": "Física do solo:",
+    "section": "Fatores que afetam a porosidade do solo",
+    "text": "Fatores que afetam a porosidade do solo\n\nCompactação:\n\nO tráfego de máquinas reduz principalmente a macroporosidade, prejudicando a aeração e a infiltração de água."
   },
   {
-    "objectID": "aula_2/aula_2.html#motor-completo",
-    "href": "aula_2/aula_2.html#motor-completo",
-    "title": "Mecanização agrícola:",
-    "section": "Motor completo",
-    "text": "Motor completo"
+    "objectID": "aula_6/aula_6.html#relação-entre-a-porosidade-e-aspectos-agronômicos",
+    "href": "aula_6/aula_6.html#relação-entre-a-porosidade-e-aspectos-agronômicos",
+    "title": "Física do solo:",
+    "section": "Relação entre a porosidade e aspectos agronômicos",
+    "text": "Relação entre a porosidade e aspectos agronômicos\n\nPorosidade de aeração:\n\nValores de macroporosidade abaixo de 10% são considerados limitantes ao crescimento radicular;\nA restrição de oxigênio afeta a respiração radicular e a absorção de nutrientes;\nSolos compactados apresentam menor macroporosidade e maior risco de deficiência de aeração."
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-15",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-15",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nCamisa do cilindro"
+    "objectID": "aula_6/aula_6.html#relação-entre-a-porosidade-e-aspectos-agronômicos-1",
+    "href": "aula_6/aula_6.html#relação-entre-a-porosidade-e-aspectos-agronômicos-1",
+    "title": "Física do solo:",
+    "section": "Relação entre a porosidade e aspectos agronômicos",
+    "text": "Relação entre a porosidade e aspectos agronômicos\n\nInfiltração e armazenamento de água:\n\nMacroporos: condução rápida de água (infiltração e drenagem);\nMicroporos: armazenamento de água disponível às plantas;\nO equilíbrio entre macro e microporosidade é essencial para o manejo da água no solo."
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-16",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-16",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nCamisa do cilindro\nFunção:\n\nEvitar desgaste do bloco pelo atrico entre pistão e bloco.\nFornecer proteção para outros componentes de interior.\n\nCaracterísticas:\n\nResistentes a altas temperaturas e pressões.\nPodem ser úmidas ou secas (em contato ou não com líquido de arrefecimento)."
+    "objectID": "aula_6/aula_6.html#relações-entre-propriedades-1",
+    "href": "aula_6/aula_6.html#relações-entre-propriedades-1",
+    "title": "Física do solo:",
+    "section": "Relações entre propriedades",
+    "text": "Relações entre propriedades\n\n\\[\nP_t =\n\\frac{V_p}{V_t}\n=\n\\frac{V_t - V_s}{V_t}\n=\n\\frac{\n\\frac{M_s}{D_s} - \\frac{M_s}{D_p}\n}{\n\\frac{M_s}{D_s}\n}\n=\n1- \\frac{M_s}{D_p}*\\frac{D_s}{M_s}\n=\n1 -\n\\frac{D_s}{D_p}\n\\]\n\n\n\\(P_t\\) — porosidade total do solo, expressa como fração ou porcentagem (%).\n\\(V_p\\) — volume de poros do solo, ou seja, o volume ocupado pelo espaço poroso.\n\\(V_t\\) — volume total da amostra de solo, correspondente à soma do volume dos sólidos e do volume de poros.\n\\(V_s\\) — volume ocupado pelos sólidos do solo.\n\\(M_s\\) — massa de sólidos do solo, geralmente expressa em g.\n\\(D_s\\) — densidade do solo, definida como a razão entre a massa de sólidos e o volume total da amostra:\n\\(D_p\\) — densidade de partículas, definida como a razão entre a massa de sólidos e o volume ocupado exclusivamente pelas partículas sólidas:"
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-17",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-17",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nCamisa do cilindro"
+    "objectID": "aula_6/aula_6.html#exercícios-1",
+    "href": "aula_6/aula_6.html#exercícios-1",
+    "title": "Física do solo:",
+    "section": "Exercícios",
+    "text": "Exercícios\n\n\n\n\n\n\n1 - Um cilindro de 100 cm3 apresentou porosidade total de 50%. Após tensão de 6 kPa, a amostra reteve 18 cm3 de água. Qual a macro e a microporosidade dessa amostra?\n\nResposta:\n\\[Microporosidade = \\frac{18}{100}= 0,18 cm^3 cm^3 (18\\%)\\]\n\n\n\\[Porosidade~total = \\frac{100*50}{100}= 50\\]\n\n\n\\[Macroporosidade = \\frac{(50-18)}{100}= 0,32 cm^3 cm^3 (32\\%)\\]"
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-18",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-18",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nCasquilhos ou bronzinas"
+    "objectID": "aula_6/aula_6.html#exercícios-2",
+    "href": "aula_6/aula_6.html#exercícios-2",
+    "title": "Física do solo:",
+    "section": "Exercícios",
+    "text": "Exercícios\n\n\n\n\n\n\n2 - Um cilindro de 200 cm3 apresentou porosidade total de 45%. Após tensão de 6 kPa, a amostra reteve 52 cm3 de água. Qual a macro e a microporosidade dessa amostra?\n\nResposta:\n\\[Microporosidade = \\frac{52}{200}= 0,26 cm^3 cm^3 (26\\%)\\]\n\n\n\\[Porosidade~total = \\frac{200*45}{100}= 90\\]\n\n\n\\[Macroporosidade = \\frac{(90-52)}{200}= 0,19 cm^3 cm^3 (19\\%)\\]"
   },
   {
-    "objectID": "aula_2/aula_2.html#componente-do-motor-diesel-19",
-    "href": "aula_2/aula_2.html#componente-do-motor-diesel-19",
-    "title": "Mecanização agrícola:",
-    "section": "Componente do motor diesel",
-    "text": "Componente do motor diesel\nCasquilhos ou bronzinas\nFunção:\n\nReduzir atrito e desgaste entre os elementos.\nAuxiliam no correto alinhamento do virabrequim e comando de válculas no bloco.\n\nCaracterísticas:\n\nEntregada entre biela e virabrequim, pino e êmbolo, etc."
+    "objectID": "aula_6/aula_6.html#exercícios-3",
+    "href": "aula_6/aula_6.html#exercícios-3",
+    "title": "Física do solo:",
+    "section": "Exercícios",
+    "text": "Exercícios\n\n\n\n\n\n\n3 - Um cilindro de 150 cm3 apresentou porosidade total de 60%. Após tensão de 6 kPa, a amostra reteve 45 cm3 de água. Qual a macro e a microporosidade dessa amostra?\n\nResposta:\n\\[Microporosidade = \\frac{45}{150}= 0,3 cm^3 cm^3 (30\\%)\\]\n\n\n\\[Porosidade~total = \\frac{150*60}{100}= 90\\]\n\n\n\\[Macroporosidade = \\frac{(90-45)}{150}= 0,3 cm^3 cm^3 (30\\%)\\]"
   },
   {
-    "objectID": "aula_2/aula_2.html#diferenças-entre-otto-e-diesel",
-    "href": "aula_2/aula_2.html#diferenças-entre-otto-e-diesel",
-    "title": "Mecanização agrícola:",
-    "section": "Diferenças entre Otto e Diesel",
-    "text": "Diferenças entre Otto e Diesel\nForma do pistão"
+    "objectID": "aula_6/aula_6.html#exercícios-4",
+    "href": "aula_6/aula_6.html#exercícios-4",
+    "title": "Física do solo:",
+    "section": "Exercícios",
+    "text": "Exercícios\n\n\n\n\n\n\n4 - Um cilindro de 250 cm3 apresentou porosidade total de 48%. Após tensão de 6 kPa, a amostra reteve 80 cm3 de água. Qual a macro e a microporosidade dessa amostra?\n\nResposta:\n\\[Microporosidade = \\frac{80}{250}= 0,32 cm^3 cm^3 (32\\%)\\]\n\n\n\\[Porosidade~total = \\frac{250*48}{100}= 120\\]\n\n\n\\[Macroporosidade = \\frac{(120-80)}{250}= 0,16 cm^3 cm^3 (16\\%)\\]"
   },
   {
-    "objectID": "aula_2/aula_2.html#diferenças-entre-otto-e-diesel-1",
-    "href": "aula_2/aula_2.html#diferenças-entre-otto-e-diesel-1",
-    "title": "Mecanização agrícola:",
-    "section": "Diferenças entre Otto e Diesel",
-    "text": "Diferenças entre Otto e Diesel\n\n\n\n\n\n\n\n\nParâmetro\nCiclo Otto\nCiclo Diesel\n\n\n\n\nCombustível\nGasolina, Etanol, Metanol, GLP\nÓleo Diesel, Biodiesel\n\n\nCondição termodinâmica do ciclo principal\nAdição de calor a volume constante\nAdição de calor a pressão constante\n\n\nFase de admissão\nAdmite mistura de ar e combustível\nAdmite apenas ar\n\n\nRelação ar/combustível\nPouco variável\nMuito variável\n\n\nControle de carga\nVariando a quantidade de mistura\nVariando a quantidade de combustível"
+    "objectID": "aula_6/aula_6.html#exercícios-5",
+    "href": "aula_6/aula_6.html#exercícios-5",
+    "title": "Física do solo:",
+    "section": "Exercícios",
+    "text": "Exercícios\n\n\n\n\n\n\n5 - Um cilindro de 180 cm3 apresentou porosidade total de 55%. Após tensão de 6 kPa, a amostra reteve 63 cm3 de água. Qual a macro e a microporosidade dessa amostra?\n\nResposta:\n\\[Microporosidade = \\frac{63}{180}= 0,35 cm^3 cm^3 (35\\%)\\]\n\n\n\\[Porosidade~total = \\frac{180*55}{100}= 99\\]\n\n\n\\[Macroporosidade = \\frac{(99-63)}{180}= 0,2 cm^3 cm^3 (20\\%)\\]"
   },
   {
-    "objectID": "aula_2/aula_2.html#diferenças-entre-otto-e-diesel-2",
-    "href": "aula_2/aula_2.html#diferenças-entre-otto-e-diesel-2",
-    "title": "Mecanização agrícola:",
-    "section": "Diferenças entre Otto e Diesel",
-    "text": "Diferenças entre Otto e Diesel\n\n\n\n\n\n\n\n\nParâmetro\nCiclo Otto\nCiclo Diesel\n\n\n\n\nTaxa de compressão\n6–10:1\n16–20:1\n\n\nPressão mínima de compressão (kPa)\n1400\n3240\n\n\nForma de ignição\nCentelha elétrica\nAutoignição\n\n\nRotação\nMotores leves; combustão homogênea; altas rotações\nMotores pesados; combustão heterogênea; baixas rotações\n\n\nRotação de potência máxima\n&gt; 5000 rpm\n&lt; 3000 rpm\n\n\nRendimento térmico\n25–30%\n30–35%"
+    "objectID": "aula_6/aula_6.html#exercícios-6",
+    "href": "aula_6/aula_6.html#exercícios-6",
+    "title": "Física do solo:",
+    "section": "Exercícios",
+    "text": "Exercícios\n\n\n\n\n\n\n6 - Uma amostra de solo apresentou densidade do solo de 1,35 g cm-3 e densidade de partícula de 2,70 g cm-3. Qual a porosidade total desse solo?\n\nResposta:\n\\[P_t = \\left(1-\\frac{D_s}{D_p}\\right)*100\\]\n\n\n\\[P_t = \\left(1-\\frac{1,35}{2,70}\\right)*100\\]\n\n\n\\[P_t = 50~\\%\\]"
   },
   {
-    "objectID": "aula_2/aula_2.html#arranjamento-dos-cilindros-1",
-    "href": "aula_2/aula_2.html#arranjamento-dos-cilindros-1",
-    "title": "Mecanização agrícola:",
-    "section": "Arranjamento dos cilindros",
-    "text": "Arranjamento dos cilindros"
-  },
-  {
-    "objectID": "aula_2/aula_2.html#o-que-é-cilindrada",
-    "href": "aula_2/aula_2.html#o-que-é-cilindrada",
-    "title": "Mecanização agrícola:",
-    "section": "O que é Cilindrada?",
-    "text": "O que é Cilindrada?\n\nO que significa falar que o motor é 2.0?\nO que é um carro 1000?"
-  },
-  {
-    "objectID": "aula_2/aula_2.html#motor-2-tempos-1",
-    "href": "aula_2/aula_2.html#motor-2-tempos-1",
-    "title": "Mecanização agrícola:",
-    "section": "Motor 2 tempos",
-    "text": "Motor 2 tempos"
-  },
-  {
-    "objectID": "aula_4/aula_4.html#o-que-é-um-trator",
-    "href": "aula_4/aula_4.html#o-que-é-um-trator",
-    "title": "Mecanização agrícola:",
-    "section": "O que é um trator?",
-    "text": "O que é um trator?"
-  },
-  {
-    "objectID": "aula_4/aula_4.html#definições",
-    "href": "aula_4/aula_4.html#definições",
-    "title": "Mecanização agrícola:",
-    "section": "Definições",
-    "text": "Definições\nMotor\n\nUma máquina que transforma energia térmica em energia mecânica\n\n\n\nOs motores de combustão interna, transformam a energia térmica gerada pela combustão da mistura ar/combustível em energia mecânica"
+    "objectID": "aula_6/aula_6.html#exercícios-7",
+    "href": "aula_6/aula_6.html#exercícios-7",
+    "title": "Física do solo:",
+    "section": "Exercícios",
+    "text": "Exercícios\n\n\n\n\n\n\n7 - Um solo apresenta densidade de partícula de 2,65 g cm-3 e porosidade total de 42%. Qual a densidade desse solo?\n\nResposta:\n\\[P_t = \\left(1-\\frac{D_s}{D_p}\\right)*100\\]\n\n\n\\[42 = \\left(1-\\frac{D_s}{2,65}\\right)*100\\]\n\n\n\\[D_s = 2,65*(1-0,42) = 1,54~g~cm^3\\]"
   }
 ]

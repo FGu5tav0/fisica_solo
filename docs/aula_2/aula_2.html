@@ -6,13 +6,13 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/quarto-contrib/timeline-0.1.0/timeline.js"></script>
 <link href="../site_libs/quarto-contrib/timeline-0.1.0/timeline.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.38">
+  <meta name="generator" content="quarto-1.10.19">
 
   <meta name="author" content="Gustavo Frosi">
-  <title>mecanizacao – Mecanização agrícola:</title>
+  <title>Física do solo – Física do solo:</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -22,10 +22,13 @@
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
     */
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -36,15 +39,6 @@
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-ec59874b3a8398889ca2432df423b2c0.css">
   <link rel="stylesheet" href="styles.scss">
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-SCQSRGY4FE"></script>
-
-  <script type="text/javascript">
-
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-SCQSRGY4FE', { 'anonymize_ip': true});
-  </script>
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -136,20 +130,23 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
 <script src="mathjax-config.js"></script>
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="fundo.jpg" data-background-opacity="0.9" data-background-position="right 3% top 52%" data-background-size="50%" class="quarto-title-block center">
-  <h1 class="title">Mecanização agrícola:</h1>
-  <p class="subtitle">Motores de combustão interna e <br> seus constituintes</p>
+<section id="title-slide" data-background-image="fundo.png" data-background-opacity="0.9" data-background-position="right 3% top 52%" data-background-size="40%" class="quarto-title-block center">
+  <h1 class="title">Física do solo:</h1>
+  <p class="subtitle">Composição do solo e textura</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Gustavo Frosi 
+Gustavo Frosi
 </div>
 <div class="quarto-title-author-email">
 <a href="mailto:gustavofrosi@hotmail.com">gustavofrosi@hotmail.com</a>
@@ -160,675 +157,863 @@ Gustavo Frosi
     </div>
 </div>
 
-  <p class="date">10 de junho de 2026</p>
+  <p class="date">17 de agosto de 2026</p>
 </section>
-<section id="o-que-é-um-motor" class="title-slide slide level1 center">
-<h1>O que é um motor?</h1>
+<section>
+<section id="o-que-compõe-o-solo" class="title-slide slide level1 center">
+<h1>O que compõe o solo?</h1>
+
+</section>
+<section id="composição-do-solo" class="slide level2">
+<h2>Composição do solo</h2>
 <hr>
+<p>O solo é um corpo natural, trifásico, tridimensional, heterogêneo, dinâmico, formado por materiais minerais e orgânicos, contém matéria viva e pode ser vegetado.</p>
+<p>Fases:</p>
+<ul>
+<li class="fragment"><p>Fase sólida (matriz do solo).</p></li>
+<li class="fragment"><p>Fase líquida.</p></li>
+<li class="fragment"><p>Fase gasosa.</p></li>
+</ul>
 </section>
+<section id="composição-do-solo-1" class="slide level2">
+<h2>Composição do solo</h2>
+<hr>
 
-<section>
-<section id="definições" class="title-slide slide level1 center">
-<h1>Definições</h1>
-
-</section>
-<section id="definições-1" class="slide level2">
-<h2>Definições</h2>
-<p>Motor</p>
-<blockquote>
-<p>Uma máquina que transforma energia térmica em energia mecânica</p>
-</blockquote>
-<div class="fragment">
-<blockquote>
-<p>Os motores de combustão interna, transformam a energia térmica gerada pela combustão da mistura ar/combustível em energia mecânica</p>
-</blockquote>
+<img data-src="imagens/composicao.jpeg" class="quarto-figure quarto-figure-center r-stretch"><div style="font-size: 70%;">
+<p>Representação de um solo (em volume) de textura média em condições ótimas para o crescimento das plantas.</p>
 </div>
-</section></section>
-<section>
-<section id="classificação-dos-motores" class="title-slide slide level1 center">
-<h1>Classificação dos motores</h1>
-
 </section>
-<section id="quanto-a-fonte-geradora" class="slide level2">
-<h2>Quanto a fonte geradora</h2>
+<section id="composição-do-solo-2" class="slide level2">
+<h2>Composição do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Fase líquida</strong></span></p>
+<ul>
+<li class="fragment"><p>Ocupa parcialmente ou totalmente o espaço poroso do solo;</p></li>
+<li class="fragment"><p>Variação espacial e temporal (condições climáticas, estado de energia no solo e relações solo-planta-atmosfera);</p></li>
+<li class="fragment"><p>Responsável pela dissolução e transporte de íons e compostos às plantas;</p></li>
+<li class="fragment"><p>Água do solo é diferente de solução do solo;</p></li>
+<li class="fragment"><p>Governa a maior parte dos processos que ocorrem no solo, direta ou indiretamente.</p></li>
+</ul>
+</section>
+<section id="composição-do-solo-3" class="slide level2">
+<h2>Composição do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Fase gasosa</strong></span></p>
+<ul>
+<li class="fragment"><p>Espaço poroso momentaneamente não ocupado por água;</p></li>
+<li class="fragment"><p>Pode ser considerado o “ar” ou a “atmosfera” do solo;</p></li>
+<li class="fragment"><p>Composto por diversos gases.</p>
+<ul>
+<li class="fragment">N<sub>2</sub>, O<sub>2</sub>, CO<sub>2</sub>, CH<sub>4</sub>, C<sub>2</sub>H<sub>6</sub>, H<sub>2</sub>S, N<sub>2</sub>O, NO.</li>
+</ul></li>
+</ul>
+</section>
+<section id="composição-do-solo-4" class="slide level2">
+<h2>Composição do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Fase sólida orgânica</strong></span></p>
+<ul>
+<li class="fragment"><p>Geralmente menos de 5%;</p></li>
+<li class="fragment"><p>Material orgânico em diferentes estágios de alteração;</p></li>
+<li class="fragment"><p>Húmus: substâncias húmicas (80-90% da MOS).</p></li>
+<li class="fragment"><p>Fração com alta área superficial específica (ASE);</p></li>
+<li class="fragment"><p>Densidade de cargas elétricas na superfície;</p></li>
+<li class="fragment"><p>Capacidade de troca de cátions (CTC);</p></li>
+<li class="fragment"><p>Afinidade com água;</p></li>
+<li class="fragment"><p>Densidade de partícula.</p></li>
+</ul>
+</section>
+<section id="composição-do-solo-5" class="slide level2">
+<h2>Composição do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Fase sólida mineral</strong></span></p>
+<ul>
+<li class="fragment"><p>Partículas minerais herdadas do material de origem do solo ou formadas por processos pedogenéticos;</p></li>
+<li class="fragment"><p>Propriedades químicas das partículas minerais;</p></li>
+<li class="fragment"><p>Diâmetro das partículas (tamanho);</p></li>
+<li class="fragment"><p>ASE;</p></li>
+<li class="fragment"><p>Mineralogia influência nas propriedades globais dos solos;</p></li>
+</ul>
+</section>
+<section id="composição-do-solo-6" class="slide level2">
+<h2>Composição do solo</h2>
+<hr>
+<p>Composição do solo em volume e peso</p>
+
+<img data-src="imagens/volume_peso.jpeg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="composição-do-solo-7" class="slide level2">
+<h2>Composição do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Classificação de diâmetro das partículas</strong></span></p>
 <p><br></p>
-<div class="columns">
-<div class="column">
-<div class="fragment">
-<p>Motor a combustão</p>
-<p><img data-src="imagens/motor_trator.jpg" style="width:100.0%"></p>
-</div>
-</div><div class="column">
-<div class="fragment">
-<p>Motor elétrico</p>
-<p><img data-src="imagens/motor_eletrico.jpeg" style="width:100.0%"></p>
-</div>
-</div></div>
-<div class="fragment">
-<p><span class="fg" style="--col: #e64173"><strong>Motor híbrido</strong>: Que é um sistema que se utiliza de ambos os tipos de motores para gerar movimento</span></p>
-</div>
-</section>
-<section id="quanto-a-combustão" class="slide level2">
-<h2>Quanto a combustão</h2>
-<p><br></p>
-<ul>
-<li class="fragment"><p>Combustão externa (máquina a vapor)</p></li>
-<li class="fragment"><p>Combustão interna</p>
-<ul>
-<li class="fragment">De pistão (ciclo otto e diesel)</li>
-<li class="fragment">Êmbolo rotativo (wankel)</li>
-</ul></li>
-</ul>
-</section>
-<section id="como-ocorre-a-combustão" class="slide level2">
-<h2>Como ocorre a combustão</h2>
-<p>A combustão é uma reação química exotérmica (libera calor) entre uma substãncia (combustível) e um gás (comburente) para liberar calor.</p>
-<div class="fragment">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="imagens/tri_combustao.png" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div>
-</section>
-<section id="como-ocorre-a-combustão-1" class="slide level2">
-<h2>Como ocorre a combustão</h2>
-
-<img data-src="imagens/requisitos_motor.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="como-ocorre-a-combustão-2" class="slide level2">
-<h2>Como ocorre a combustão</h2>
-<p>Fórmula química da combustão</p>
-<p><span class="math display">\[CH_{4} + 20_2 = CO_2 + 2H_{2}O + Calor\]</span></p>
-<div class="fragment">
-<p>Gasolina = C<sub>8</sub>H<sub>18</sub> (octano)</p>
-<p>Diesel (estrutura complexa) = CH<sub>3</sub>(CH<sub>2</sub>)<sub>14</sub>CH<sub>3</sub>(C<sub>16</sub>H<sub>34</sub>) (cetano)</p>
-</div>
-</section>
-<section id="combustão-externa" class="slide level2">
-<h2>Combustão externa</h2>
-<p>Ex: máquinas a vapor</p>
-
-<img data-src="imagens/maquna_vapor2.jpg" style="width:100.0%" class="r-stretch"><aside class="notes">
-<p>quando a água é aquecida ela se torna vapor e ocupa maior espaço o que gera pressão</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="quanto-a-combustão-1" class="slide level2">
-<h2>Quanto a combustão</h2>
-<p>Exemplo de máquina a vapor</p>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="imagens/maquina_vapor1.jpeg"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="imagens/locomotiva.jpg"></p>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="combustão-interna" class="title-slide slide level1 center">
-<h1>Combustão interna</h1>
-
-</section>
-<section id="combustão-interna-1" class="slide level2">
-<h2>Combustão interna</h2>
-<div class="fragment">
-<p><span class="fg" style="--col: #e64173"><strong>Ciclo Otto</strong></span></p>
-<p>Utilizam combustível de baixa volatilidade, como gasolina e álcool. Para ignição necessitam de centelha produzida pelo sistema elétrico.</p>
-</div>
-<div class="fragment">
-<p><span class="fg" style="--col: #e64173"><strong>Ciclo Diesel</strong></span></p>
-<p>Utilizam como combustível o óleo diesel. A inflamação do combustível injetado sobe pressão na câmara de combustão ocorre pela ocmpressão de ar e consequente elevação da temperatura.</p>
-</div>
-</section>
-<section id="quanto-ao-número-de-ciclos" class="slide level2">
-<h2>Quanto ao número de ciclos</h2>
-<ul>
-<li class="fragment"><p>Motor de 4 tempos</p></li>
-<li class="fragment"><p>Motor de 2 tempos</p></li>
-</ul>
-</section>
-<section id="objetivo-do-motor" class="slide level2">
-<h2>Objetivo do motor</h2>
-<p>Gerar trabalho!</p>
-<div class="fragment">
-<p><span class="math inline">\(Trabalho~(J) = Força(N) * deslocamento(m)\)</span></p>
-</div>
-<div class="fragment">
-<p><span class="math inline">\(Força(N) = mass(kg) * aceleração(\Delta_v/\Delta_t)\)</span></p>
-</div>
-<div class="fragment">
-<p>Potência: Capacidade de transmitir energia por tempo.</p>
-<ul>
-<li>Realização de trabalho ou transmissão de calor.</li>
-</ul>
-<p>Ex de potência: 1 cavalo puxa 75 kg em 1 s.</p>
-</div>
-</section></section>
-<section>
-<section id="histórico-sobre-motores" class="title-slide slide level1 center">
-<h1>Histórico sobre motores</h1>
-
-</section>
-<section id="histórico" class="slide level2">
-<h2>Histórico</h2>
-<!-- <br> -->
-<div class="timeline horizontal fragment-slide tl-spacious">
-<div class="event" data-label="1862">
-<p><strong>Alphonse Beau de Rochas (França)</strong></p>
-<p>Publica e registra os termos teóricos de um “princípio” de um motor a 4 tempos com compressão prévia da mistura antes da ignição.</p>
-</div>
-<div class="event fragment" data-label="1867">
-<p><strong>Exposição de Paris</strong></p>
-<p><strong>Nikolaus August Otto</strong> apresenta um motor a combustão interna (4 tempos). <img data-src="imagens/otto.png"></p>
-</div>
-<div class="event fragment" data-label="1876">
-<p><strong>Motor a quatro tempos funcional de Otto</strong></p>
-<p>Otto e Deutz produzem o primeiro motor prático e confiável no ciclo de 4 tempo (admissão, compressão, combustão e escape).</p>
-<p>O ciclo ficou conhecido como <strong>ciclo Otto</strong></p>
-</div>
-<div class="event fragment" data-label="1886">
-<p><strong>Queda da patente de Otto na Alemanha</strong></p>
-<p>O documento de Beau de Rocha é redescoberto, assim a patente de Otto é invalidade.</p>
-<p>Várias fabricantes podem recriar o motor.</p>
-</div>
-<div class="event fragment" data-label="1879 – 1881">
-<p><strong>Dois tempos</strong></p>
-<p>Dugald Clerk patenteia um motor de 2 tempo com compressão estabelecendo uma alternativa ao ciclo Otto de 4 tempos.</p>
-</div>
-<div class="event fragment" data-label="1889">
-<p><strong>Ciclo Otto em veículos</strong></p>
-<p>Ocorre a primeira aplicação do motor de ciclo Otto em veículos utilizando combustível a gasolina.</p>
-</div>
-<div class="event fragment" data-label="1893">
-<p><strong>Ciclo Diesel</strong></p>
-<p>Engenheiro <strong>Rudolf Diesel</strong> descreve um novo motor, no qual a ignição da mistura ar mais combustível era feita por compressão (<strong>motor Diesel</strong>). <img data-src="imagens/diesel.png"></p>
-</div>
-</div>
-</section></section>
-<section>
-<section id="funcionamento-do-motor-a-combustão-interna" class="title-slide slide level1 center">
-<h1>Funcionamento do motor a combustão interna</h1>
-
-</section>
-<section id="funcionamento-do-motor-a-combustão-interna-1" class="slide level2">
-<h2>Funcionamento do motor a combustão interna</h2>
-
-<img data-src="imagens/motor_cortado.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="funcionamento-do-motor-a-combustão-interna-2" class="slide level2">
-<h2>Funcionamento do motor a combustão interna</h2>
-<p><span class="fg" style="--col: #e64173"><strong>4 tempos ciclo diesel</strong></span></p>
-<div class="fragment">
-<ul>
-<li>Admissão: O pistão desce, a válvula de admissão se abre e a de escape fecha. Ao descer, o pistão cria pressão no cilindor. O ar é forçado pela pressão atmosféria a entrar no cilindro pelo filtro de ar e pela tubulação de admissão. A quantidade que entra é sempre a mesma, independente da aceleração.</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>Compressão: O pistão sobe, as válvulas de admissão e de escape ficam fechadas. O ar admitido é comprimido até ocupar o volume da câmara de combustão. O ar se aquece, e ao fim da compressão, o bico injeto pulveriza óleo diesel no interior da câmara de combustão.</li>
-</ul>
-</div>
-</section>
-<section id="funcionamento-do-motor-a-combustão-interna-3" class="slide level2">
-<h2>Funcionamento do motor a combustão interna</h2>
-<p><span class="fg" style="--col: #e64173"><strong>4 tempos ciclo diesel</strong></span></p>
-<div class="fragment">
-<ul>
-<li>Combustão: O pistão desce, acionado pela força de expansão dos gases queimados. As válvulas de admissão e de escape estão fechadas. A força de expansão é transmitida pelo piestão à biela e desta ao virabrequim, provocando assim movimento de rotação do motor.</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>Escape: O pistão sobe, estando a válvula de escape aberta e a de admissão fechada. Os gases queimados são expulsos através da passagem dada pela válvula de escape.</li>
-</ul>
-</div>
-</section>
-<section id="funcionamento-do-motor-a-combustão-interna-4" class="slide level2">
-<h2>Funcionamento do motor a combustão interna</h2>
-<p>Admissão</p>
-
-<img data-src="imagens/admissao.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="funcionamento-do-motor-a-combustão-interna-5" class="slide level2">
-<h2>Funcionamento do motor a combustão interna</h2>
-<p>Compressão</p>
-
-<img data-src="imagens/compressao.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="funcionamento-do-motor-a-combustão-interna-6" class="slide level2">
-<h2>Funcionamento do motor a combustão interna</h2>
-<p>Explosão</p>
-
-<img data-src="imagens/expansao.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="funcionamento-do-motor-a-combustão-interna-7" class="slide level2">
-<h2>Funcionamento do motor a combustão interna</h2>
-<p>Descarga</p>
-
-<img data-src="imagens/descarga.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="funcionamento-do-motor-a-combustão-interna-8" class="slide level2">
-<h2>Funcionamento do motor a combustão interna</h2>
-
-<img data-src="imagens/ciclo_diesel.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="funcionamento-do-motor-a-combustão-interna-9" class="slide level2">
-<h2>Funcionamento do motor a combustão interna</h2>
-
-<img data-src="imagens/motor-diesel-gif-4.gif" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="funcionamento-do-motor-a-combustão-interna-10" class="slide level2">
-<h2>Funcionamento do motor a combustão interna</h2>
-
-<img data-src="imagens/fases_motor.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="funcionamento-do-motor-a-combustão-interna-11" class="slide level2">
-<h2>Funcionamento do motor a combustão interna</h2>
-
-<img data-src="imagens/motor.gif" class="r-stretch"></section>
-<section id="funcionamento-do-motor-a-combustão-interna-12" class="slide level2">
-<h2>Funcionamento do motor a combustão interna</h2>
-<iframe width="2537" height="745" src="https://www.youtube.com/embed/Rw5Ewen7fGI" title="Como funciona um motor a diesel? Animação 3D" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-</section>
-<section id="funcionamento-do-motor-a-combustão-interna-13" class="slide level2">
-<h2>Funcionamento do motor a combustão interna</h2>
-</section></section>
-<section>
-<section id="componente-do-motor" class="title-slide slide level1 center">
-<h1>Componente do motor</h1>
-
-</section>
-<section id="componente-do-motor-1" class="slide level2">
-<h2>Componente do motor</h2>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="imagens/componentes-motor-ciclo-diesel.png" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="imagens/motor_combustao.jpeg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="componente-do-motor-diesel" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p><span class="fg" style="--col: #e64173"><strong>Bloco dos cilindros</strong></span></p>
-
-<img data-src="imagens/bloco-dos-cilindros.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="componente-do-motor-diesel-1" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p><span class="fg" style="--col: #e64173"><strong>Bloco dos cilindros</strong></span></p>
-<p>Função:</p>
-<ul>
-<li>Base onde se encontram todos os demais elementos do funcionamento do motor.
-<ul>
-<li>Cabeçote, válvulas, árvore de comando, cilindros, pistão, aníes de segmento, biela, casquilhos, árvore dde manivelas, volante e cárter.</li>
-</ul></li>
-<li>Em máquinas agrícolas apresenta função estrutural e de sustentação.</li>
-</ul>
-<p>Características:</p>
-<ul>
-<li>Peça de fundição.</li>
-<li>Em seu interior apresenta grandes orifícios cilíndricos (cilindros) onde se realiza a combustão.</li>
-<li>Apresenta cavidades para a passagem de água de arrefecimento.</li>
-</ul>
-</section>
-<section id="componente-do-motor-diesel-2" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p><span class="fg" style="--col: #e64173"><strong>Árvore de manivelas (virabrequim )</strong></span></p>
-
-<img data-src="imagens/arvore-de-manivelas.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="componente-do-motor-diesel-3" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p><span class="fg" style="--col: #e64173"><strong>Árvore de manivelas (virabrequim )</strong></span></p>
-<p>Função:</p>
-<ul>
-<li>Atua em conjunto com a biela como órgão transformador do movimento alternativo do pistão em movimento de rotação, transformando o trabalho realizado pelo pistão em torque.</li>
-</ul>
-<p>Características:</p>
-<ul>
-<li>Peça de aço forjado com canais para conduzir o óleo lubrificante até os mancais e cabeças das bielas.</li>
-<li>Seu formato deriva do número e da distribuição dos cilindros (manivelas iguais ao número de cilindros).</li>
-</ul>
-</section>
-<section id="componente-do-motor-diesel-4" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p><span class="fg" style="--col: #e64173"><strong>Biela e pistão</strong></span></p>
-
-<img data-src="imagens/biela-pistao.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="componente-do-motor-diesel-5" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p><span class="fg" style="--col: #e64173"><strong>Pistão</strong></span></p>
-<p>Função:</p>
-<ul>
-<li>Pistão é o órgão receptor do movimento de expansão dos gases resultantes da combustão. Primeiro componente a se movimentar.</li>
-<li>Responsável pela conversão da energia da combustão em trabalho mecânico.</li>
-<li>Trasfere a energia para o virabrequim.</li>
-</ul>
-<p>Características:</p>
-<ul>
-<li>Peça cilíndrica localizada dentro do cilindro sem contato com o mesmo.</li>
-</ul>
-</section>
-<section id="componente-do-motor-diesel-6" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p><span class="fg" style="--col: #e64173"><strong>Anéis do pistão</strong></span></p>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="imagens/aneis_pistao.jpeg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="imagens/aneis_pistao.jpg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="componente-do-motor-diesel-7" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p><span class="fg" style="--col: #e64173"><strong>Anéis do pistão</strong></span></p>
-<p>Função:</p>
-<ul>
-<li>Os de compressão são responsáveis pela vedaão da câmara do cilindro (fechamento hermético)</li>
-<li>Os de lubrificação executam o controle do fluxo de óleo entre o pistão e o cilindro.</li>
-<li>Dissipação do calor do pistão pelas paredes do cilindro.</li>
-<li>Redução da área de contato direta entre as paredes do cilindro e do pistão.</li>
-</ul>
-</section>
-<section id="componente-do-motor-diesel-8" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p><span class="fg" style="--col: #e64173"><strong>Biela</strong></span></p>
-<p>Função:</p>
-<ul>
-<li>É um órgão transformador do movimento alternativo do pistão em movimento de rotação no virabrequim.</li>
-<li>Elemento de ligação entre o pistão e o virabrequim.</li>
-</ul>
-<p>Características:</p>
-<ul>
-<li>Feita em aço, é resistente para poder transferir a energia entre as partes.</li>
-<li>Possui 3 partes
-<ul>
-<li>Cabeça: Orifício circular que permite ligação com o virabrequim.</li>
-<li>Corpo: Fas a ligação entre o pé e a cabeça.</li>
-<li>Pé: Orifício circular que permite ligação com o pistão.</li>
-</ul></li>
-</ul>
-</section>
-<section id="componente-do-motor-diesel-9" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p><span class="fg" style="--col: #e64173"><strong>Cárter de óleo</strong></span></p>
-
-<img data-src="imagens/carter-de-oleo.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="componente-do-motor-diesel-10" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p><span class="fg" style="--col: #e64173"><strong>Cárter de óleo</strong></span></p>
-<p>Função:</p>
-<ul>
-<li>Depósito para o óleo lubrificante do motor.</li>
-<li>Assegura a lubrificação do motor.</li>
-<li>Reservatório do óleo de lubrificação e de eventuais detritos não retido pelos filtros.</li>
-</ul>
-<p>Características:</p>
-<ul>
-<li>Invólucro rígido que fecha o bloco em sua parte inferior.</li>
-</ul>
-</section>
-<section id="componente-do-motor-diesel-11" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p>Volante do motor</p>
-
-<img data-src="imagens/compensador-de-massa.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="componente-do-motor-diesel-12" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p>Válvulas</p>
-
-<img data-src="imagens/valvulas.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="componente-do-motor-diesel-13" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p>Cabeçote</p>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="imagens/cabecote-1-1.png"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="imagens/cabecote-2-1.png"></p>
-</div>
-</div>
-</div>
-</section>
-<section id="componente-do-motor-diesel-14" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p>Comando de válvulas</p>
-
-<img data-src="imagens/comando-de-valvulas.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="motor-completo" class="slide level2">
-<h2>Motor completo</h2>
-
-<img data-src="imagens/partes_motor.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="componente-do-motor-diesel-15" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p>Camisa do cilindro</p>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="imagens/camisa.jpeg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="imagens/camisa_cilindro.jpeg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="componente-do-motor-diesel-16" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p>Camisa do cilindro</p>
-<p>Função:</p>
-<ul>
-<li>Evitar desgaste do bloco pelo atrico entre pistão e bloco.</li>
-<li>Fornecer proteção para outros componentes de interior.</li>
-</ul>
-<p>Características:</p>
-<ul>
-<li>Resistentes a altas temperaturas e pressões.</li>
-<li>Podem ser úmidas ou secas (em contato ou não com líquido de arrefecimento).</li>
-</ul>
-</section>
-<section id="componente-do-motor-diesel-17" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p>Camisa do cilindro</p>
-
-<img data-src="imagens/camisas.png" class="r-stretch"></section>
-<section id="componente-do-motor-diesel-18" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p>Casquilhos ou bronzinas</p>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="imagens/casquilho.jpg"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="imagens/biela_casquilho.jpeg"></p>
-</div>
-</div>
-</div>
-</section>
-<section id="componente-do-motor-diesel-19" class="slide level2">
-<h2>Componente do motor diesel</h2>
-<p>Casquilhos ou bronzinas</p>
-<p>Função:</p>
-<ul>
-<li>Reduzir atrito e desgaste entre os elementos.</li>
-<li>Auxiliam no correto alinhamento do virabrequim e comando de válculas no bloco.</li>
-</ul>
-<p>Características:</p>
-<ul>
-<li>Entregada entre biela e virabrequim, pino e êmbolo, etc.</li>
-</ul>
-</section>
-<section id="diferenças-entre-otto-e-diesel" class="slide level2">
-<h2>Diferenças entre Otto e Diesel</h2>
-<p>Forma do pistão</p>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="imagens/pistao-ciclo-otto.png"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="imagens/pistao-ciclo-diesel.png"></p>
-</div>
-</div>
-</div>
-</section>
-<section id="diferenças-entre-otto-e-diesel-1" class="slide level2">
-<h2>Diferenças entre Otto e Diesel</h2>
 <table class="caption-top">
-<colgroup>
-<col style="width: 31%">
-<col style="width: 31%">
-<col style="width: 36%">
-</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Parâmetro</th>
-<th style="text-align: left;">Ciclo Otto</th>
-<th style="text-align: left;">Ciclo Diesel</th>
+<th>Denominação</th>
+<th>Diâmetro (mm)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Combustível</td>
-<td style="text-align: left;">Gasolina, Etanol, Metanol, GLP</td>
-<td style="text-align: left;">Óleo Diesel, Biodiesel</td>
+<td>Matacões</td>
+<td>&gt; 200</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Condição termodinâmica do ciclo principal</td>
-<td style="text-align: left;">Adição de calor a volume constante</td>
-<td style="text-align: left;">Adição de calor a pressão constante</td>
+<td>Calhaus</td>
+<td>200 - 20</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Fase de admissão</td>
-<td style="text-align: left;">Admite mistura de ar e combustível</td>
-<td style="text-align: left;">Admite apenas ar</td>
+<td>Cascalhos</td>
+<td>20 - 2</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Relação ar/combustível</td>
-<td style="text-align: left;">Pouco variável</td>
-<td style="text-align: left;">Muito variável</td>
+<td>Areia grossa</td>
+<td>2 - 0,2</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Controle de carga</td>
-<td style="text-align: left;">Variando a quantidade de mistura</td>
-<td style="text-align: left;">Variando a quantidade de combustível</td>
+<td>Areia fina</td>
+<td>0,2 - 0,05</td>
+</tr>
+<tr class="even">
+<td>Silte</td>
+<td>0,05 - 0,002</td>
+</tr>
+<tr class="odd">
+<td>Argila</td>
+<td>&lt; 0,002</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="diferenças-entre-otto-e-diesel-2" class="slide level2">
-<h2>Diferenças entre Otto e Diesel</h2>
-<table class="caption-top">
+<section id="composição-do-solo-8" class="slide level2">
+<h2>Composição do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Classificação de diâmetro das partículas</strong></span></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/matacao.jpg" style="width:50.0%"></p>
+<figcaption>Matacões (&gt; 200 mm)</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/calhau.jpg"></p>
+<figcaption>Calhaus (20 - 200 mm)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="composição-do-solo-9" class="slide level2">
+<h2>Composição do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Classificação de diâmetro das partículas</strong></span></p>
+
+<img data-src="imagens/cascalho.jpg" class="r-stretch quarto-figure-center"><p class="caption">Cascalho (2 - 20 mm)</p></section>
+<section id="composição-do-solo-10" class="slide level2">
+<h2>Composição do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Classificação de diâmetro das partículas</strong></span></p>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+
+    A["&lt;b&gt;Fase sólida do solo&lt;/b&gt;"]
+
+    A --&gt; B["Areia&lt;br&gt;&lt;b&gt;2000–53 µm&lt;/b&gt;"]
+    A --&gt; C["Silte&lt;br&gt;&lt;b&gt;53–2 µm&lt;/b&gt;"]
+    A --&gt; D["Argila&lt;br&gt;&lt;b&gt;&amp;lt; 2 µm&lt;/b&gt;"]
+
+    D --&gt; E["Mineral"]
+    D --&gt; F["Orgânica"]
+
+    E --&gt; G["Argilominerais"]
+    G --&gt; H["Minerais 2:1"]
+    G --&gt; I["Minerais 1:1"]
+
+    E --&gt; J["Óxidos"]
+    J --&gt; K["Óxidos de ferro"]
+    J --&gt; L["Óxidos de alumínio"]
+
+    style A fill:#000,color:#fff,stroke:#000
+    style B fill:#000,color:#fff,stroke:#000
+    style C fill:#000,color:#fff,stroke:#000
+    style D fill:#000,color:#fff,stroke:#000
+    style E fill:#000,color:#fff,stroke:#000
+    style F fill:#000,color:#fff,stroke:#000
+    style G fill:#000,color:#fff,stroke:#000
+    style H fill:#000,color:#fff,stroke:#000
+    style I fill:#000,color:#fff,stroke:#000
+    style J fill:#000,color:#fff,stroke:#000
+    style K fill:#000,color:#fff,stroke:#000
+    style L fill:#000,color:#fff,stroke:#000
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="minerais-do-solo" class="title-slide slide level1 center">
+<h1>Minerais do solo</h1>
+
+</section>
+<section id="minerais-do-solo-1" class="slide level2">
+<h2>Minerais do solo</h2>
+<hr>
+<p>Composição da crosta terrestre (Massa)</p>
+
+<img data-src="imagens/composicao_crosta1.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="minerais-do-solo-2" class="slide level2">
+<h2>Minerais do solo</h2>
+<hr>
+<p>Respeitando regras, ânions de oxigênio se organizam em torno de cátions centrais (Si, Al e Fe). São formados os tetraedros e os octaedros.</p>
+
+<img data-src="imagens/tetraedro.png" width="300" class="r-stretch"></section>
+<section id="minerais-do-solo-3" class="slide level2">
+<h2>Minerais do solo</h2>
+<hr>
+<div class="fragment">
+<p><span class="fg" style="--col: #e64173"><strong>Minerais primários</strong></span></p>
+<p>Não alterado quimicamente desde sua deposição e cristalização da lava derretida.</p>
+</div>
+<div class="fragment">
+<p><span class="fg" style="--col: #e64173"><strong>Minerais secundários</strong></span></p>
+<p>Resulta da intemperização dos minerais primários.</p>
+</div>
+</section>
+<section id="minerais-do-solo-4" class="slide level2">
+<h2>Minerais do solo</h2>
+<hr>
+<div class="quarto-layout-panel" data-layout-ncol="3">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/gib.jpg"></p>
+<figcaption>Óxido de Al</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/cauli.jpg"></p>
+<figcaption>Caulinita</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagens/filo2_1.jpg"></p>
+<figcaption>Camada 2:1</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="textura-do-solo" class="title-slide slide level1 center">
+<h1>Textura do solo</h1>
+
+</section>
+<section id="textura-do-solo-1" class="slide level2">
+<h2>Textura do solo</h2>
+<hr>
+<p>É a característica do solo que diz respeito as proporções relativas das frações areia, silte e argila do solo. Essas frações são advindas da fração geral chamada <strong>Terra Fina</strong>.</p>
+<div class="fragment">
+<p>A textura refere-se à sensação que a amostra oferece ao tato.</p>
+</div>
+<div class="fragment">
+<p>A textura é a forma de determinar a granulometria do solo (distribuição do tamanho das partículas).</p>
+</div>
+</section>
+<section id="textura-do-solo-2" class="slide level2">
+<h2>Textura do solo</h2>
+<hr>
+<div class="fragment">
+<p><strong>Terra fina seca ao ar</strong> (TFSA) é a fração do solo menor que 2 mm.</p>
+</div>
+<div class="fragment">
+<p>Interações mecânicas, físicas, biológicas e químicas</p>
+</div>
+</section>
+<section id="textura-do-solo-3" class="slide level2">
+<h2>Textura do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Tamanho das partículas</strong></span></p>
+
+<img data-src="imagens/tamanho_particula.jpeg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="textura-do-solo-4" class="slide level2">
+<h2>Textura do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Minerais por fração</strong></span></p>
+
+<img data-src="imagens/mineral_fracao2.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="textura-do-solo-5" class="slide level2">
+<h2>Textura do solo</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Tamanho das partículas</strong></span></p>
+<table class="caption-top" style="width:100%;">
 <colgroup>
-<col style="width: 31%">
-<col style="width: 31%">
-<col style="width: 36%">
+<col style="width: 37%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 22%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Parâmetro</th>
-<th style="text-align: left;">Ciclo Otto</th>
-<th style="text-align: left;">Ciclo Diesel</th>
+<th style="text-align: left;">Propriedade</th>
+<th style="text-align: center;">Areia</th>
+<th style="text-align: center;">Silte</th>
+<th style="text-align: center;">Argila</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Taxa de compressão</td>
-<td style="text-align: left;">6–10:1</td>
-<td style="text-align: left;">16–20:1</td>
+<td style="text-align: left;"><strong>Forma</strong></td>
+<td style="text-align: center;">Denteada</td>
+<td style="text-align: center;">Ligeiramente irregular</td>
+<td style="text-align: center;">Lâminas/tubos</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Pressão mínima de compressão (kPa)</td>
-<td style="text-align: left;">1400</td>
-<td style="text-align: left;">3240</td>
+<td style="text-align: left;"><strong>Sensação</strong></td>
+<td style="text-align: center;">Aspereza</td>
+<td style="text-align: center;">Suave/talco</td>
+<td style="text-align: center;">Pegajoso</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Forma de ignição</td>
-<td style="text-align: left;">Centelha elétrica</td>
-<td style="text-align: left;">Autoignição</td>
+<td style="text-align: left;"><strong>Plasticidade</strong></td>
+<td style="text-align: center;">Não plástica</td>
+<td style="text-align: center;">Ligeiramente plástica</td>
+<td style="text-align: center;">Plástica</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Rotação</td>
-<td style="text-align: left;">Motores leves; combustão homogênea; altas rotações</td>
-<td style="text-align: left;">Motores pesados; combustão heterogênea; baixas rotações</td>
+<td style="text-align: left;"><strong>Coesão</strong></td>
+<td style="text-align: center;">Não coesiva</td>
+<td style="text-align: center;">Ligeiramente coesiva</td>
+<td style="text-align: center;">Coesiva/gelatinosa</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Rotação de potência máxima</td>
-<td style="text-align: left;">&gt; 5000 rpm</td>
-<td style="text-align: left;">&lt; 3000 rpm</td>
+<td style="text-align: left;"><strong>Área superficial</strong></td>
+<td style="text-align: center;">Muito baixa</td>
+<td style="text-align: center;">Moderada</td>
+<td style="text-align: center;">Muito alta</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Rendimento térmico</td>
-<td style="text-align: left;">25–30%</td>
-<td style="text-align: left;">30–35%</td>
+<td style="text-align: left;"><strong>Capacidade de retenção de água</strong></td>
+<td style="text-align: center;">Ausente/pouca</td>
+<td style="text-align: center;">Moderada</td>
+<td style="text-align: center;">Muito alta</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>CTC</strong></td>
+<td style="text-align: center;">Ausente</td>
+<td style="text-align: center;">Muito baixa</td>
+<td style="text-align: center;">Alta ou muito alta</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Mineralogia</strong></td>
+<td style="text-align: center;">minerais primários</td>
+<td style="text-align: center;">minerais primários</td>
+<td style="text-align: center;">minerais secundários</td>
 </tr>
 </tbody>
 </table>
 </section></section>
 <section>
-<section id="arranjamento-dos-cilindros" class="title-slide slide level1 center">
-<h1>Arranjamento dos cilindros</h1>
+<section id="determinação-da-textura" class="title-slide slide level1 center">
+<h1>Determinação da textura</h1>
 
 </section>
-<section id="arranjamento-dos-cilindros-1" class="slide level2">
-<h2>Arranjamento dos cilindros</h2>
+<section id="determinação-da-textura-1" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p>Duas formas: no campo e no laboratório</p>
+</section>
+<section id="determinação-da-textura-2" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>No campo</strong></span></p>
 
-<img data-src="imagens/tipo_motor.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="o-que-é-cilindrada" class="slide level2">
-<h2>O que é Cilindrada?</h2>
+<img data-src="imagens/textura_campo.jpeg" class="r-stretch"></section>
+<section id="determinação-da-textura-3" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>No campo</strong></span></p>
 <ul>
-<li><p>O que significa falar que o motor é 2.0?</p></li>
-<li><p>O que é um carro 1000?</p></li>
+<li class="fragment"><p>Baseado na correlação entre a sensibilidade ao tato com o tamanho e distribuição das partículas unitárias do solo;</p></li>
+<li class="fragment"><p>Areia: Sensação de atrito (aspereza).</p>
+<ul>
+<li class="fragment">Solta em grão simples, não-plastica, não-pegajosa, não-deformada.</li>
+</ul></li>
+<li class="fragment"><p>Silte: Sensação sedosa.</p>
+<ul>
+<li class="fragment">Ligeira coesão quando seca.</li>
+</ul></li>
+<li class="fragment"><p>Argila: Sensação de pegajosidade e de plasticidade.</p>
+<ul>
+<li class="fragment">Muito pegajosa quando úmida, dura e muito coesa quando seca.</li>
+</ul></li>
+<li class="fragment"><p><strong>Atenção!</strong> É uma avaliação muito subjetiva e ligada a experiência da pessoa.</p></li>
 </ul>
-</section></section>
+</section>
+<section id="determinação-da-textura-4" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>No laboratório</strong></span></p>
+<p>Obtenção da TFSA:</p>
+<div class="quarto-layout-panel" data-layout-ncol="5">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<p><img data-src="imagens/solo.jpg"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<p><img data-src="imagens/amostra.jpg"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<p><img data-src="imagens/secando.jpeg"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<p><img data-src="imagens/solo_moido.jpeg"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<p><img data-src="imagens/peneira_2.jpg"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="determinação-da-textura-5" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>No laboratório</strong></span></p>
+<p>Etapas:</p>
+<ul>
+<li class="fragment"><p>Pré-tratamento;</p></li>
+<li class="fragment"><p>Dispersão;</p></li>
+<li class="fragment"><p>Separação das frações do solo.</p></li>
+</ul>
+</section>
+<section id="determinação-da-textura-6" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>No laboratório</strong></span></p>
+<p>Pré-tratamentos:</p>
+<ul>
+<li class="fragment"><p>Remoção da matéria orgânica via oxidação com peróxido de hidrogênio;</p></li>
+<li class="fragment"><p>Remoção dos óxidos de ferro e alumínio*;</p></li>
+<li class="fragment"><p>Remoção de carbonados por meio de tratamento com ácidos (HCl);</p></li>
+<li class="fragment"><p>Remoção de sais solúveis por meio de lixiviação (diálise).</p></li>
+</ul>
+<div class="fragment">
+<p>Solos do Brasil, de forma geral, é removido apenas a matéria orgânica.</p>
+</div>
+</section>
+<section id="determinação-da-textura-7" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>No laboratório</strong></span></p>
+<p>Dispersão:</p>
+<ul>
+<li class="fragment"><p>Finalidade de destruir os agregados do solo, transformando-os em partículas individualizadas.</p></li>
+<li class="fragment"><p>Dispersão física e química.</p>
+<ul>
+<li class="fragment">Dispersão física por meio de agitação mecânica.</li>
+<li class="fragment">Dispersão química por meio de produto químico (NaOH 1 mol).</li>
+</ul></li>
+<li class="fragment"><p>Dispersão física por meio de agitação horizontal (choque de partículas).</p></li>
+<li class="fragment"><p>Dispersão química por meio do aumento da espessura da dupla camada difusa das partículas de argila com cátions monovalentes com hidratação. A mudança do pH também altera o balanço eletroquímico do meio (aumento de cargas negativas).</p></li>
+</ul>
+</section>
+<section id="determinação-da-textura-8" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>No laboratório</strong></span></p>
+<p>Dispersão:</p>
+<div class="quarto-layout-panel" data-layout-ncol="3">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: center;">
+<p><video data-src="imagens/agitador.mp4" controls=""><a href="imagens/agitador.mp4">Video</a></video></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="imagens/disper_quimica.JPG"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="determinação-da-textura-9" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>No laboratório</strong></span></p>
+<p>Dispersão:</p>
+
+<img data-src="imagens/eletronico.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="determinação-da-textura-10" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>No laboratório</strong></span></p>
+<p>Separação das frações:</p>
+<ul>
+<li class="fragment"><p>A fração areia é removida por meio de peneiramento úmido (peneira com malha de 0,053 mm);</p></li>
+<li class="fragment"><p>Toda a amostra é lavada para remover a argila e o silte da peneira e reter apenas a areia;</p></li>
+<li class="fragment"><p>Todo conteúdo é armazenado em uma proveta com volume de 1 L (não pode ultrapassar).</p></li>
+<li class="fragment"><p>A determinação do silte e da argila ocorre por sedimentação.</p></li>
+</ul>
+</section>
+<section id="determinação-da-textura-11" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>No laboratório</strong></span></p>
+<p>Separação das frações:</p>
+<div class="quarto-layout-panel" data-layout-ncol="3">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img data-src="imagens/areia1.jpg"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img data-src="imagens/areia2.jpg"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img data-src="imagens/areia3.jpg"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="determinação-da-textura-12" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>No laboratório</strong></span></p>
+<p>Separação das frações:</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 48.3%;justify-content: center;">
+<p><img data-src="imagens/lavagem_areia.png" width="280"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 51.7%;justify-content: center;">
+<p><img data-src="imagens/pipeta.JPG" width="300"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="determinação-da-textura-13" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>No laboratório</strong></span></p>
+<p>A determinação do teor de argila é baseada no tempo necessário para que uma quantidade (cm) da solução da proveta contenha apenas argila.</p>
+<div class="fragment">
+<p>Isso está relacionado com a lei de Stokes:</p>
+<blockquote>
+<p>A velocidade de queda (sedimentação) de um material sólido no líquido ocorre de acordo com o seu diãmetro (esférico) e a viscosidade do líquido</p>
+</blockquote>
+</div>
+</section>
+<section id="determinação-da-textura-14" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Lei de Stokes</strong></span></p>
+<p><span class="math display">\[
+\vec{F} = -6\pi r\eta\vec{v}
+\]</span></p>
+<p>onde:</p>
+<ul>
+<li><span class="math inline">\(\vec{F}\)</span> é a força de fricção;</li>
+<li><span class="math inline">\(r\)</span> é o raio de Stokes da partícula;</li>
+<li><span class="math inline">\(\eta\)</span> é a viscosidade do fluido; e</li>
+<li><span class="math inline">\(\vec{v}\)</span> é a velocidade da partícula.</li>
+</ul>
+</section>
+<section id="determinação-da-textura-15" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Lei de Stokes</strong></span></p>
+<p><span class="math display">\[
+V_s = \frac{2}{9}\frac{r^2 g(\rho_p-\rho_f)}{\eta}
+\]</span></p>
+<p><strong>onde:</strong></p>
+<ul>
+<li><span class="math inline">\(V_s\)</span> é a velocidade de sedimentação das partículas (velocidade limite);</li>
+<li><span class="math inline">\(g\)</span> é a aceleração da gravidade;</li>
+<li><span class="math inline">\(r\)</span> é o raio de Stokes da partícula;</li>
+<li><span class="math inline">\(\rho_p\)</span> é a densidade das partículas;</li>
+<li><span class="math inline">\(\eta\)</span> é a viscosidade do fluido;</li>
+<li><span class="math inline">\(\rho_f\)</span> é a densidade do fluido.</li>
+</ul>
+</section>
+<section id="determinação-da-textura-16" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Lei de Stokes</strong></span></p>
+<p><span class="math display">\[
+t = \frac{18~\eta~h}{g(\rho_s-\rho_l)\phi^2}
+\]</span></p>
+<ul>
+<li><span class="math inline">\(t\)</span> é o tempo de queda (s);</li>
+<li><span class="math inline">\(h\)</span> é altura da queda (cm) - 10 ou 5 cm desde a superfície da solução;</li>
+<li><span class="math inline">\(\eta\)</span> é a viscosidade da água (g/cm/s) - 0,008007 (20ºC);</li>
+<li><span class="math inline">\(g\)</span> é a aceleração da gravidade (cm/s<sup>2</sup>) - 980;</li>
+<li><span class="math inline">\(\rho_s\)</span> é a viscosidade do sólido (cm/cm<sup>3</sup>) - 2,65;</li>
+<li><span class="math inline">\(\rho_l\)</span> é a densidade do líquido (g/cm<sup>3</sup>) - 0,99949 (20ºC);</li>
+<li><span class="math inline">\(\phi^2\)</span> é o diâmetro da partícula (cm) - 0,0002</li>
+</ul>
+</section>
+<section id="determinação-da-textura-17" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Lei de Stokes exemplo</strong></span></p>
+<p>Qual é o tempo de queda necessário para obter apenas partículas de tamanho argila a uma profundidade de 5 cm?</p>
+<div class="fragment">
+<p><span class="math display">\[
+t = \frac{18* 0,008007*5}{980*(2,65-0,099949)*0,0002^2}
+\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(t = 11138,02~s\)</span> ou <span class="math inline">\(t = 3.09~h\)</span></p>
+</div>
+</section>
+<section id="determinação-da-textura-18" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p>Exemplo de sedimentação das partículas</p>
+
+<img data-src="imagens/texture.jpeg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="determinação-da-textura-19" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método do hidrômetro ou densímetro</strong></span></p>
+<ul>
+<li class="fragment"><p>Proposto por Bouyoucos em 1927 é baseado na densidade da solução (silte + argila);</p></li>
+<li class="fragment"><p>Relaciona as densidades com o tempo de leitura e com a temperatura;</p></li>
+<li class="fragment"><p>Resultados em g L<sup>-1</sup>;</p></li>
+<li class="fragment"><p>Método rápido, mas menos preciso.</p></li>
+</ul>
+</section>
+<section id="determinação-da-textura-20" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método do densímetro</strong></span></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 48.3%;justify-content: center;">
+<p><img data-src="imagens/bouy.jpg" width="280"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 51.7%;justify-content: center;">
+<p><img data-src="imagens/hidro.jpeg" width="300"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="determinação-da-textura-21" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método do densímetro</strong></span></p>
+<ul>
+<li class="fragment"><p>50g de TFSA são dispersas de forma mecânica e química;</p>
+<ul>
+<li class="fragment">250 ml de água mais 10 ml de NaOH 1 mol L<sup>-1</sup>;</li>
+</ul></li>
+<li class="fragment"><p>Contéudo transferido para proveta de 1 L;</p></li>
+<li class="fragment"><p>Agitação por 40 s;</p></li>
+<li class="fragment"><p>Imediatamente após a agitação o densímetro de Bouyoucos é adicionado;</p></li>
+<li class="fragment"><p>Leitura é realizada após 40 s (argila + silte);</p></li>
+<li class="fragment"><p>Após 1 hora e meia é realizada uma segunda medição (apenas argila).</p></li>
+</ul>
+</section>
+<section id="determinação-da-textura-22" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método da pipeta</strong></span></p>
+<ul>
+<li class="fragment"><p>Desenvolvido em 1922 é adequado para a determinação da fração argila;</p></li>
+<li class="fragment"><p>Utiliza-se de uma pipeta para coletar uma alíquota da suspensão a profundidade e tempo determinados;</p></li>
+<li class="fragment"><p>Método mais lento, mas mais preciso;</p></li>
+</ul>
+</section>
+<section id="determinação-da-textura-23" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método da pipeta</strong></span></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="imagens/pipeta.JPG" width="300"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="imagens/pipete.jpeg" width="300"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="determinação-da-textura-24" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>Método da pipeta</strong></span></p>
+<ul>
+<li class="fragment"><p>20 g de TFSA com 100 ml de água e 10 ml de NaOH 1 mol L<sup>-1</sup>;</p></li>
+<li class="fragment"><p>Agitar por 16 horas a 50 rpm;</p></li>
+<li class="fragment"><p>Remover a areia por peneiramento;</p></li>
+<li class="fragment"><p>Agitação a suspensão por 1 minuto de forma vigorosa;</p></li>
+<li class="fragment"><p>Mediar a temperatura e calcular o tempo de sedimentação para 5 cm;</p></li>
+<li class="fragment"><p>Após a sedimentação coletar 50 ml da suspensão com pipeta em profundidade de 5 cm;</p></li>
+<li class="fragment"><p>Deixar secar em estufa e calcular o peso dos recipientes de areia e de argila.</p></li>
+</ul>
+</section>
+<section id="determinação-da-textura-25" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p><span class="fg" style="--col: #e64173"><strong>No laboratório</strong></span></p>
+<p>Separação das frações:</p>
+<div class="quarto-layout-panel" data-layout-ncol="3">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img data-src="imagens/argila2.jpg"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img data-src="imagens/argila.jpg"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img data-src="imagens/argila3.jpg"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="determinação-da-textura-26" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p>Zonas de amostragem dos diferentes métodos</p>
+
+<img data-src="imagens/metodos_textura.jpg" class="r-stretch quarto-figure-center"><p class="caption">Durner et al., 2017</p></section>
+<section id="determinação-da-textura-27" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p>Ex: Em 20 g de TFSA, 7 g de areia foram retidas na peneira. Após determinação do tempo, 50 ml da suspensão foi coletada a 5 cm de profundidade, coloca em recipiente e pesada, totalizando 0,548 g.</p>
+<div class="fragment">
+<ul>
+<li>Areia: 350 g kg<sup>-1</sup></li>
+<li>Argila: 548 g kg<sup>-1</sup></li>
+<li>Silte: ???</li>
+</ul>
+</div>
+</section>
+<section id="determinação-da-textura-28" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p>Triângulo textural (A + S + Ar = 100%)</p>
+
+<img data-src="imagens/triangulo.jpg" class="r-stretch quarto-figure-center"><p class="caption">SiBCS</p></section>
+<section id="determinação-da-textura-29" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+
+<img data-src="imagens/triangle_textural.jpeg" class="r-stretch quarto-figure-center"><p class="caption">ISRIC</p></section>
+<section id="determinação-da-textura-30" class="slide level2">
+<h2>Determinação da textura</h2>
+<hr>
+<p>Exemplo:</p>
+
+<img data-src="imagens/mapa_textura_dois.jpg" class="r-stretch quarto-figure-center"><p class="caption">Fonte: Frosi G, 2026</p></section></section>
 <section>
-<section id="motor-2-tempos" class="title-slide slide level1 center">
-<h1>Motor 2 tempos</h1>
+<section id="importância-da-textura" class="title-slide slide level1 center">
+<h1>Importância da textura</h1>
 
 </section>
-<section id="motor-2-tempos-1" class="slide level2">
-<h2>Motor 2 tempos</h2>
-
-
+<section id="importância-da-textura-1" class="slide level2">
+<h2>Importância da textura</h2>
+<hr>
+<ul>
+<li class="fragment"><p>Valor da terra e exploração de uso (agrícola, descartes).</p></li>
+<li class="fragment"><p>Em classificação do solo, às vezes é a primeira e mais importante característica a ser determinada.</p></li>
+<li class="fragment"><p>Zoneamento agrícola e de risco climático.</p></li>
+</ul>
+</section>
+<section id="importância-da-textura-2" class="slide level2">
+<h2>Importância da textura</h2>
+<hr>
+<div class="small">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Propriedades no solo</th>
+<th style="text-align: center;">Argiloso</th>
+<th style="text-align: center;">Arenoso</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Retenção de água</td>
+<td style="text-align: center;">Alta</td>
+<td style="text-align: center;">Baixa</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Movimentação de água no perfil</td>
+<td style="text-align: center;">Difícil</td>
+<td style="text-align: center;">Fácil</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Coesão</td>
+<td style="text-align: center;">Elevada</td>
+<td style="text-align: center;">Baixa</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Densidade</td>
+<td style="text-align: center;">Menor</td>
+<td style="text-align: center;">Maior</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Porosidade total</td>
+<td style="text-align: center;">Maior</td>
+<td style="text-align: center;">Menor</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Microporosidade</td>
+<td style="text-align: center;">Maior</td>
+<td style="text-align: center;">Menor</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Superfície específica</td>
+<td style="text-align: center;">Elevada</td>
+<td style="text-align: center;">Baixa</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Estruturação</td>
+<td style="text-align: center;">Bem estruturado</td>
+<td style="text-align: center;">Sem estrutura</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CTC</td>
+<td style="text-align: center;">Alta</td>
+<td style="text-align: center;">Baixa</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dificuldade de preparo</td>
+<td style="text-align: center;">Maior</td>
+<td style="text-align: center;">Menor</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Amplitude térmica</td>
+<td style="text-align: center;">Menor</td>
+<td style="text-align: center;">Maior</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section></section>
+<section id="fim" class="title-slide slide level1 center">
+<h1>Fim!</h1>
+
+
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="logo.png" class="slide-logo"></p>
