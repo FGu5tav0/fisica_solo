@@ -13,7 +13,7 @@ project:
 
 website:
   title: "Física do solo"
-  # google-analytics: "G-SCQSRGY4FE"
+  google-analytics: "G-NV855VL2CD"
 
 format:
   html:
