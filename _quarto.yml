@@ -10,6 +10,8 @@ project:
     - aula_5/
     - aula_6/
     - aula_7/
+    - aula_8/
+    - aula_9/
 
 website:
   title: "Física do solo"

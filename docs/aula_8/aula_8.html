@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.19">
+
+  <meta name="author" content="Gustavo Frosi">
+  <title>Física do solo – Física do solo:</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-ec59874b3a8398889ca2432df423b2c0.css">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NV855VL2CD"></script>
+
+  <script type="text/javascript">
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NV855VL2CD', { 'anonymize_ip': true});
+  </script>
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <link href="../site_libs/countdown-0.6.0/countdown.css" rel="stylesheet">
+
+  <script src="../site_libs/countdown-0.6.0/countdown.js"></script>
+
+</head>
+<body class="quarto-light">
+<script src="mathjax-config.js"></script>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="fundo.png" data-background-opacity="0.9" data-background-position="right 3% top 52%" data-background-size="35%" class="quarto-title-block center">
+  <h1 class="title">Física do solo:</h1>
+  <p class="subtitle">Retenção de água e potenciais da água no solo</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Gustavo Frosi
+</div>
+        <p class="quarto-title-affiliation">
+            Instituto Federal do Paraná <br> Campus Palmas <br> Curso Superior em Engenharia Agronômica
+          </p>
+    </div>
+</div>
+
+  <p class="date">9 de novembro de 2026</p>
+</section>
+<section id="revisão-rápida" class="slide level2">
+<h2>Revisão rápida</h2>
+<hr>
+<div class="columns">
+<div class="column">
+<p><span class="fg" style="--col: #e64173"><strong>Umidade</strong></span></p>
+<p><span class="math display">\[U = \frac{M_a}{M_s} \qquad \theta = \frac{V_a}{V_t}\]</span></p>
+<p><span class="math display">\[\theta = U \cdot D_s\]</span></p>
+</div><div class="column">
+<p><span class="fg" style="--col: #e64173"><strong>Lâmina de água</strong></span></p>
+<p><span class="math display">\[h = \theta \cdot z\]</span></p>
+<p>1 mm de lâmina = 1 L m<sup>-2</sup>.</p>
+</div></div>
+<div class="fragment">
+<p>Esta aula responde à pergunta: <strong>com que energia</strong> essa água está retida, e <strong>quanta</strong> fica disponível para a planta?</p>
+</div>
+</section>
+<section>
+<section id="parte-1-por-que-o-solo-retém-água" class="title-slide slide level1 center">
+<h1>Parte 1: por que o solo retém água?</h1>
+
+</section>
+<section id="forças-envolvidas" class="slide level2">
+<h2>Forças envolvidas</h2>
+<hr>
+<div class="columns">
+<div class="column">
+<p><span class="fg" style="--col: #e64173"><strong>Coesão</strong></span></p>
+<p>Atração entre moléculas <strong>de água</strong> (pontes de hidrogênio, pela polaridade da molécula).</p>
+</div><div class="column">
+<p><span class="fg" style="--col: #e64173"><strong>Adesão (adsorção)</strong></span></p>
+<p>Atração entre a água e as <strong>superfícies sólidas</strong> das partículas.</p>
+</div></div>
+<div class="fragment">
+<p><span class="fg" style="--col: #e64173"><strong>Tensão superficial (<span class="math inline">\(\sigma\)</span>)</strong></span>: moléculas na interface líquido-gás sofrem forças não balanceadas e a superfície tende a se contrair. Para a água a ~20 °C, <span class="math inline">\(\sigma \approx 0,072~N~m^{-1}\)</span>.</p>
+</div>
+</section>
+<section id="capilaridade-e-equação-de-laplace" class="slide level2">
+<h2>Capilaridade e equação de Laplace</h2>
+<hr>
+<ul>
+<li>Equação de Laplace:</li>
+</ul>
+<p><span class="math display">\[
+h = \frac{2 \times \sigma \times \cos(\alpha)}
+{\rho \times g \times r}
+\]</span></p>
+<div style="font-size:26px">
+<p>Onde:</p>
+<ul>
+<li><span class="math inline">\(h\)</span> = altura da coluna de água (m);</li>
+<li><span class="math inline">\(\alpha\)</span> = ângulo de contato do líquido com o sólido (variável);</li>
+<li><span class="math inline">\(\sigma\)</span> = tensão superficial do líquido (0,072 N m<span class="math inline">\(^{-1}\)</span>);</li>
+<li><span class="math inline">\(\rho\)</span> = densidade do líquido (1.000 kg m<span class="math inline">\(^{-3}\)</span>);</li>
+<li><span class="math inline">\(g\)</span> = aceleração da gravidade (9,81 m s<span class="math inline">\(^{-2}\)</span>);</li>
+<li><span class="math inline">\(r\)</span> = raio do capilar (m).</li>
+</ul>
+</div>
+</section>
+<section id="capilaridade-e-equação-de-laplace-1" class="slide level2">
+<h2>Capilaridade e equação de Laplace</h2>
+<hr>
+<p><span class="math display">\[h = \frac{2\,\sigma\,\cos\alpha}{\rho\, g\, r}\]</span></p>
+<ul>
+<li class="fragment">Adesão &gt; coesão (água): menisco côncavo, o líquido <strong>sobe</strong>;</li>
+<li class="fragment">Coesão &gt; adesão (mercúrio): menisco convexo, o líquido <strong>desce</strong>;</li>
+<li class="fragment"><span class="math inline">\(\alpha\)</span> ≈ 0° para água em solo limpo; r = raio do poro (m).</li>
+</ul>
+<div class="fragment">
+<p><strong>Leitura física:</strong> quanto <strong>menor o poro</strong>, <strong>maior</strong> a ascensão e <strong>maior a energia</strong> de retenção. Poros pequenos retêm água com mais força.</p>
+</div>
+</section>
+<section id="ascensão-capilar-x-raio-do-poro" class="slide level2">
+<h2>Ascensão capilar x raio do poro</h2>
+<hr>
+
+<img data-src="aula_8_files/figure-revealjs/unnamed-chunk-2-1.png" width="768" class="r-stretch"></section>
+<section id="laplace-exemplo" class="slide level2">
+<h2>Laplace: exemplo</h2>
+<hr>
+<div class="fragment">
+<p>Qual a altura de ascensão da água a 20 °C em um poro cilíndrico de raio 0,05 mm (<span class="math inline">\(\alpha \approx 0\)</span>)?</p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[h = \frac{2 \cdot 0,072 \cdot 1}{1000 \cdot 9,81 \cdot 5 \cdot 10^{-5}} = 0,294~m \approx 29~cm\]</span></p>
+</div>
+<div class="fragment">
+<p>Ou seja, a água nesse poro é mantida com uma tensão de aproximadamente <strong>-29 cm H<sub>2</sub>O</strong> (≈ -2,9 kPa): é essa energia de retenção que chamaremos de <strong>potencial matricial</strong>.</p>
+</div>
+</section></section>
+<section>
+<section id="parte-2-energia-e-potencial-da-água" class="title-slide slide level1 center">
+<h1>Parte 2: energia e potencial da água</h1>
+
+</section>
+<section id="energia-da-água" class="slide level2">
+<h2>Energia da água</h2>
+<hr>
+<div class="fragment">
+<p><span class="math display">\[E_{total} = E_{cinética} + E_{potencial}\]</span></p>
+</div>
+<ul>
+<li class="fragment"><strong>Cinética</strong>: <span class="math inline">\(E_c = \dfrac{m v^2}{2}\)</span> (devida ao movimento);</li>
+<li class="fragment"><strong>Potencial</strong>: <span class="math inline">\(E_p = m g h\)</span> (devida à posição em um campo de forças);</li>
+<li class="fragment">No solo a água se move muito devagar: a energia cinética é <strong>desprezível</strong>, e o que governa tudo é a energia <strong>potencial</strong>.</li>
+</ul>
+<div class="fragment">
+<p>O estado de referência é a <strong>água pura, livre de íons e sólidos, a pressão atmosférica, em um nível de referência</strong>. O que importa é a <strong>diferença</strong> de energia entre dois pontos.</p>
+</div>
+</section>
+<section id="unidades-do-potencial" class="slide level2">
+<h2>Unidades do potencial</h2>
+<hr>
+<p>O potencial pode ser expresso por unidade de <strong>volume</strong> (pressão), de <strong>massa</strong> ou de <strong>peso</strong> (altura de coluna d’água):</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Base</th>
+<th style="text-align: left;">Unidades</th>
+<th style="text-align: left;">Exemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Volume</td>
+<td style="text-align: left;">Pa, kPa, MPa, bar, atm</td>
+<td style="text-align: left;">-33 kPa</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Massa</td>
+<td style="text-align: left;">J kg<sup>-1</sup></td>
+<td style="text-align: left;">-33 J kg<sup>-1</sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Peso</td>
+<td style="text-align: left;">cm H<sub>2</sub>O, mca (m de coluna d’água)</td>
+<td style="text-align: left;">-336 cm H<sub>2</sub>O</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p>Para a água, kPa e J kg<sup>-1</sup> são numericamente iguais, pois ρ = 1000 kg m<sup>-3</sup>.</p>
+</div>
+</section>
+<section id="conversão-de-unidades" class="slide level2">
+<h2>Conversão de unidades</h2>
+<hr>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">1 atm equivale a</th>
+<th style="text-align: right;">Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">kPa</td>
+<td style="text-align: right;">101,3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">bar</td>
+<td style="text-align: right;">1,013</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">cm H<sub>2</sub>O</td>
+<td style="text-align: right;">1033</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mm Hg</td>
+<td style="text-align: right;">760</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li class="fragment">Atalhos: <strong>1 bar = 100 kPa ≈ 1020 cm H<sub>2</sub>O</strong> e <strong>1 kPa ≈ 10,2 cm H<sub>2</sub>O</strong>;</li>
+<li class="fragment">1 MPa = 10 bar ≈ 102 mca; <!-- - **pF** = log~10~|Ψ em cm H~2~O|: CC ≈ pF 2,0 a 2,5 e PMP ≈ pF 4,2. --></li>
+</ul>
+</section>
+<section id="potencial-total-psi_t" class="slide level2">
+<h2>Potencial total (<span class="math inline">\(\Psi_t\)</span>)</h2>
+<hr>
+<p>A energia potencial da água no solo expressa a quantidade de trabalho envolvido no transporte de água no solo.</p>
+<p><span class="math display">\[\Psi_t = \Psi_g + \Psi_p + \Psi_{os} + \Psi_m\]</span></p>
+<ul>
+<li class="fragment"><span class="math inline">\(\Psi_g\)</span>: gravitacional;</li>
+<li class="fragment"><span class="math inline">\(\Psi_p\)</span>: pressão (submersão);</li>
+<li class="fragment"><span class="math inline">\(\Psi_{os}\)</span>: osmótico;</li>
+<li class="fragment"><span class="math inline">\(\Psi_m\)</span>: matricial (mátrico);</li>
+</ul>
+</section>
+<section id="o-potencial-define-o-sentido-do-fluxo" class="slide level2">
+<h2>O potencial define o sentido do fluxo</h2>
+<hr>
+<div class="fragment">
+<p>A água se move <strong>do maior para o menor</strong> potencial total (rumo ao menor estado de energia, de maior estabilidade).</p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\Psi_t(A) - \Psi_t(B) = (E_A - E_0) - (E_B - E_0) = E_A - E_B\]</span></p>
+</div>
+<ul>
+<li class="fragment"><span class="math inline">\(\Psi_t(A) &gt; \Psi_t(B)\)</span>: fluxo de <strong>A para B</strong>;</li>
+<li class="fragment"><span class="math inline">\(\Psi_t(B) &gt; \Psi_t(A)\)</span>: fluxo de <strong>B para A</strong>;</li>
+<li class="fragment"><span class="math inline">\(\Psi_t(A) = \Psi_t(B)\)</span>: <strong>equilíbrio</strong>, sem movimento.</li>
+</ul>
+<div class="fragment">
+<p>A água <strong>não</strong> vai necessariamente do ponto mais úmido para o mais seco: vai do maior para o menor <span class="math inline">\(\Psi_t\)</span>.</p>
+</div>
+</section>
+<section id="o-potencial-define-o-sentido-do-fluxo-1" class="slide level2">
+<h2>O potencial define o sentido do fluxo</h2>
+<hr>
+<p>A diferença entre o potencial total da água no solo, na planta e na atmosfera faz com que ocorra o movimento da água do <strong>solo</strong> até as <strong>raízes</strong>, das <strong>raízes</strong> até as <strong>folhas</strong> e das <strong>folhas</strong> até a <strong>atmosfera</strong>.</p>
+</section></section>
+<section>
+<section id="parte-3-os-componentes-do-potencial-total" class="title-slide slide level1 center">
+<h1>Parte 3: os componentes do potencial total</h1>
+
+</section>
+<section id="potencial-gravitacional-psi_g" class="slide level2">
+<h2>Potencial gravitacional (<span class="math inline">\(\Psi_g\)</span>)</h2>
+<hr>
+<ul>
+<li class="fragment">Atração da gravidade sobre a água, de cima para baixo;</li>
+<li class="fragment">Vale a <strong>altura (z) do ponto em relação ao plano de referência</strong> (positivo acima, negativo abaixo);</li>
+<li class="fragment">Explica a <strong>drenagem</strong> e a infiltração;</li>
+<li class="fragment">Está <strong>sempre presente</strong> e domina em solo saturado ou próximo da saturação.</li>
+</ul>
+<div class="fragment">
+<p>O que importa é a <strong>diferença</strong> de <span class="math inline">\(\Psi_g\)</span> entre dois pontos, que depende só da diferença de altura, e não da escolha da referência.</p>
+</div>
+</section>
+<section id="psi_g-exemplo" class="slide level2">
+<h2><span class="math inline">\(\Psi_g\)</span>: exemplo</h2>
+<hr>
+<div class="fragment">
+<p>Referência (z = 0) na base do perfil:</p>
+</div>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Caso</th>
+<th style="text-align: center;">z<sub>A</sub> (cm)</th>
+<th style="text-align: center;">z<sub>B</sub> (cm)</th>
+<th style="text-align: center;"><span class="math inline">\(\Psi_{gA} - \Psi_{gB}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">130</td>
+<td style="text-align: center;"><strong>-30 cm</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">130</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;"><strong>30 cm</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p>Só no caso 3 e 4 há diferença de <span class="math inline">\(\Psi_g\)</span>: tendência de fluxo de B para A e de A para B, respectivamente.</p>
+</div>
+</section>
+<section id="potencial-de-pressão-psi_p" class="slide level2">
+<h2>Potencial de pressão (<span class="math inline">\(\Psi_p\)</span>)</h2>
+<hr>
+<ul>
+<li class="fragment">Ocorre <strong>somente em condição de saturação</strong>: lâmina de água sobre o solo ou camada saturada;</li>
+<li class="fragment">Surge quando a pressão sobre a água é <strong>maior</strong> que a atmosférica;</li>
+<li class="fragment">É sempre <strong>positivo</strong> (ou nulo);</li>
+<li class="fragment">Vale a altura da coluna de água acima do ponto considerado.</li>
+</ul>
+<div class="fragment">
+<p>Exemplo: lâmina de 10 cm sobre o solo; pontos a 0, 10, 20 e 50 cm abaixo da superfície da água: <span class="math inline">\(\Psi_p\)</span> = 0, 10, 20 e 50 cm H<sub>2</sub>O.</p>
+</div>
+</section>
+<section id="potencial-osmótico-psi_os" class="slide level2">
+<h2>Potencial osmótico (<span class="math inline">\(\Psi_{os}\)</span>)</h2>
+<hr>
+<ul>
+<li class="fragment">Resulta da presença de <strong>solutos</strong> (Ca, Mg, K, Na…) na solução do solo;</li>
+<li class="fragment">Só afeta o fluxo quando há <strong>membrana semipermeável</strong> (ex.: raiz);</li>
+<li class="fragment">É sempre <strong>negativo</strong>: mais sais, menos água utilizável pela planta.</li>
+</ul>
+<div class="fragment">
+<p><span class="fg" style="--col: #e64173"><strong>Equação de Van’t Hoff</strong></span></p>
+<p><span class="math display">\[\Psi_{os} = -R\,T\,C\]</span></p>
+<p>R = 0,082 atm L mol<sup>-1</sup> K<sup>-1</sup>; T = temperatura absoluta (K); C = concentração (mol L<sup>-1</sup>).</p>
+</div>
+</section>
+<section id="psi_os-exemplo" class="slide level2">
+<h2><span class="math inline">\(\Psi_{os}\)</span>: exemplo</h2>
+<hr>
+<div class="fragment">
+<p>C = 0,1 mol L<sup>-1</sup> e T = 27 °C (300 K):</p>
+<p><span class="math display">\[\Psi_{os} = -0,082 \cdot 300 \cdot 0,1 = -2,46~atm\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[-2,46 \cdot 1033 \approx -2541~cm~H_2O \quad (\approx -249~kPa)\]</span></p>
+</div>
+<div class="fragment">
+<p>Em solos salinos, o <span class="math inline">\(\Psi_{os}\)</span> reduz a absorção de água pela planta mesmo com o solo “úmido”.</p>
+</div>
+</section>
+<section id="potencial-matricial-psi_m" class="slide level2">
+<h2>Potencial matricial (<span class="math inline">\(\Psi_m\)</span>)</h2>
+<hr>
+<ul>
+<li class="fragment">Expressa a <strong>energia de retenção</strong> da água pela matriz do solo;</li>
+<li class="fragment">Resulta de <strong>capilaridade</strong> (poros) e <strong>adsorção</strong> (superfície das partículas);</li>
+<li class="fragment">É sempre <strong>negativo ou zero</strong> (zero na saturação);</li>
+<li class="fragment">Está ligado à umidade: <strong>quanto mais úmido, maior (menos negativo) o <span class="math inline">\(\Psi_m\)</span></strong>.</li>
+</ul>
+<div class="fragment">
+<p>Em solo não saturado, é o componente que mais importa para o manejo e para a planta.</p>
+</div>
+</section>
+<section id="medida-do-psi_m-tensiômetro" class="slide level2">
+<h2>Medida do <span class="math inline">\(\Psi_m\)</span>: tensiômetro</h2>
+<hr>
+<div class="fragment">
+<p>Cápsula porosa + tubo cheio de água + manômetro de mercúrio:</p>
+<p><span class="math display">\[\Psi_m = -12,6\,h_{Hg} + h_c + z\]</span></p>
+</div>
+<div class="fragment">
+<p>h<sub>Hg</sub> = altura da coluna de mercúrio (cm); h<sub>c</sub> = altura da cuba de mercúrio em relação à superfície do solo (cm); z = profundidade da cápsula (cm); 12,6 = 13,6 − 1 (diferença de densidade entre Hg e água).</p>
+</div>
+<div class="fragment">
+<p>Faixa de uso: até cerca de -80 kPa, pois acima disso entra ar na cápsula.</p>
+</div>
+</section>
+<section id="como-medir-o-psi_m-em-laboratório" class="slide level2">
+<h2>Como medir o <span class="math inline">\(\Psi_m\)</span> em laboratório</h2>
+<hr>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Faixa de <span class="math inline">\(\Psi_m\)</span></th>
+<th style="text-align: left;">Método</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">0 a -10 kPa</td>
+<td style="text-align: left;">Funil de Haines / mesa de tensão</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">-10 a -1500 kPa</td>
+<td style="text-align: left;">Câmara de pressão com placa porosa (Richards)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Menor que -1000 kPa (aprox.)</td>
+<td style="text-align: left;">Psicrômetro de ponto de orvalho</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Em campo (0 a -80 kPa)</td>
+<td style="text-align: left;">Tensiômetro</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p>Cada método cobre uma faixa: a curva de retenção completa é montada com a <strong>combinação</strong> deles.</p>
+</div>
+</section>
+<section id="quais-componentes-importam" class="slide level2">
+<h2>Quais componentes importam?</h2>
+<hr>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Situação</th>
+<th style="text-align: left;">Componentes relevantes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Solo saturado</td>
+<td style="text-align: left;"><span class="math inline">\(\Psi_g + \Psi_p\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Solo não saturado</td>
+<td style="text-align: left;"><span class="math inline">\(\Psi_g + \Psi_m\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Solo salino saturado</td>
+<td style="text-align: left;"><span class="math inline">\(\Psi_g + \Psi_p + \Psi_{os}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Do solo para a planta (não saturado)</td>
+<td style="text-align: left;"><span class="math inline">\(\Psi_g + \Psi_m + \Psi_{os}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Células de tecido tenro (planta)</td>
+<td style="text-align: left;"><span class="math inline">\(\Psi_p + \Psi_{os}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Células de tecido fibroso (planta)</td>
+<td style="text-align: left;"><span class="math inline">\(\Psi_m + \Psi_{os}\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="gradiente-de-potencial" class="slide level2">
+<h2>Gradiente de potencial</h2>
+<hr>
+<div class="fragment">
+<p><span class="math display">\[\nabla\Psi_t = \frac{\Delta \Psi_t}{\Delta x} = \frac{\Psi_t(B) - \Psi_t(A)}{\Delta x}\]</span></p>
+</div>
+<div class="fragment">
+<p>Exemplo: <span class="math inline">\(\Psi_t(A) = -300\)</span> cm H<sub>2</sub>O e <span class="math inline">\(\Psi_t(B) = -540\)</span> cm H<sub>2</sub>O, a 20 cm de distância:</p>
+<p><span class="math display">\[\nabla\Psi_t = \frac{-540-(-300)}{20} = -12~cm~cm^{-1}\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(\Psi_t\)</span> diminui de A para B: a água flui de A para B. Quanto maior o gradiente, maior o fluxo (Darcy-Buckingham: <span class="math inline">\(q = -K\,\nabla\Psi_t\)</span>).</p>
+</div>
+</section>
+<section id="exemplo-de-sentido-de-fluxo" class="slide level2">
+<h2>Exemplo de sentido de fluxo</h2>
+<hr>
+<div class="fragment">
+<p>Dois pontos em solo não saturado, referência na superfície (<span class="math inline">\(\Psi_t = \Psi_g + \Psi_m\)</span>):</p>
+<p>A: z = -20 cm, <span class="math inline">\(\Psi_m\)</span> = -150 cm; B: z = -40 cm, <span class="math inline">\(\Psi_m\)</span> = -100 cm.</p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\Psi_t(A) = -20 - 150 = -170~cm \qquad \Psi_t(B) = -40 - 100 = -140~cm\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(\Psi_t(B) &gt; \Psi_t(A)\)</span>: a água flui de <strong>B para A</strong>, isto é, <strong>para cima</strong>, mesmo havendo gravidade puxando para baixo. O ponto A é muito mais seco e “puxa” a água.</p>
+</div>
+</section></section>
+<section>
+<section id="parte-4-curva-de-retenção-de-água" class="title-slide slide level1 center">
+<h1>Parte 4: curva de retenção de água</h1>
+
+</section>
+<section id="o-que-é-a-curva-de-retenção" class="slide level2">
+<h2>O que é a curva de retenção?</h2>
+<hr>
+<ul>
+<li class="fragment">Relação entre <strong>umidade</strong> (<span class="math inline">\(\theta\)</span>) e <strong>potencial matricial</strong> (<span class="math inline">\(\Psi_m\)</span>);</li>
+<li class="fragment">É a “identidade hídrica” do solo: cada solo tem a sua;</li>
+<li class="fragment">Poros grandes esvaziam primeiro (baixa tensão); poros pequenos retêm água até tensões altas;</li>
+<li class="fragment">Permite estimar CC, PMP, CAD e a <strong>distribuição do tamanho de poros</strong>.</li>
+</ul>
+</section>
+<section id="curvas-de-retenção-efeito-da-textura" class="slide level2">
+<h2>Curvas de retenção: efeito da textura</h2>
+<hr>
+
+<img data-src="aula_8_files/figure-revealjs/unnamed-chunk-3-1.png" width="864" class="r-stretch"></section>
+<section id="lendo-a-curva" class="slide level2">
+<h2>Lendo a curva</h2>
+<hr>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">|Ψm| (kPa)</th>
+<th style="text-align: center;">Franco-arenoso</th>
+<th style="text-align: center;">Franco</th>
+<th style="text-align: center;">Argiloso</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">0.152</td>
+<td style="text-align: center;">0.284</td>
+<td style="text-align: center;">0.370</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">0.121</td>
+<td style="text-align: center;">0.241</td>
+<td style="text-align: center;">0.365</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">33</td>
+<td style="text-align: center;">0.084</td>
+<td style="text-align: center;">0.164</td>
+<td style="text-align: center;">0.347</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">0.072</td>
+<td style="text-align: center;">0.125</td>
+<td style="text-align: center;">0.324</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">500</td>
+<td style="text-align: center;">0.067</td>
+<td style="text-align: center;">0.097</td>
+<td style="text-align: center;">0.291</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1500</td>
+<td style="text-align: center;">0.066</td>
+<td style="text-align: center;">0.088</td>
+<td style="text-align: center;">0.270</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(\theta\)</span> (cm<sup>3</sup> cm<sup>-3</sup>) em potenciais de referência. Valores ilustrativos de parâmetros médios (Carsel &amp; Parrish, 1988).</p>
+</div>
+</section>
+<section id="o-que-molda-a-curva" class="slide level2">
+<h2>O que molda a curva?</h2>
+<hr>
+<div class="columns">
+<div class="column">
+<p><span class="fg" style="--col: #e64173"><strong>Textura</strong></span></p>
+<ul>
+<li><strong>Argiloso</strong>: muitos microporos e grande área superficial; retém muita água em tensões altas; curva suave;</li>
+<li><strong>Arenoso</strong>: poros grandes; perde água rápido em tensões baixas; curva “em degrau”.</li>
+</ul>
+</div><div class="column">
+<p><span class="fg" style="--col: #e64173"><strong>Estrutura e matéria orgânica</strong></span></p>
+<ul>
+<li><strong>Compactação</strong> reduz macroporos e desloca a distribuição de poros;</li>
+<li>Agregação e matéria orgânica aumentam a retenção em baixa e média tensão;</li>
+<li>Na região seca (PMP), domina a <strong>adsorção</strong>: a textura pesa mais que a estrutura.</li>
+</ul>
+</div></div>
+</section>
+<section id="histerese" class="slide level2">
+<h2>Histerese</h2>
+<hr>
+
+<img data-src="aula_8_files/figure-revealjs/unnamed-chunk-5-1.png" width="816" class="r-stretch"><div class="fragment">
+<p>Para o mesmo <span class="math inline">\(\Psi_m\)</span>, o solo retém <strong>mais</strong> água ao secar do que ao umedecer (poros de “gargalo”, ar aprisionado, ângulo de contato).</p>
+</div>
+</section></section>
+<section>
+<section id="parte-5-cc-pmp-e-água-disponível" class="title-slide slide level1 center">
+<h1>Parte 5: CC, PMP e água disponível</h1>
+
+</section>
+<section id="capacidade-de-campo-cc" class="slide level2">
+<h2>Capacidade de campo (CC)</h2>
+<hr>
+<div class="fragment">
+<p>Solo saturado: <span class="math inline">\(\Psi_m = 0\)</span> e o movimento ocorre por <span class="math inline">\(\Psi_g\)</span> (drenagem livre). Quando o <strong>excesso</strong> é drenado e o fluxo descendente se torna desprezível, o solo está na <strong>capacidade de campo</strong>.</p>
+</div>
+<ul>
+<li class="fragment">Ocorre 1 a 3 dias após uma chuva ou irrigação que saturou o perfil (mais rápido em solos arenosos);</li>
+<li class="fragment">Referência: <strong>-10 kPa</strong> (arenosos) a <strong>-33 kPa</strong> (argilosos), isto é, 0,1 a 0,3 bar;</li>
+<li class="fragment">Limite <strong>superior</strong> da água disponível;</li>
+<li class="fragment">Não é uma constante física: depende do solo e do tempo de drenagem.</li>
+</ul>
+</section>
+<section id="cc-exemplo" class="slide level2">
+<h2>CC: exemplo</h2>
+<hr>
+<div class="fragment">
+<p>Solo inundado; após quatro dias de drenagem, a umidade média de 0 a 50 cm foi <span class="math inline">\(\theta_{CC}\)</span> = 0,349 cm<sup>3</sup> cm<sup>-3</sup>.</p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[h_{CC} = 0,349 \cdot 50 = 17,45~cm = 174,5~mm\]</span></p>
+</div>
+<div class="fragment">
+<p>Hoje a camada tem <strong>150 mm</strong> e ocorre uma chuva de <strong>40 mm</strong>:</p>
+<ul>
+<li>Retenção possível: 174,5 - 150 = <strong>24,5 mm</strong>;</li>
+<li>Perda (drenagem e/ou escoamento): 40 - 24,5 = <strong>15,5 mm</strong>.</li>
+</ul>
+</div>
+</section>
+<section id="ponto-de-murcha-permanente-pmp" class="slide level2">
+<h2>Ponto de murcha permanente (PMP)</h2>
+<hr>
+<ul>
+<li class="fragment">Umidade na qual a planta murcha e <strong>não se recupera</strong>, mesmo se irrigada;</li>
+<li class="fragment">Água retida com energia <strong>maior</strong> do que a planta consegue exercer;</li>
+<li class="fragment">Referência: <span class="math inline">\(\Psi_m\)</span> = <strong>-1500 kPa (15 bar, -1,5 MPa)</strong>;</li>
+<li class="fragment">Limite <strong>inferior</strong> da água disponível;</li>
+<li class="fragment">A água está adsorvida às superfícies sólidas: depende muito da <strong>textura</strong> e pouco da estrutura.</li>
+</ul>
+<div class="fragment">
+<p>O PMP é uma <strong>convenção</strong>; o limite real varia com a espécie e a demanda atmosférica.</p>
+</div>
+</section>
+<section id="pmp-exemplo" class="slide level2">
+<h2>PMP: exemplo</h2>
+<hr>
+<div class="fragment">
+<p>Mesmo solo: <span class="math inline">\(U_{PMP}\)</span> = 0,173 g g<sup>-1</sup> e <span class="math inline">\(D_s\)</span> = 1,46 g cm<sup>-3</sup>.</p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\theta_{PMP} = 0,173 \cdot 1,46 = 0,253~cm^3~cm^{-3}\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[h_{PMP} = 0,253 \cdot 50 = 12,63~cm = 126,3~mm\]</span></p>
+</div>
+</section>
+<section id="capacidade-de-água-disponível-cad" class="slide level2">
+<h2>Capacidade de água disponível (CAD)</h2>
+<hr>
+<p><span class="math display">\[CAD = \theta_{CC} - \theta_{PMP}\]</span></p>
+<div class="fragment">
+<p><span class="math display">\[CAD = 0,349 - 0,253 = 0,096~cm^3~cm^{-3}~(9,6\%)\]</span></p>
+</div>
+<div class="fragment">
+<p>Em lâmina, na camada de 50 cm: 174,5 - 126,3 = <strong>48,2 mm</strong>.</p>
+</div>
+<div class="fragment">
+<p>Dos 174,5 mm retidos na CC, <strong>126,3 mm não podem ser aproveitados</strong> pela planta.</p>
+</div>
+</section>
+<section id="água-disponível-por-textura" class="slide level2">
+<h2>Água disponível por textura</h2>
+<hr>
+
+<img data-src="aula_8_files/figure-revealjs/unnamed-chunk-6-1.png" width="864" class="r-stretch"></section>
+<section id="cad-é-capacidade-não-garantia" class="slide level2">
+<h2>CAD é capacidade, não garantia</h2>
+<hr>
+<ul>
+<li class="fragment">CC e PMP definem a <strong>quantidade máxima</strong> disponível, que não necessariamente será usada;</li>
+<li class="fragment">Se a <strong>infiltração</strong> é muito lenta, o reservatório pode não ser preenchido;</li>
+<li class="fragment">Se a <strong>CAD</strong> é pequena (solos rasos ou arenosos), a oferta é limitada;</li>
+<li class="fragment">Nos dois casos há <strong>deficiência hídrica</strong> e queda de crescimento.</li>
+</ul>
+</section>
+<section id="da-cad-ao-manejo-da-irrigação" class="slide level2">
+<h2>Da CAD ao manejo da irrigação</h2>
+<hr>
+<div class="fragment">
+<p>Nem toda a CAD é facilmente utilizada. Define-se o fator de disponibilidade <em>f</em> (≈ 0,3 a 0,6, conforme cultura e demanda):</p>
+<p><span class="math display">\[AFD = f \cdot CAD \cdot z \qquad \theta_{crítico} = \theta_{CC} - f \cdot CAD\]</span></p>
+</div>
+<div class="fragment">
+<p>Exemplo (CAD = 0,096; z = 500 mm; <em>f</em> = 0,5):</p>
+<p><span class="math display">\[AFD = 0,5 \cdot 0,096 \cdot 500 = 24~mm\]</span></p>
+</div>
+<div class="fragment">
+<p>Irriga-se quando cerca de 24 mm já foram consumidos, repondo essa lâmina (dividida pela eficiência do sistema).</p>
+</div>
+</section></section>
+<section>
+<section id="parte-6-exercícios-e-fechamento" class="title-slide slide level1 center">
+<h1>Parte 6: exercícios e fechamento</h1>
+
+</section>
+<section id="exercício-1" class="slide level2">
+<h2>Exercício 1</h2>
+<hr>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_85a3de63" minutes="5" seconds="0" update-every="1" tabindex="0" style="top:0;right:0;--countdown-margin:0%;--countdown-padding:5px;"></countdown-timer>
+</div>
+</div>
+<p>Dois pontos de um solo não saturado, com referência na superfície: A (z = -30 cm; <span class="math inline">\(\Psi_m\)</span> = -90 cm) e B (z = -50 cm; <span class="math inline">\(\Psi_m\)</span> = -70 cm). Qual o sentido do fluxo?</p>
+<div class="fragment">
+<p>Resposta:</p>
+<p><span class="math display">\[\Psi_t(A) = -30 - 90 = -120~cm \qquad \Psi_t(B) = -50 - 70 = -120~cm\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(\Psi_t(A) = \Psi_t(B)\)</span>: <strong>equilíbrio</strong>, não há fluxo.</p>
+</div>
+</section>
+<section id="exercício-2" class="slide level2">
+<h2>Exercício 2</h2>
+<hr>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_f6982791" minutes="5" seconds="0" update-every="1" tabindex="0" style="top:0;right:0;--countdown-margin:0%;--countdown-padding:5px;"></countdown-timer>
+</div>
+</div>
+<p>Uma lâmina de 5 cm cobre um solo saturado. Com a superfície do solo como referência, calcule <span class="math inline">\(\Psi_g\)</span>, <span class="math inline">\(\Psi_p\)</span> e <span class="math inline">\(\Psi_t\)</span> em um ponto a 30 cm de profundidade.</p>
+<div class="fragment">
+<p>Resposta:</p>
+<p><span class="math display">\[\Psi_g = -30~cm \qquad \Psi_p = 5 + 30 = 35~cm \qquad \Psi_m = 0\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\Psi_t = -30 + 35 + 0 = 5~cm~H_2O\]</span></p>
+</div>
+</section>
+<section id="exercício-3" class="slide level2">
+<h2>Exercício 3</h2>
+<hr>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_38886403" minutes="5" seconds="0" update-every="1" tabindex="0" style="top:0;right:0;--countdown-margin:0%;--countdown-padding:5px;"></countdown-timer>
+</div>
+</div>
+<p>Calcule o <span class="math inline">\(\Psi_{os}\)</span> de uma solução do solo com C = 0,05 mol L<sup>-1</sup> a 25 °C, em atm, kPa e cm H<sub>2</sub>O.</p>
+<div class="fragment">
+<p>Resposta (T = 298 K):</p>
+<p><span class="math display">\[\Psi_{os} = -0,082 \cdot 298 \cdot 0,05 = -1,22~atm\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[-1,22 \cdot 101,3 \approx -124~kPa \qquad -1,22 \cdot 1033 \approx -1262~cm~H_2O\]</span></p>
+</div>
+</section>
+<section id="exercício-4" class="slide level2">
+<h2>Exercício 4</h2>
+<hr>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_2cfc5019" minutes="5" seconds="0" update-every="1" tabindex="0" style="top:0;right:0;--countdown-margin:0%;--countdown-padding:5px;"></countdown-timer>
+</div>
+</div>
+<p>Um tensiômetro com cápsula a z = 30 cm marca h<sub>Hg</sub> = 50 cm, com h<sub>c</sub> = 10 cm. Qual o <span class="math inline">\(\Psi_m\)</span>? Já é hora de irrigar (critério: &lt; -0,06 MPa)?</p>
+<div class="fragment">
+<p>Resposta:</p>
+<p><span class="math display">\[\Psi_m = -12,6 \cdot 50 + 10 + 30 = -590~cm~H_2O \approx -58~kPa\]</span></p>
+</div>
+<div class="fragment">
+<p>-58 kPa ainda é maior que -60 kPa: <strong>ainda não</strong>, mas a irrigação deve ser feita em breve.</p>
+</div>
+</section>
+<section id="exercício-5" class="slide level2">
+<h2>Exercício 5</h2>
+<hr>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_9d1bc256" minutes="8" seconds="0" update-every="1" tabindex="0" style="top:0;right:0;--countdown-margin:0%;--countdown-padding:5px;"></countdown-timer>
+</div>
+</div>
+<p>Um solo tem U<sub>CC</sub> = 0,28 g g<sup>-1</sup>, U<sub>PMP</sub> = 0,16 g g<sup>-1</sup> e D<sub>s</sub> = 1,25 g cm<sup>-3</sup>. Calcule a CAD e a lâmina disponível em 0 a 60 cm. Com <em>f</em> = 0,5, qual a AFD?</p>
+<div class="fragment">
+<p>Resposta:</p>
+<p><span class="math display">\[\theta_{CC} = 0,28 \cdot 1,25 = 0,35 \qquad \theta_{PMP} = 0,16 \cdot 1,25 = 0,20\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[CAD = 0,15~cm^3~cm^{-3} \qquad h = 0,15 \cdot 600 = 90~mm \qquad AFD = 0,5 \cdot 90 = 45~mm\]</span></p>
+</div>
+</section>
+<section id="exercício-6" class="slide level2">
+<h2>Exercício 6</h2>
+<hr>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_e97c52af" minutes="8" seconds="0" update-every="1" tabindex="0" style="top:0;right:0;--countdown-margin:0%;--countdown-padding:5px;"></countdown-timer>
+</div>
+</div>
+<p>Camada de 0 a 40 cm com <span class="math inline">\(\theta_{CC}\)</span> = 0,27 e <span class="math inline">\(\theta_{PMP}\)</span> = 0,15. A umidade atual é <span class="math inline">\(\theta\)</span> = 0,22 e <em>f</em> = 0,5. Já é hora de irrigar? Qual a lâmina necessária para voltar à CC?</p>
+<div class="fragment">
+<p>Resposta:</p>
+<p><span class="math display">\[CAD = 0,27 - 0,15 = 0,12 \qquad \theta_{crítico} = 0,27 - 0,5 \cdot 0,12 = 0,21\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(\theta = 0,22 &gt; 0,21\)</span>: <strong>ainda não</strong> é hora de irrigar. Lâmina para repor até a CC:</p>
+<p><span class="math display">\[h = (0,27 - 0,22) \cdot 400 = 20~mm\]</span></p>
+</div>
+</section>
+<section id="atenção" class="slide level2">
+<h2>Atenção</h2>
+<hr>
+<ul>
+<li class="fragment"><strong>Sinais</strong>: <span class="math inline">\(\Psi_m \le 0\)</span>, <span class="math inline">\(\Psi_p \ge 0\)</span>, <span class="math inline">\(\Psi_{os} \le 0\)</span>; <span class="math inline">\(\Psi_g\)</span> depende da referência;</li>
+<li class="fragment"><strong>Fluxo</strong>: do <strong>maior</strong> para o <strong>menor</strong> <span class="math inline">\(\Psi_t\)</span>, não necessariamente do mais úmido para o mais seco;</li>
+<li class="fragment"><strong>Unidades</strong>: confira se <span class="math inline">\(\Psi\)</span> está em kPa, MPa, bar ou cm H<sub>2</sub>O antes de comparar;</li>
+<li class="fragment"><strong>CAD</strong> é diferença de <strong>umidades volumétricas</strong>; para lâmina, multiplique por z;</li>
+<li class="fragment">CC e PMP são <strong>referências convencionais</strong>, e não constantes físicas rígidas.</li>
+</ul>
+</section></section>
+<section id="fim" class="title-slide slide level1 center">
+<h1>Fim!</h1>
+<hr>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copiada");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copiada");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
